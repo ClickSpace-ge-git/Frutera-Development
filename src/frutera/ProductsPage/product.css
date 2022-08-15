@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page .mainProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.page .mainProduct .leftSide {
+  max-width: 16rem;
+  min-width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page .mainProduct .leftSide ul {
+  list-style-type: none;
+}
+
+.page .mainProduct .leftSide li {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  max-width: 80%;
+  border-left: 0.2rem solid #f76b2a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page .mainProduct .leftSide li:hover {
+  background-color: #f76b2a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+}
+
+.page .mainProduct .productDesc {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(white), to(#009444));
+  background-image: linear-gradient(to right, white, white, #fe854d);
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page .mainProduct .productDesc .images {
+  border: #f76b2a solid 0.1rem;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.page .mainProduct .productDesc .images .mainImage {
+  margin: 1rem 0;
+  max-width: 22rem;
+  min-width: 16rem;
+  border-radius: 8px;
+}
+
+.page .mainProduct .productDesc .images .otherImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page .mainProduct .productDesc .images .otherImages h2 {
+  margin: 1.3rem 0 0 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page .mainProduct .productDesc .images .otherImages h2:hover {
+  color: #009444;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page .mainProduct .productDesc .images .otherImages img {
+  border-radius: 8px;
+  margin: 0 0.5rem;
+  max-width: 7rem;
+}
+
+.page .mainProduct .productDesc .description {
+  padding-left: 1rem;
+}
+
+.page .mainProduct .productDesc .description h1 {
+  margin: 1rem 0;
+}
+
+.page .mainProduct .productDesc .description h3 {
+  margin: 1rem 0;
+}
+
+.page .mainProduct .productDesc .description h2 {
+  margin: 1rem 0;
+}
+
+.page .mainProduct .productDesc .description h4 {
+  margin: 1rem 0;
+  cursor: pointer;
+  color: #f76b2a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.page .mainProduct .productDesc .description h4:hover {
+  color: #009444;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page .mainProduct .productDesc .description .amountCart {
+  margin-top: 3rem;
+}
+
+.page .mainProduct .productDesc .description .amountCart input {
+  height: 1.8rem;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  margin: 0 0.5rem;
+  padding-bottom: 0.4rem;
+}
+
+.page .mainProduct .productDesc .description .amountCart #addtocart {
+  margin: 0 0.5rem;
+}
+
+.page .mainProduct .productDesc .description .amountCart button {
+  color: white;
+  height: 2rem;
+  font-weight: bold;
+  padding: 2px 9px;
+  background-color: #f76b2a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin: 0 0.01rem;
+}
+
+.page .mainProduct .productDesc .description .amountCart button:hover {
+  background-color: #282d2e;
+  color: white;
+}
+
+.page .mainProduct .productDesc .description #favorite {
+  margin-top: 3rem;
+  height: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 2px 9px;
+  background-color: #282d2e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page .mainProduct .productDesc .description #favorite:hover {
+  background-color: #009444;
+}
+
+.page .recomended {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.page .recomended .associated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .recomended .associated h2 {
+  margin: 1.3rem 0 0 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #f76b2a;
+}
+
+.page .recomended .associated h2:hover {
+  color: #009444;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.page .recomended .recomendedBottom {
+  margin: 1rem;
+}
+
+.page .recomended .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.page .recomended .cards #card {
+  border: #f76b2a solid 0.1rem;
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem;
+  width: 30%;
+  margin: 0 1.25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.page .recomended .cards #card img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.page .recomended .cards #card button {
+  margin-top: 1rem;
+  height: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 2px 9px;
+  background-color: #f76b2a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page .recomended .cards #card button:hover {
+  background-color: #363e40;
+}
+
+.page .recomended .cards #card .cardDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=product.css.map */

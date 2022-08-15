@@ -1,0 +1,89 @@
+@import '../ScssVariables.scss';
+
+.languages {
+   .dropBtn {
+      text-decoration: none;
+      border: none;
+      background-color: $orangeColor2;
+      width: 160px;
+      height: 50px;
+      border-radius: 10px 10px 10px 10px;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+         transition: 0.2s;
+         background-color: $orangeColor;
+      }
+   
+      a {
+         font-size: 16px;
+         font-weight: 600;
+         display: flex;
+         color: $backgroundColor;
+         text-decoration: none;
+
+         &:hover {
+            background: $orangeColor;
+            transition: 0.2s;
+         }
+
+         img {
+            width: 30px;
+         }
+
+         p {
+            transform: translateX(20px)
+         }
+      }
+   }
+
+   .dropDownList {
+      position: absolute;
+      background-color: $orangeColor2;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      list-style: none;
+      width: 160px;
+      border-radius: 0 0 10px 10px;
+
+      li {
+         a {
+            padding: 10px 15px;
+            display: flex;
+            color: $backgroundColor;
+            text-decoration: none;
+            font-weight: 600;
+            img {
+               width: 30px;
+            }
+            p {
+               padding-left: 20px;
+            }
+   
+            &:hover {
+               background: $backgroundColor;
+               color: black;
+               transition: 0.3s;
+            }
+         }
+         &:last-child a{
+            border-radius: 0 0 10px 10px;
+         }
+      }
+   }
+   
+   .btnpos1 {
+      border-radius: 10px 10px 10px 10px;
+   }
+
+   .btnpos2 {
+      border-radius: 10px 10px 0 0;
+   }
+
+   .show {
+      display: block;
+   }
+   .hide {
+      display: none;
+   }
+}

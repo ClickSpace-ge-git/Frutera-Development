@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutUsPage from './frutera/AboutUsPage/AboutUsPage'
+import HomePage from './frutera/HomePage/HomePage'
+import BlogPage from './frutera/BlogPage/BlogPage';
+import Product from './frutera/ProductsPage/product';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.scss';
+
+export default function App() {
+   return (
+      <BrowserRouter>
+         <Routes>
+            <Route path='/' element={<div className='App'><HomePage/></div>}/>
+            <Route path='/aboutus' element={<div className='App'><AboutUsPage/></div>}/>
+            <Route path='/blog' element={<div className='App'><BlogPage/></div>}/>
+            <Route path='/product' element={<div className='App'><Product/></div>}/>
+         </Routes>
+      </BrowserRouter>
+   );
 }
-
-export default App;

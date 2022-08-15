@@ -1,0 +1,103 @@
+@import '../ScssVariables.scss';
+
+.Ccontainer {
+   display: flex;
+   justify-content: center;
+   overflow-y: hidden;
+   overflow-x: hidden;
+
+   .Ccontainer2 {
+      padding: 50px;
+
+      .header {
+         display: flex;
+         justify-content: center;
+
+         h1 {
+            font-family: 'Samsung Sharp Sans', sans-serif;
+            font-size: 50px;
+            color: $orangeColor;
+            padding-right: 1000px;
+         }
+
+         .categories {
+            margin-top: 7px;
+            font-size: 17px;
+            color: $greenColor;
+            padding: 10px;
+            border: $orangeColor 1px solid;
+            border-radius: 10px;
+            height: 50px;
+            outline: none;
+            font-weight: bold;
+            background: transparent;
+            cursor: pointer;
+
+            .option-container {
+               border: none;
+               background: $backgroundColor;
+            }
+         }
+      }
+
+      .categoriesList {
+         margin-top: 50px;
+         display: grid;
+         grid-template-columns: 450px 450px 450px;
+         grid-column-gap: 40px;
+         grid-column-gap: 40px;
+         grid-row-gap: 30px;
+
+         .Category {
+            width: 460px;
+            border-radius: 10px;
+            padding-left: 250px;
+
+            img {
+                  display: flex;
+                  width: 100%;
+                  border-radius: 100px 10px 10px 0px;
+            }
+            .text {
+               position: absolute;
+               transform: translate(-225px, -200px);
+               color: white;
+
+               .title {
+                  font-size: 25px;
+                  width: 180px;
+               }
+
+               p {
+                  font-size: 17px;
+                  padding-top: 10px;
+                  font-weight: 600;
+               }
+
+               button {
+                  border: none;
+                  color: $orangeColor;
+                  font-weight: 600;
+                  font-size: 17px;
+                  background-color: white;
+                  padding: 7px;
+                  margin-top: 80px;
+                  width: 100px;
+                  border-radius: 100px;
+                  cursor: pointer;
+
+                  &:hover {
+                     background: #ffede7;
+                  }
+               }
+            }
+            
+         }
+      }
+   }
+}
+
+.hide {
+   display: none;
+}
+

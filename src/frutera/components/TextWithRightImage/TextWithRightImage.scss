@@ -1,0 +1,72 @@
+@import '../ScssVariables.scss';
+
+.TWRIcontainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 130px;
+   padding-bottom: 170px;
+
+   .components {
+      margin: auto;
+      display: flex;
+      align-items: center;
+
+      img {
+         width: 500px;
+         margin-left: 340px;
+      }
+
+      h1 {
+         font-family: 'Samsung Sharp Sans', sans-serif;
+         font-size: 40px;
+         color: $orangeColor;
+         font-weight: 700;
+         margin-bottom: 20px;
+         margin-left: 100px;
+      }
+
+      li {
+         padding-left: 20px;
+         font-size: 18px;
+         color: rgb(72, 72, 72);
+         line-height: 40px;
+         margin-bottom: 25px;
+         list-style-type: none;
+         margin-left: 100px;
+
+         
+         &:last-child{
+            padding-bottom: 20px;
+         }
+      }
+   }
+
+   .componentBtns{
+      .btn {
+         padding: 20px 32px;
+         margin-right: 10px;
+         color: #111;
+         font-size: 16px;
+         font-weight: bold;
+         background: white;
+         box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+         outline: none;
+         text-decoration: none;
+         &:not(:last-child) {
+            margin-left: 100px;
+         }
+         &:hover {
+            color: white;
+            background-color: $greenColor;
+            transition: 0.3s;
+            cursor: pointer;
+         }
+      }
+   
+      .moreStyle {
+         background: $hoverOrangeColor;
+         color: white;
+      }
+   }
+}
