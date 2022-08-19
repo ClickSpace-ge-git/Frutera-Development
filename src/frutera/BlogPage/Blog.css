@@ -102,19 +102,7 @@ body {
   color: #c74242;
   transition: all ease 0.3s;
 }
-.all {
-  color: #32302f;
-  position: absolute;
-  top: 120%;
-  right: 33%;
-  text-align:right;
-  
-}
-.all:hover{
-  color: #f33c3c;
-  transition: all ease 0.3s;
-  cursor: pointer;
-}
+
 #comments{
   display: flex;
   flex-direction: column;
