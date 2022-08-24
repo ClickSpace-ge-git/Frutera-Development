@@ -1,0 +1,189 @@
+@import '../ScssVariables.scss';
+@import '../LanguageList/LanguageList.scss';
+
+body {
+   overflow-x: hidden;
+}
+
+.H2container {
+   display: flex;
+   justify-content: center;
+
+   .images {
+      .backgroundImage {
+         position: absolute;
+         // max-width: 1920px;
+         // min-width: 1420px;
+         width: 1536px;
+         // width: 100%;
+      }
+      .whiteFigure {
+         position: absolute;
+         width: 300px;
+         z-index: 1;
+      }
+      .logoWithName {
+         cursor: pointer;
+         position: absolute;
+         display: flex;
+         margin: 20px;
+         z-index: 3;
+         .logo {
+            width: 50px;
+         }
+         .logoName {
+            color: $orangeColor;
+            font-size: 30px;
+            margin: 25px 0px 0px 10px;
+         }
+      }
+   }
+
+   .navigationBar {
+      // width: 1920px;
+      // min-width: 1420px;
+      width: 1536px;
+      background-color: $orangeColor;
+      padding: 10px 20px 10px 300px;
+      transform: translateY(18px);
+      z-index: 0;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+   
+      .nav_links {
+         list-style: none;
+      
+         .navBtn {
+            display: inline-block;
+            padding: 0px 20px;
+            transition: 0.3s;
+            cursor: pointer;
+      
+            &::after {
+               content: '';
+               width: 0;
+               height: 3px;
+               background: white;
+               display: block;
+               margin: auto;
+               transition: 0.5s;
+               border-radius: 100px;
+            }
+      
+            &:hover::after {
+               width: 100%;
+            }
+      
+            a {
+               font-family: 'Poppins', sans-serif;
+               color: white;
+               text-decoration: none;
+               transition: all 0.3s ease 0s;
+               font-size: 22px;
+            }
+         }
+      
+         .marked {
+            &::after {
+               width: 100%;
+               background: #007436;
+            }
+            a {
+               color: #007436;
+            }
+         }
+      }
+   
+      .btn{
+         a {
+            text-decoration: none;
+            width: 55px;
+            height: 55px;
+            margin-right: 20px;
+            background-color: $backgroundColor;
+            color: $orangeColor;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 0.3s;
+   
+            &:first-child {
+               margin-left: 10px;
+            }
+      
+            &:hover {
+               background-color: $orangeColor;
+               color: $backgroundColor;
+            }
+      
+            i {
+               font-size: 20px;
+               cursor: pointer;
+            }
+         }
+      }
+
+      .LLContainer {
+         
+         .dropBtn {
+            background-color: $orangeColor;
+            border: $backgroundColor 2px solid;
+
+            &:hover {
+               background-color: $orangeColor2;
+            }
+
+            a {
+               &:hover {
+                  background: $orangeColor2;
+               }
+            }
+         }
+
+         .dropDownList {
+            background-color: $orangeColor;
+            border: $backgroundColor 2px solid;
+         }
+      }
+   }
+
+   .text {
+      position: absolute;
+      top: 0;
+      // transform: translate(-560px, 340px);
+      transform: translate(-450px, 240px);
+      z-index: 4;
+
+      h1 {
+         font-family: 'Samsung Sharp Sans', sans-serif;
+         font-size: 55px;
+         color: $orangeColor;
+      }
+
+      p {
+         color: white;
+         font-size: 23px;
+         font-weight: 600;
+         width: 500px;
+      }
+   
+      button {
+         margin-top: 50px;
+         border: none;
+         outline: none;
+         background: $orangeColor;
+         padding: 10px 40px;
+         border-radius: 100px;
+         font-size: 20px;
+         color: white;
+         cursor: pointer;
+
+         &:hover {
+            background: $hoverOrangeColor;
+         }
+      }
+   }
+}
