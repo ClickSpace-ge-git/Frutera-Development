@@ -1,12 +1,9 @@
-import Comments from "./comments/Comments";
-import './Blog.css';
-import blog1 from '../../images/Blogs/blog1.jpeg';
-import blog2 from '../../images/Blogs/blog2.jpeg';
-import profile1 from '../../images/Blogs/profile1.jpg';
-import profile2 from '../../images/Blogs/profile2.jpeg';
-import {getPage} from "./api";
+//import blog1 from '../../images/Blogs/blog1.jpeg';
+//import blog2 from '../../images/Blogs/blog2.jpeg';
+import {getPage} from "../../BlogPage/api";
 import {useEffect, useState} from "react";
-import Paragraph from "./comments/Paragraph";
+import Paragraph from "./Paragraph";
+import Comments from "./Comments";
 
 const BlogPage = (props) => {
     const [pageInfo,setPageInfo] = useState({})
@@ -44,7 +41,7 @@ const BlogPage = (props) => {
                     <div className="blog-box">
 
                         <div className="blog-img">
-                            <img src={blog1} alt="blog" className="img"/>
+                        <img src={require("../../../images/Blogs/blog1.jpeg")} alt="blof_fruit" />
                         </div>
                         <div className="blog-text">
                             <span>28 ივლისი 2022წ </span>
@@ -58,7 +55,7 @@ const BlogPage = (props) => {
                     <div className="blog-box">
 
                         <div className="blog-img">
-                            <img src={blog2} alt="blog" className="img"/>
+                        <img src={require("../../../images/Blogs/blog2.jpeg")} alt="blof_fruit" />
                         </div>
                         <div className="blog-text">
                             <span>28 ივლისი 2022წ </span>
@@ -78,10 +75,9 @@ const BlogPage = (props) => {
                     <h4 className="comments">კომენტარები</h4>
                 </div>
                 <Comments
-                    commentsUrl="http://localhost:3004/comments"
-                    currentUserId="1"
-                />
-
+            commentsUrl="http://localhost:3004/comments"
+            currentUserId="1"
+          />
             </section>
         </div>
 

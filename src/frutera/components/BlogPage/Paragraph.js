@@ -1,4 +1,3 @@
-import '../Blog.css';
 
 const Paragraph = (props) => {
     return(
