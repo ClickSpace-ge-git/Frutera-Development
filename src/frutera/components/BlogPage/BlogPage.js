@@ -1,9 +1,11 @@
-//import blog1 from '../../images/Blogs/blog1.jpeg';
-//import blog2 from '../../images/Blogs/blog2.jpeg';
+import blog1 from '../../../images/Blogs/blog1.jpeg';
+import blog2 from '../../../images/Blogs/blog2.jpeg';
 import {getPage} from "../../BlogPage/api";
 import {useEffect, useState} from "react";
 import Paragraph from "./Paragraph";
 import Comments from "./Comments";
+import Header2 from "../Header2/Header2";
+import Footer from "../Footer/Footer";
 
 const BlogPage = (props) => {
     const [pageInfo,setPageInfo] = useState({})
@@ -17,69 +19,76 @@ const BlogPage = (props) => {
     },[])
 
     return (
-        <div className="App">
-            <div className="blog">
-                <div className="date">{pageInfo.time}</div>
-                <h2 className="title">{pageInfo.title}</h2>
-                <br/>
-                {paragraphs.length > 0? paragraphs.map((todos,index) => (
-                    <Paragraph props={todos} key={index}/>
-                )):""}
-                <br/>
-                <br/>
-                <br/>
-                <p className="comment">4 კომენტარი</p>
-            </div>
-            <div className="posts">
-                <h3>სხვა სტატიები</h3>
-            </div>
+        <div>
+            <Header2 className="header"/>
+            <div className="BPcontainer">
+                <div className="blog">
+                    <div className="date">{pageInfo.time}</div>
+                    <h2 className="title">{pageInfo.title}</h2>
+                    <br/>
+                    {paragraphs.length > 0? paragraphs.map((todos,index) => (
+                        <Paragraph props={todos} key={index}/>
+                    )):""}
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p className="comment">4 კომენტარი</p>
+                </div>
+                <div className="posts">
+                    <h3>სხვა სტატიები</h3>
+                </div>
 
-            <section id="blog">
+                <section id="blog">
 
-                <div className="blog-container">
+                    <div className="blog-container">
 
-                    <div className="blog-box">
+                        <div className="blog-box">
 
-                        <div className="blog-img">
-                        <img src={require("../../../images/Blogs/blog1.jpeg")} alt="blof_fruit" />
+                            <p className="all">მეტის ნახვა</p>
+
+                            <div className="blog-img">
+                                <img src={blog1} alt="blof_fruit" />
+                            </div>
+                            <div className="blog-text">
+                                <span>28 ივლისი 2022წ </span>
+                                <br/>
+                                <a href="#" className="blog-title">რა სასარგებლო თვისებები აქვს ვაშლის ჩირს?</a>
+                            </div>
+
                         </div>
-                        <div className="blog-text">
-                            <span>28 ივლისი 2022წ </span>
-                            <br/>
-                            <a href="#" className="blog-title">რა სასარგებლო თვისებები აქვს ვაშლის ჩირს?</a>
+
+
+                        <div className="blog-box">
+
+                            <div className="blog-img">
+                                <img src={blog2} alt="blof_fruit" />
+                            </div>
+                            <div className="blog-text">
+                                <span>28 ივლისი 2022წ </span>
+                                <br/>
+                                <a href="#" className="blog-title">რა სასარგებლო თვისებები აქვს შავი ქლიავის ჩირს?</a>
+                            </div>
+
                         </div>
+
 
                     </div>
 
+                </section>
 
-                    <div className="blog-box">
-
-                        <div className="blog-img">
-                        <img src={require("../../../images/Blogs/blog2.jpeg")} alt="blof_fruit" />
-                        </div>
-                        <div className="blog-text">
-                            <span>28 ივლისი 2022წ </span>
-                            <br/>
-                            <a href="#" className="blog-title">რა სასარგებლო თვისებები აქვს შავი ქლიავის ჩირს?</a>
-                        </div>
-
+                <section id="comments">
+                    <div>
+                        <h4 className="comments">კომენტარები</h4>
                     </div>
+                    <Comments
+                        commentsUrl="http://localhost:3004/comments"
+                        currentUserId="1"
+                    />
+                </section>
+            </div>
 
-
-                </div>
-
-            </section>
-
-            <section id="comments">
-                <div>
-                    <h4 className="comments">კომენტარები</h4>
-                </div>
-                <Comments
-            commentsUrl="http://localhost:3004/comments"
-            currentUserId="1"
-          />
-            </section>
         </div>
+
 
     );
 };

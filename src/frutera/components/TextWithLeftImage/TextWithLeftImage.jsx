@@ -1,10 +1,11 @@
 import './TextWithLeftImage.scss'
+import img1 from "../../../images/Frutera/img1.jpg"
 
 export default function TextWithLeftImage() {
     return (
       <div className="TWLIcontainer">
          <div className="components">
-            <img src={require("../../../images/Frutera/img1.jpg")} alt="products"/>
+            <img src={img1} alt="products"/>
             <div className="text">
                <h4>About Us</h4>
                <h1>Our mission & values</h1>
@@ -22,7 +23,7 @@ export default function TextWithLeftImage() {
                </p>
                <div className="componentBtns">
                   <a href='/#' className="btn">Our Team</a>
-                  <a href='/#' className="btn moreStyle">Learn More</a>
+                  <a href='/aboutus' className="btn moreStyle">Learn More</a>
                </div>
             </div>
          </div>

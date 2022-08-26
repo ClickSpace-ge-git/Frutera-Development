@@ -1,4 +1,5 @@
 import './Footer.scss'
+import logo from "../../../images/Frutera/logo.png"
 
 export default function Footer() {
    return (
@@ -8,7 +9,7 @@ export default function Footer() {
                <div className='otherComponents'>
                   <div className='logoWithName'>
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/logo.png")} alt="logo" />
+                        <img src={logo} alt="logo" />
                      </div>
                      <h1>Frutera</h1>
                   </div>
@@ -29,10 +30,10 @@ export default function Footer() {
                   <div className="column">
                      <h4>About Company</h4>
                      <ul>
-                        <li><a href="/#">about us</a></li>
+                        <li><a href="/aboutus">about us</a></li>
                         <li><a href="/#">our service</a></li>
                         <li><a href="/#">privecy policy</a></li>
-                        <li><a href="/#">Products</a></li>
+                        <li><a href="/products">Products</a></li>
                      </ul>
                   </div>
                   <div className="column">
@@ -41,17 +42,8 @@ export default function Footer() {
                         <li><a href="/#">FAQ</a></li>
                         <li><a href="/#">shipping</a></li>
                         <li><a href="/#">Returns</a></li>
-                        <li><a href="/#">Rrder status</a></li>
+                        <li><a href="/#">Reader status</a></li>
                         <li><a href="/#">payment options</a></li>
-                     </ul>
-                  </div>
-                  <div className="column">
-                     <h4>Online Shop</h4>
-                     <ul>
-                        <li><a href="/#">Watch</a></li>
-                        <li><a href="/#">Phone</a></li>
-                        <li><a href="/#">TV</a></li>
-                        <li><a href="/#">Leptop</a></li>
                      </ul>
                   </div>
                   <div className="column">

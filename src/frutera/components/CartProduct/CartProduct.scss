@@ -1,0 +1,179 @@
+@import '../ScssVariables.scss';
+
+.Ccontainer {
+   display: flex;
+   justify-content: center;
+   margin-top: 400px;
+   margin-bottom: 50px;
+
+   h1 {
+      font-family: $TitleFontFamily2;
+   }
+
+   h4, h2, label, p, a, td {
+      font-family: $textFontFamily;
+   }
+
+   .productPart {
+      padding: 10px 20px;
+      background-color: #ffffff;
+
+      .PPbackground {
+         h1, h2 {
+            color: $orangeColor;
+         }
+
+         .removeBtn {
+
+            outline: none;
+            border: none;
+            background: none;
+            padding: 5px;
+            color: $redColor;
+            cursor: pointer;
+
+            &:hover {
+               background-color: $orangeColor;
+               color: white;
+               transition: 0.3s;
+            }
+         }
+
+         .Ptext {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px 15px 5px;
+            border-bottom: #bcbcbc 1px solid;
+         }
+         .productTable {
+            margin: 10px 0 -10px 0;
+            height: 520px;
+            overflow: hidden;
+            overflow-y: scroll;
+
+            table {
+
+               padding-top: 20px;
+               tr {
+                  td {
+                     padding: 0 5px 0 5px;
+                     text-align: center;
+
+                     &:first-child {
+                        text-align: left;
+                     }
+                  }
+
+                  .Pimage {
+                     padding-top: 10px;
+                     img {
+                        width: 80px;
+                        border-radius: 20px;
+                     }
+                  }
+      
+                  .Pname {
+                     width: auto;
+                     text-align: left;
+                     padding-right: 20px;
+                  }
+      
+                  .Pquantity {
+                     width: 150px;
+                     button {
+                        border: none;
+                        outline: none;
+                        text-decoration: none;
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 10px 0 10px;
+                        font-size: 22px;
+                     }
+                  }
+      
+                  .Pprice {
+                     padding: 25px;
+                  }
+
+                  .removeTr {
+                     text-align: left;
+                     align-items: flex-start;
+                     height: 1px;
+                  }
+               }
+
+
+            }
+         }
+      }
+   }
+
+   .OrderPart {
+      background-color: #f5814b;
+      padding: 10px 40px;
+      color: white;
+
+      h1 {
+         padding-bottom: 15px;
+         border-bottom: #ffffff 1px solid;
+      }
+
+      button {
+         outline: none;
+         text-decoration: none;
+         border: none;
+         background: #282828;
+         color: white;
+         padding: 7px;
+         cursor: pointer;
+
+         &:hover {
+            background-color: white;
+            color: $orangeColor;
+            transition: 0.4s;
+         }
+      }
+
+      .OPheader {
+         padding: 20px 0 40px 0;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .shippingPart {
+         border-bottom: #ffffff 1px solid;
+
+         input, select {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            margin: 8px 0 30px 0;
+            width: 100%;
+            padding: 5px;
+            background-color: white;
+
+            &:hover {
+               background-color: #fff0e7;
+            }
+         }
+
+         .applyBtn {
+            width: 100px;
+            margin-bottom: 30px;
+         }
+      }
+
+      .OPtotalPrice {
+         display: flex;
+         justify-content: space-between;
+         padding: 20px 0;
+      }
+
+      .checkoutBtn {
+         width: 100%;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+   }
+}
