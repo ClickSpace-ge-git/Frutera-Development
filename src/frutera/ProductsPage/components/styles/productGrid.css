@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("http://fonts.cdnfonts.com/css/samsung-sharp-sans");
+@import url("http://fonts.cdnfonts.com/css/samsungone");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  font-family: 'Samsung Sharp Sans', sans-serif;
+}
+
+.page .productdisplaygrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.page .productdisplaygrid .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page .productdisplaygrid .mainGrid {
+  margin-left: 15rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(10px, 1fr));
+  grid-gap: 1.5rem;
+}
+/*# sourceMappingURL=productGrid.css.map */

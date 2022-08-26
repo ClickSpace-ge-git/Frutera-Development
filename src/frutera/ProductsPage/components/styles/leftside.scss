@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$orangeColor: #f76b2a;
+$greenColor: #009444;
+$hoverOrangeColor: #f5814b;
+$backgroundColor: #f9f0ed;
+$imageBorderOrangeColor: #ffbea4;
+$redColor: #e7353b;
+$appleColor:#dd4a4a;
+$orangeColor2: #f3925f;
+$redAppleColor:#80101c;
+$plumColor:#9ba4c5;
+$peachColor:#d38b27;
+$pearColor:#a6ab8d;
+$FooterColor:#0f1c25;
+
+
+.leftSide{
+    overflow: auto;
+    max-width:18rem;
+    min-width:12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul{
+        list-style-type: none;
+    }
+
+    li{
+        padding-left: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        max-width: 80%;
+        box-shadow: -4px 0px 0px 0px $orangeColor;
+        margin-left: 4px;
+        box-sizing: content-box;
+        transition: color 0.3s linear;
+        padding: 0.5rem;
+        position: relative;
+    }
+    li:hover{
+        transition: 0.2s;
+        color: white;
+    }
+
+    li::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        width: 100%;
+        height: 100%;
+        background: $orangeColor;
+        z-index: -1;
+        transition: transform 0.2s;
+        transform-origin:0 0;
+        transition-timing-function: cubic-bezier(0.5,1.6);
+        transform: scaleX(0);
+    }
+
+    li:hover::before{
+        transform: scaleX(1);
+    }
+
+    .liActive{
+        background-color: $orangeColor;
+        color: white;
+    }
+
+
+}
