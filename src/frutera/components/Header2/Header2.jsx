@@ -11,8 +11,10 @@ function PageName() {
          return ("Cart")
       case "/products":
          return ("Products")
+      case "/aboutus":
+         return ("About Us")
       default:
-         return ("Frutera")
+         return ("")
    }
 
 }

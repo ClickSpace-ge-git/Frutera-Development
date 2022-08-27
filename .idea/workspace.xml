@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder">
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartElement.js" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="optimized Cart system&#10;implemented mock voucher system">
+      <change afterPath="$PROJECT_DIR$/src/frutera/ProductsPage/ProductsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/ProductsPage/productsPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Product/Product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Product/product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductCard/productcard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductGrid/productGrid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/productShowcase.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/leftside.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductPages/kurkisGaresheChiri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductPages/packagedPlum.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductPages/qliavisChiri.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/ProductsPage/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/ProductsPage/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +41,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,7 +61,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/frutera&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,9 +73,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
@@ -78,7 +101,9 @@
       <workItem from="1661524384559" duration="1069000" />
       <workItem from="1661531215170" duration="4720000" />
       <workItem from="1661590917100" duration="201000" />
-      <workItem from="1661594791409" duration="6454000" />
+      <workItem from="1661594791409" duration="7073000" />
+      <workItem from="1661617140337" duration="1535000" />
+      <workItem from="1661619710263" duration="1531000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -94,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661535156697</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="optimized Cart system&#10;implemented mock voucher system">
+      <created>1661601454483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661601454483</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +147,7 @@
     <MESSAGE value="Initializing project demo" />
     <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page" />
     <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder" />
+    <MESSAGE value="optimized Cart system&#10;implemented mock voucher system" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized Cart system&#10;implemented mock voucher system" />
   </component>
 </project>

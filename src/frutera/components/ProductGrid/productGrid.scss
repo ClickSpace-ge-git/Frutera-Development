@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('http://fonts.cdnfonts.com/css/samsung-sharp-sans');
+@import url('http://fonts.cdnfonts.com/css/samsungone');
+
+
+$orangeColor: #f76b2a;
+$greenColor: #009444;
+$hoverOrangeColor: #f5814b;
+$backgroundColor: #f9f0ed;
+$imageBorderOrangeColor: #ffbea4;
+$redColor: #e7353b;
+$appleColor:#dd4a4a;
+$orangeColor2: #f3925f;
+$redAppleColor:#80101c;
+$plumColor:#9ba4c5;
+$peachColor:#d38b27;
+$pearColor:#a6ab8d;
+$FooterColor:#0f1c25;
+
+
+.page{
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    .productdisplaygrid{
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: row;
+        position: relative;
+
+        .left{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .mainGrid{
+            margin-left: 17rem;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(10px, 3fr));
+            grid-gap: 1.5rem;
+
+        }
+
+    }
+}

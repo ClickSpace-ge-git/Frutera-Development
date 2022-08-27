@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+$orangeColor: #f76b2a;
+$greenColor: #009444;
+$hoverOrangeColor: #f5814b;
+$backgroundColor: #f9f0ed;
+$imageBorderOrangeColor: #ffbea4;
+$redColor: #e7353b;
+$appleColor:#dd4a4a;
+$orangeColor2: #f3925f;
+$redAppleColor:#80101c;
+$plumColor:#9ba4c5;
+$peachColor:#d38b27;
+$pearColor:#a6ab8d;
+$FooterColor:#0f1c25;
+
+
+
+.card{
+    max-width: 540px;
+    min-width: 300px;
+    border-radius: 40px;
+    padding: 1.5rem 2rem;
+    background: $imageBorderOrangeColor;
+    border: $imageBorderOrangeColor solid 0.1rem;
+    margin: 0 1.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    .hider{
+        overflow: hidden;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        overflow: hidden;
+        border-radius: 20px;
+        max-width: 100%;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    img:hover{
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    
+
+    button{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        border-radius: 100px;
+        height: 2rem;
+        // font-weight: bold;
+        padding: 12px 20px 38px 20px;
+        background-color:$orangeColor;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color:white;
+
+    }
+    button:hover {
+        background-color: $hoverOrangeColor;
+        color:white;
+    } 
+
+
+
+
+    .cardDesc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        h1{
+            s{
+                color:black;
+            }
+            color: $orangeColor;
+
+        }
+        p{
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 0.5rem 0;
+
+        }
+        h2{
+            text-align: center;
+            font-size: 2.2rem;
+            margin-top: 0.5rem;
+            color: $orangeColor;
+
+
+        }
+
+
+    }
+}
