@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 export default function ProductCard(){
     let navigate = useNavigate()
     function routeToProduct(){
-        navigate("/product")
+        navigate("/product/123")
     }
 
     return(
