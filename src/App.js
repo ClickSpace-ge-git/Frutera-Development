@@ -1,7 +1,7 @@
 import AboutUsPage from './frutera/AboutUsPage/AboutUsPage'
 import HomePage from './frutera/HomePage/HomePage'
 import Blogs from './frutera/BlogPage/Blogs';
-import Product from './frutera/ProductsPage/product';
+import ProductsPage from "./frutera/ProductsPage/ProductsPage"
 import CartPage from "./frutera/CartPage/CartPage";
 import RegisterPage from './frutera/RegisterPage/RegisterPage'
 import LoginPage from './frutera/LoginPage/LoginPage'
@@ -19,16 +19,14 @@ export default function App() {
             <Route path='/' element={<HomePage/>}/>
             <Route path='/aboutus' element={<AboutUsPage/>}/>
             <Route path='/blog' element={<Blogs/>}/>
-            <Route path='/products' element={<Product/>}/>
+            <Route path='/products' element={<ProductsPage/>}/>
              <Route path='/cart' element={<CartPage/>}/>
              <Route path='/register' element={<RegisterPage/>}/>
              <Route path='/login' element={<LoginPage/>}/>
              <Route path='/user' element={<UserPage/>}/>
              <Route path='/blogs' element={<BlogsPage/>}/>
-
-
-
-         </Routes>
+             <Route path='/category' element={<ProductsPage/>}/>
+           </Routes>
       </BrowserRouter>
    );
 }

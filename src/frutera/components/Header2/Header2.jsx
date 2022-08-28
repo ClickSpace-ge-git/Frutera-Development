@@ -45,7 +45,7 @@ export default function Header2() {
                 <div className="btn">
                    <a href="/#"><i className="fa-solid fa-magnifying-glass"></i></a>
                    <a href="/cart"><i className="fa-solid fa-cart-shopping"></i></a>
-                   <a href="/#"><i className="fa-solid fa-user"></i></a>
+                   <a href="/user"><i className="fa-solid fa-user"></i></a>
                 </div>
                 <div className="LLContainer">
                    <LanguageList />

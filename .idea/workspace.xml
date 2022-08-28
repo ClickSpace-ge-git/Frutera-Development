@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages">
-      <change afterPath="$PROJECT_DIR$/src/Data/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.js" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Deleted old Login to allow merging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661621573179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted old Login to allow merging">
+      <created>1661687353864</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661687353864</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +149,7 @@
     <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder" />
     <MESSAGE value="optimized Cart system&#10;implemented mock voucher system" />
     <MESSAGE value="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages" />
+    <MESSAGE value="Deleted old Login to allow merging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted old Login to allow merging" />
   </component>
 </project>
