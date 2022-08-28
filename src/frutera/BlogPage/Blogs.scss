@@ -1,5 +1,7 @@
 @import "../components/ScssVariables";
-
+.bigBcontainer {
+	background-color: #f9f0ed;
+}
 .BPcontainer {
 	background-color: #f9f0ed;
 	width: 80%;
@@ -68,8 +70,8 @@
 			.all {
 				color: #32302f;
 				position: absolute;
-				top: 120%;
-				right: 33%;
+				top: 150%;
+				right: 28%;
 				text-align:right;
 
 				&:hover{

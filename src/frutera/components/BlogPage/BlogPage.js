@@ -19,7 +19,7 @@ const BlogPage = (props) => {
     },[])
 
     return (
-        <div>
+        <div class="bigBcontainer">
             <Header2 className="header"/>
             <div className="BPcontainer">
                 <div className="blog">
@@ -85,7 +85,9 @@ const BlogPage = (props) => {
                         currentUserId="1"
                     />
                 </section>
+
             </div>
+            <Footer />
 
         </div>
 
