@@ -2,7 +2,7 @@ import BlogPage from "../components/BlogPage/BlogPage";
 
 import './Blogs.scss';
 
-function Blogs() {
+function Blog() {
   return (
     <>
     <BlogPage/>
@@ -11,4 +11,4 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export default Blog;

@@ -6,10 +6,15 @@ import Paragraph from "./Paragraph";
 import Comments from "./Comments";
 import Header2 from "../Header2/Header2";
 import Footer from "../Footer/Footer";
+import {useMatch} from "react-router-dom";
 
-const BlogPage = (props) => {
+
+const BlogPage = ({props}) => {
     const [pageInfo,setPageInfo] = useState({})
     const [paragraphs,setParagraphs] = useState([])
+
+    let ma = useMatch("/blog/:blogId")
+    console.log(ma.params)
 
     useEffect(() => {
         getPage().then((data)=>{
