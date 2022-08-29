@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed productCard link">
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSideElement.js" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements">
+      <change afterPath="$PROJECT_DIR$/src/Utils/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/Product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Blogs/Blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/Blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsListElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsListElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +65,7 @@
       <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\RouteProtector" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
     </key>
@@ -96,7 +94,10 @@
       <workItem from="1661617140337" duration="1535000" />
       <workItem from="1661619710263" duration="3237000" />
       <workItem from="1661623004679" duration="194000" />
-      <workItem from="1661781925123" duration="3421000" />
+      <workItem from="1661781925123" duration="3657000" />
+      <workItem from="1661794648094" duration="1032000" />
+      <workItem from="1661796406646" duration="1638000" />
+      <workItem from="1661811345158" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -154,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661692436165</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements">
+      <created>1661785465582</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661785465582</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="Merged Ira, Luka, Ioane and Saina for new baseline" />
     <MESSAGE value="Made Blogs implementation modular and connected to BlogPage (todo remove dual links)&#10;&#10;Added a mock dynamic route to products and blogs" />
     <MESSAGE value="fixed productCard link" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed productCard link" />
+    <MESSAGE value="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements" />
   </component>
 </project>

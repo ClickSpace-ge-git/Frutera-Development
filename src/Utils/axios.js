@@ -3,6 +3,14 @@ import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 const BASE_URL = ""
 
+export function sendRequest(props){
+
+}
+
+export function authenticateUser(){
+    return(true)
+}
+
 export default axios.create({
     baseURL: BASE_URL
 })
