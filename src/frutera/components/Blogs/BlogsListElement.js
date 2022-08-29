@@ -16,7 +16,7 @@ export default function BlogsListElement({props}){
                 <p>{props.text}</p>
 
                 <a className="blog-line" href="/#" >კითხვის გაგრძელება</a>
-                <Link to="/blog/123">კითხვის გაგრძელება </Link>
+                <Link to={"/blog/" + props.id}>კითხვის გაგრძელება </Link>
                 <br/>
                 <br/>
                 <p>20 კომენტარი</p>

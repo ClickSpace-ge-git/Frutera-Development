@@ -1,12 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useState} from 'react'
 import './productShowcase.scss'
 import packPlum from "../../../images/ProductPages/packagedPlum.jpg"
+import {useMatch} from "react-router-dom";
 
 
 
 
 export default function ProductShowcase() {
+
+    const [productsInfo, setProductsInfo] = useState({})
+    const [loading, setLoading] = useState(true)
+    const [filterClass, setFilterClass] = useState("All")
+    const id = useMatch("/products/:productId").params
+
+    const loadingPage = () => {
+        setProductsInfo({})
+        if( productsInfo!= null){
+            setLoading(false)
+        }
+    }
+
+    useEffect(() => {
+        loadingPage()
+    },[])
 
     return (
                     <div className="productDesc">

@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Merged Ira, Luka, Ioane and Saina for new baseline">
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsListElement.js" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed productCard link">
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSideElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/BlogPage/Blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/BlogPage/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogPage/BlogPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogPage/BlogPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogPage/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogPage/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/Product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/Product/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Blogs/Blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/Blogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsListElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Blogs/BlogsListElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
@@ -95,6 +96,7 @@
       <workItem from="1661617140337" duration="1535000" />
       <workItem from="1661619710263" duration="3237000" />
       <workItem from="1661623004679" duration="194000" />
+      <workItem from="1661781925123" duration="3421000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -138,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661688216036</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made Blogs implementation modular and connected to BlogPage (todo remove dual links)&#10;&#10;Added a mock dynamic route to products and blogs">
+      <created>1661692351804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661692351804</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed productCard link">
+      <created>1661692436165</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661692436165</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +179,8 @@
     <MESSAGE value="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages" />
     <MESSAGE value="Deleted old Login to allow merging" />
     <MESSAGE value="Merged Ira, Luka, Ioane and Saina for new baseline" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged Ira, Luka, Ioane and Saina for new baseline" />
+    <MESSAGE value="Made Blogs implementation modular and connected to BlogPage (todo remove dual links)&#10;&#10;Added a mock dynamic route to products and blogs" />
+    <MESSAGE value="fixed productCard link" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed productCard link" />
   </component>
 </project>

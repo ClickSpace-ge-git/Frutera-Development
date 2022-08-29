@@ -44,7 +44,6 @@ function Blogs() {
         setBlogsList(demoBlogsList)
         if( setBlogsList!= null){
             setLoading(false)
-            console.log(blogsList)
         }
     }
 
