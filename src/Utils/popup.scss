@@ -1,0 +1,19 @@
+.popup{
+  position: fixed;
+  top: 0%;
+  left: 25%;
+  width: 100vh;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup-content{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f5814b;
+  }
+}

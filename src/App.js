@@ -8,27 +8,43 @@ import UserPage from './frutera/UserPage/UserPage'
 import BlogsPage from './frutera/BlogsPage/BlogsPage.js';
 import Blog from "./frutera/BlogPage/Blog";
 import Product from "./frutera/Product/Product";
+import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
+import AdminPage from "./frutera/AdminPage/AdminPage";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import './App.scss';
 
 export default function App() {
-   return (
-      <BrowserRouter>
-         <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/aboutus' element={<AboutUsPage/>}/>
-            <Route path='/products' element={<ProductsPage/>}/>
-             <Route path='/cart' element={<CartPage/>}/>
-             <Route path='/register' element={<RegisterPage/>}/>
-             <Route path='/login' element={<LoginPage/>}/>
-             <Route path='/user' element={<UserPage/>}/>
-             <Route path='/blogs' element={<BlogsPage/>}/>
-             <Route path='/blog/:blogId' element={<Blog/>}/>
-             <Route path='/products/:productId' element={<Product/>}/>
-             <Route path='/category' element={<ProductsPage/>}/>
-           </Routes>
-      </BrowserRouter>
-   );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<HomePage/>}/>
+                <Route path='/aboutus' element={<AboutUsPage/>}/>
+                <Route path='/products' element={<ProductsPage/>}/>
+                <Route path='/cart' element={
+                    <RouteProtector>
+                        <CartPage/>
+                    </RouteProtector>}/>
+                <Route path='/register' element={<RegisterPage/>}/>
+                <Route path='/login' element={<LoginPage/>}/>
+                <Route path='/blogs' element={<BlogsPage/>}/>
+                <Route path='/blog/:blogId' element={<Blog/>}/>
+                <Route path='/user' element={
+                    <RouteProtector>
+                        <UserPage/>
+                    </RouteProtector>
+                }>
+                </Route>
+                <Route path='/products/:productId' element={<Product/>}/>
+                <Route path='/category' element={<ProductsPage/>}/>
+                <Route path='/dashboard' element={
+                    <RouteProtector>
+                        <AdminPage/>
+                    </RouteProtector>
+                }/>
+            </Routes>
+
+        </BrowserRouter>
+    );
 }

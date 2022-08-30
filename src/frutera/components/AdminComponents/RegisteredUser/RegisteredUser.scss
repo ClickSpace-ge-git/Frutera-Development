@@ -1,0 +1,238 @@
+@import '../../ScssVariables.scss';
+
+.MFIcontainer {
+   margin: 20px;
+
+   h1, h4, h3 {
+      font-family: $TitleFontFamily2;
+   }
+
+   td, p, h2, h5, button, label, input, textarea, select, option {
+      font-family: $textFontFamily;
+   }
+
+   .Flist {
+      box-shadow: 0px 0px 10px 2px rgba($color: #000000, $alpha: 0.15);
+      border-radius: 5px;
+      background-color: white;
+      margin-bottom: 30px;
+
+      .filterContainer {
+         padding: 20px 20px;
+
+         .firstPart, .secondPart {
+            display: flex;
+            justify-content: space-between;
+            
+            input {
+               outline: none;
+               border: none;
+               border-bottom: 1px solid $orangeColor;
+               text-align: center;
+               font-size: 18px;
+            }
+         }
+
+         .firstPart {
+
+            h3 {
+               font-size: 25px;
+            }
+
+            .fPBtn {
+               outline: none;
+               padding: 5px 15px;
+               border: none;
+               border-radius: 5px;
+               font-size: 15px;
+               color: white;
+               cursor: pointer;
+               background-color: $orangeColor;
+
+               &:hover {
+                  background-color: $orangeColor2;
+               }
+            }
+         }
+
+         .secondPart {
+            margin-top: 10px;
+            .inp1 {
+               width: 30px;
+            }
+         }
+      }
+      .tableStyle {
+         display: flex;
+         justify-content: center;
+         border-top: #b5b5b5 1px solid;
+         margin: 0 20px;
+
+         table {
+            padding-top: 15px;
+   
+   
+   
+            td {
+               width: 200px;
+               text-align: center;
+               vertical-align: middle;
+            }
+   
+            tbody {
+               .Uimage{
+                  img{
+                     width: 80px;
+                     border-radius: 10px;
+                     margin: 5px;
+                  }
+               }
+   
+               .Uaction {
+                  width: 200px;
+                  .penBtn, .trashBtn {
+                     border: none;
+                     padding: 15px;
+                     border-radius: 100px;
+                     margin: 5px;
+                     background-color: white;
+                     cursor: pointer;
+                     transition: 0.2s;
+                     width: 53px;
+                     height: 53px;
+   
+                     i {
+                        font-size: 17px;
+                     }
+   
+                     &:hover {
+                        i {
+                           color: white;
+                        }
+                     }
+                     
+                  }
+   
+                  .penBtn {
+                     border: 2px $greenColor solid;
+                     background-color: white;
+   
+                     i {
+                        color: $greenColor;
+                     }
+                     
+                     &:hover {
+                        background-color: $greenColor;
+                     }
+                  }
+   
+                  .trashBtn {
+                     border: 2px $redColor solid;
+   
+                     i {
+                        color: $redColor;
+                     }
+                     &:hover {
+                        background-color: $redColor;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .createFelement {
+      box-shadow: 0px 0px 10px 2px rgba($color: #000000, $alpha: 0.15);
+      border-radius: 5px;
+      background-color: white;
+      padding: 20px;
+
+      h3 {
+         font-size: 25px;
+      }
+
+      .Felement {
+         display: flex;
+         justify-content: space-between;
+
+         .inputBx {
+            display: flex;
+            padding-bottom: 10px;
+            padding-top: 30px;
+
+            input, .inputtype {
+               outline: none;
+               text-decoration: none;
+               border: $orangeColor 1px solid;
+               padding-left: 10px;
+               height: 4vh;
+               width: 100%;
+               border-radius: 0 5px 5px 0;
+
+            }
+         }
+         
+         .textPart {
+            width: 500px;
+         }
+
+         .UimgPart {
+            width: 500px;
+
+            .displayImg {
+               padding: 60px 30px;
+               border: $orangeColor 1px solid;
+               margin-top: 30px;
+               border-radius: 5px;
+            }
+
+            .inputBx {
+               display: flex;
+               justify-content: center;
+
+               input{
+                  display: none;
+
+               }
+
+               .inputtype {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  border-radius: 5px 0 0 5px;
+               }
+
+               .titleLabel {
+                  border-radius: 0 5px 5px 0;
+               }
+
+            }
+
+            .MFIBtns {
+               display: flex;
+               
+               .MFIBtn {
+                  margin: 10px 20px 0 0;
+                  outline: none;
+                  border: none;
+                  background: $orangeColor;
+                  color: white;
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+   
+                  &:hover {
+                     background-color: $orangeColor2;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .hide {
+      display: none;
+   }
+}

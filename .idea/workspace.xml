@@ -4,13 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements">
-      <change afterPath="$PROJECT_DIR$/src/Utils/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.js" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform">
+      <change afterPath="$PROJECT_DIR$/src/Utils/PopUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/popup.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/AdminPage/AdminPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/AdminPage/AdminPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/Voucher.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/Voucher.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/VoucherElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/VoucherElementForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/Categories/CategoriesElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/FeaturedProducts/PopularElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserProfileImages/DefaultUser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserProfileImages/up1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserProfileImages/up2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserProfileImages/up3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserProfileImages/up4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/White_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogPage/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogPage/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -42,27 +76,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\RouteProtector" />
@@ -97,7 +132,11 @@
       <workItem from="1661781925123" duration="3657000" />
       <workItem from="1661794648094" duration="1032000" />
       <workItem from="1661796406646" duration="1638000" />
-      <workItem from="1661811345158" duration="308000" />
+      <workItem from="1661811345158" duration="805000" />
+      <workItem from="1661843840225" duration="68000" />
+      <workItem from="1661844344807" duration="892000" />
+      <workItem from="1661845376401" duration="1336000" />
+      <workItem from="1661864499208" duration="18901000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -162,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661785465582</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings">
+      <created>1661811912759</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661811912759</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +236,8 @@
     <MESSAGE value="Made Blogs implementation modular and connected to BlogPage (todo remove dual links)&#10;&#10;Added a mock dynamic route to products and blogs" />
     <MESSAGE value="fixed productCard link" />
     <MESSAGE value="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements" />
+    <MESSAGE value="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings" />
+    <MESSAGE value="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform" />
   </component>
 </project>

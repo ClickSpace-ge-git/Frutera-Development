@@ -7,8 +7,13 @@ import {
   updateComment as updateCommentApi,
   deleteComment as deleteCommentApi,
 } from "../../BlogPage/api";
+import {authenticateUser} from "../../../Utils/axios";
+import {Navigate, useLocation, useNavigate} from "react-router-dom";
 
 const Comments = ({ commentsUrl, currentUserId }) => {
+  let auth = authenticateUser()
+  let location = useLocation()
+  let navigate = useNavigate()
   const [backendComments, setBackendComments] = useState([]);
   const [activeComment, setActiveComment] = useState(null);
   const rootComments = backendComments.filter(
@@ -22,10 +27,11 @@ const Comments = ({ commentsUrl, currentUserId }) => {
           new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
       );
   const addComment = (text, parentId) => {
-    createCommentApi(text, parentId).then((comment) => {
-      setBackendComments([comment, ...backendComments]);
-      setActiveComment(null);
-    });
+    return auth === true ? (
+        console.log("added")
+    ) : (
+        navigate("/login",{replace: true, state: location.pathname})
+    );
   };
 
   const updateComment = (text, commentId) => {

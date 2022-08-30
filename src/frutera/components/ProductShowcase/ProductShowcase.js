@@ -2,13 +2,16 @@ import React, {useEffect} from 'react';
 import {useState} from 'react'
 import './productShowcase.scss'
 import packPlum from "../../../images/ProductPages/packagedPlum.jpg"
-import {useMatch} from "react-router-dom";
+import {useLocation, useMatch, useNavigate} from "react-router-dom";
+import {authenticateUser} from "../../../Utils/axios";
 
 
 
 
 export default function ProductShowcase() {
-
+    let auth = authenticateUser()
+    let location = useLocation()
+    let navigate = useNavigate()
     const [productsInfo, setProductsInfo] = useState({})
     const [loading, setLoading] = useState(true)
     const [filterClass, setFilterClass] = useState("All")
@@ -24,6 +27,14 @@ export default function ProductShowcase() {
     useEffect(() => {
         loadingPage()
     },[])
+
+    const addToCart = () => {
+        return auth === true ? (
+            console.log("added")
+        ) : (
+            navigate("/login",{replace: true, state: location.pathname})
+        );
+    }
 
     return (
                     <div className="productDesc">
@@ -42,7 +53,7 @@ export default function ProductShowcase() {
                             <div className="amountCart">
                                 <p className="inpAmount">Input amount:</p>
                                 <input id="amount" type="number" min="1" max="999" defaultValue="1"/>
-                                <button id="addtocart">Add to cart</button>
+                                <button id="addtocart" onClick={addToCart}>Add to cart</button>
                             </div>
                             <div className="favoriteHeart">
                                 <input id="heart" type="checkbox" />
