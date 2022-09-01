@@ -1,12 +1,12 @@
 import './DashBoard.scss'
 
-export default function DashBoard() {
+export default function DashBoard({path,setPage}) {
    return (
       <>
          <div className="DBcontainer">
                <div className="pathBx">
-                  <h2>Dashbord</h2>
-                  <h5><i class="fa-solid fa-house"></i> / Dashbord</h5>
+                  <h2>{path}</h2>
+                  <h5><i class="fa-solid fa-house"></i> / {path}</h5>
                </div>
                {/* -------------------------------------------------- */}
                <div className="categoryBxes">
@@ -27,7 +27,7 @@ export default function DashBoard() {
                      </div>
                   </div>
                   {/* -------------------------------------------------- */}
-                  <div className='categoryBx'>
+                  <div className='categoryBx' onClick={(e) => {setPage("Products")}}>
                      <div className='upperPart'>
                         <div className="text">
                            <h1>100</h1>
@@ -43,7 +43,7 @@ export default function DashBoard() {
                      </div>
                   </div>
                   {/* -------------------------------------------------- */}
-                  <div className='categoryBx'>
+                  <div className='categoryBx' onClick={(e) => {setPage("Users")}}>
                      <div className='upperPart'>
                         <div className="text">
                            <h1>13</h1>
@@ -59,14 +59,14 @@ export default function DashBoard() {
                      </div>
                   </div>
                   {/* -------------------------------------------------- */}
-                  <div className='categoryBx'>
+                  <div className='categoryBx' onClick={(e) => {setPage("Blogs")}}>
                      <div className='upperPart'>
                         <div className="text">
                            <h1>95</h1>
                            <h4>Orders</h4>
                         </div>
                         <div className='iconBx'>
-                           <i class="fa-solid fa-cart-shopping"></i>
+                           <i class="fa-solid fa-cart-shopping" ></i>
                         </div>
                      </div>
 

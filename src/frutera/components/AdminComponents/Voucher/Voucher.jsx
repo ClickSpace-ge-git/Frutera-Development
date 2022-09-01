@@ -88,10 +88,8 @@ export default function Voucher() {
 
    const openForm = () => {
       if(trigger){
-         console.log("close")
          setTrigger(false)
       }else{
-         console.log("open")
          setTrigger(true)
       }
    }

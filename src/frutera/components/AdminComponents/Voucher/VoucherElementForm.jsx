@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import "./VoucherElementForm.scss";
 
 export default function VoucherElementForm({props, close}){
 
@@ -7,6 +8,14 @@ export default function VoucherElementForm({props, close}){
     const [startDate,setStartDate] = useState(Date)
     const [endDate,setEndDate] = useState(Date)
     const [des,setDes] = useState("")
+
+    function displayDate(time) {
+        const timeStr = new Date(time)
+        const newDate = timeStr.getFullYear() + "-" +
+            (timeStr.getMonth() < 10 ? `0${timeStr.getMonth()}` : timeStr.getMonth()) + "-" +
+            (timeStr.getDate() < 10 ? `0${timeStr.getDate()}` : timeStr.getDate())
+        return newDate
+    }
 
     useEffect(() => {
         if(props !== {}){
@@ -46,13 +55,13 @@ export default function VoucherElementForm({props, close}){
                     <div className='inputBx'>
                         <label className='titleLabel'>Start Date</label>
                         <input type="date" placeholder='Enter Start Date'
-                               value={startDate} onChange={(e) => {setStartDate(e.target.value)}}/>
+                               value={displayDate(startDate)} onChange={(e) => {setStartDate(e.target.value)}}/>
                     </div>
 
                     <div className='inputBx'>
                         <label className='titleLabel'>End Date</label>
                         <input type="date" placeholder='Enter End Date'
-                               value={endDate} onChange={(e) => {setEndDate(e.target.value)}}/>
+                               value={displayDate(endDate)} onChange={(e) => {setEndDate(e.target.value)}}/>
                     </div>
                 </div>
 

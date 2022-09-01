@@ -12,7 +12,7 @@ let demoUserList = [
       phoneNumber: "523 45 67 89",
       email: 'user.usersurname1@gmail.com',
       password: 'Password1',
-      img: require('../../../../images/UserProfileImages/up1.jpg')
+      img: require('../../../../images/UserProfileImages/DefaultUser.png')
    },
    {
       id: "1",
@@ -21,7 +21,7 @@ let demoUserList = [
       phoneNumber: "534 56 78 90",
       email: `user.usersurname2@gmail.com`,
       password: "Password2",
-      img: require('../../../../images/UserProfileImages/up2.jpg')
+      img: require('../../../../images/UserProfileImages/DefaultUser.png')
    },
 
    {
@@ -31,7 +31,7 @@ let demoUserList = [
       phoneNumber: "579 45 98 65",
       email: `user.usersurname3@gmail.com`,
       password: "diadidaviti1",
-      img: require('../../../../images/UserProfileImages/up3.jpg'),
+      img: require('../../../../images/UserProfileImages/DefaultUser.png'),
    },
 
    {
@@ -41,7 +41,7 @@ let demoUserList = [
       phoneNumber: "579 45 98 65",
       email: `user.usersurname4@gmail.com`,
       password: "mariamivar5",
-      img: require('../../../../images/UserProfileImages/up4.jpg')
+      img: require('../../../../images/UserProfileImages/DefaultUser.png')
    }
 ]
 

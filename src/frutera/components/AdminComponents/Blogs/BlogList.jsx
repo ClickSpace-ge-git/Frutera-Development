@@ -1,19 +1,26 @@
 import React, {useEffect, useState} from "react";
-import FoodItemForm from "../ManageFoodItem/FoodItemForm";
-import OrderListElement from "./OrderListElement";
+import BlogListElement from "./BlogListElement";
+import BlogListElementForm from "./BlogListElementForm";
 
 
-export default function OrderList({props, close}) {
+export default function BlogList({props, close}) {
 
     const [productsList, setProductsList] = useState([])
     const [loading, setLoading] = useState(true)
     const [trigger, setTrigger] = useState(false)
+    const [editElement,setEditElement] = useState({})
 
     const loadingPage = () => {
-        setProductsList(props.orderList)
+        setProductsList(props.postsList)
         if (productsList != null) {
             setLoading(false)
         }
+        console.log(productsList)
+    }
+
+    const editItemHandler = (props) => {
+        setEditElement(props)
+        openForm()
     }
 
     const openForm = () => {
@@ -32,15 +39,15 @@ export default function OrderList({props, close}) {
 
 
     return (trigger === true) ? (
-        <FoodItemForm close={openForm} props={[]}/>
+        <BlogListElementForm close={openForm} props={editElement}/>
     ) : (
         <div className="orderlist">
             <div className="filterContainer">
                 <div className="firstPart">
-                    <h2>Order List</h2>
+                    <h2>Paragraphs List</h2>
                     <button className='opBtn' onClick={() => {
-                        openForm()
-                    }}>+ Add product Item
+                        editItemHandler([])
+                    }}>+ Add Paragraph
                     </button>
                     <button className='opBtn' onClick={() => {
                         close()
@@ -56,17 +63,15 @@ export default function OrderList({props, close}) {
                 <thead>
                 <tr className='headerPart'>
                     <td>Image</td>
-                    <td>Name</td>
-                    <td>Quantity</td>
-                    <td>Price</td>
-                    <td>Total</td>
-                    <td>Action</td>
+                    <td>Title</td>
+                    <td>Text</td>
                 </tr>
                 </thead>
                 <tbody>
-                {!loading && productsList.length > 0 ? productsList.map(item => <OrderListElement close={openForm}
-                                                                                                  props={item}
-                                                                                                  key={item.id}/>) : ""}
+                {!loading && productsList.length > 0 ? productsList.map(item => <BlogListElement close={openForm}
+                                                                                                 edit={editItemHandler}
+                                                                                                 props={item}
+                                                                                                 key={item.id}/>) : ""}
                 </tbody>
             </table>
         </div>

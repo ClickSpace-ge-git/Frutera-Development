@@ -5,22 +5,66 @@ import ManageFoodItem from '../components/AdminComponents/ManageFoodItem/ManageF
 import RegisteredUser from '../components/AdminComponents/RegisteredUser/RegisteredUser'
 import Orders from '../components/AdminComponents/Orders/Orders'
 import Voucher from '../components/AdminComponents/Voucher/Voucher'
-import {useRef} from "react";
+import {useState} from "react";
+import Blogs from "../components/AdminComponents/Blogs/Blogs";
 
 export default function AdminPage() {
+    const [page, setPage] = useState("Dashboard")
 
-   return (
-      <>
-         <div className='AdminPage'>
-            <BodyStyle />
-            <div className='allCategories'>
-               <DashBoard />
-               <ManageFoodItem />
-               <RegisteredUser />
-               <Orders />
-               <Voucher />
+    const renderDash = () => {
+        switch (page) {
+            case("Dashboard"):
+                return (
+                    <>
+                        <ManageFoodItem/>
+                        <RegisteredUser/>
+                        <Orders/>
+                        <Voucher/>
+                        <Blogs/>
+                    </>
+                )
+            case("Products"):
+                return (
+                    <ManageFoodItem/>
+                )
+            case("Users"):
+                return (
+                    <RegisteredUser/>
+                )
+            case("Orders"):
+                return (
+                    <Orders/>
+                )
+            case("Vouchers"):
+                return (
+                    <Voucher/>
+                )
+            case("Blogs"):
+                return (
+                    <Blogs/>
+                )
+            default:
+                return (
+                    <>
+                        <ManageFoodItem/>
+                        <RegisteredUser/>
+                        <Orders/>
+                        <Voucher/>
+                        <Blogs/>
+                    </>
+                )
+        }
+
+    }
+    return (
+        <>
+            <div className='AdminPage'>
+                <BodyStyle setPage={setPage}/>
+                <div className='allCategories'>
+                    <DashBoard path={page} setPage={setPage}/>
+                    {renderDash()}
+                </div>
             </div>
-         </div>
-      </>
-   )
+        </>
+    )
 }

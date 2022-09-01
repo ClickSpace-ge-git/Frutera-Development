@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import './FoodItemForm.scss';
 
 export default function FoodItemForm({props,close}){
     const [name,setName] = useState("")

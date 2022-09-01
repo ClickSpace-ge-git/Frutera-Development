@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import "./UserItemForm.scss"
 
 export default function UserItemForm({props,close}){
     const [name,setName] = useState("")
