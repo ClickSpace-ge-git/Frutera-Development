@@ -5,7 +5,7 @@ import CartPage from "./frutera/CartPage/CartPage";
 import RegisterPage from './frutera/RegisterPage/RegisterPage'
 import LoginPage from './frutera/LoginPage/LoginPage'
 import UserPage from './frutera/UserPage/UserPage'
-import BlogsPage from './frutera/BlogsPage/BlogsPage.js';
+import BlogsPage from './frutera/BlogsPage/BlogsPage.jsx';
 import Blog from "./frutera/BlogPage/Blog";
 import Product from "./frutera/Product/Product";
 import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
@@ -20,6 +20,7 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
+                <Route path='/home' element={<HomePage/>}/>
                 <Route path='/aboutus' element={<AboutUsPage/>}/>
                 <Route path='/products' element={<ProductsPage/>}/>
                 <Route path='/cart' element={
@@ -29,7 +30,7 @@ export default function App() {
                 <Route path='/register' element={<RegisterPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/blogs' element={<BlogsPage/>}/>
-                <Route path='/blog/:blogId' element={<Blog/>}/>
+                <Route path='/blogs/:blogId' element={<Blog/>}/>
                 <Route path='/user' element={
                     <RouteProtector>
                         <UserPage/>

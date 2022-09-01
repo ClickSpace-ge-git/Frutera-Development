@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {useState} from 'react'
 import './leftside.scss'
-import BlogsListElement from "../Blogs/BlogsListElement";
 import LeftSideElement from "./LeftSideElement";
 
 let demoFiltersList = [
@@ -55,7 +54,6 @@ export default function LeftSide({props,filter}) {
     },[])
 
     return (
-        // <div className="page">
             <div className="leftSide">
                 <ul className="selection">
                     {!loading && filtersList.length >0? filtersList.map(((item,index) =>
@@ -63,6 +61,5 @@ export default function LeftSide({props,filter}) {
                      )): "" }
                 </ul>
             </div>
-        // </div>
     )
 }

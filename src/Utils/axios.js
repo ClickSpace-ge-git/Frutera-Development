@@ -1,10 +1,28 @@
 import axios from "axios";
 import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
-const BASE_URL = ""
+const BASE_URL = "https://marketplacefrt.azurewebsites.net/"
 
-export function sendRequest(props){
+export const refresher = (props) => {
+    const interval = setInterval(() => props(), 1000);
+}
 
+export const sendRequest = async (url,props) =>{
+    const response = await (await axios.get(url))
+    console.log(response?.data)
+    return(response?.data)
+}
+
+export function sendPost({url,props}){
+    return({})
+}
+
+export function sendRequestPrivate({url,props}){
+    return({})
+}
+
+export function sendPostPrivate({url,props}){
+    return({})
 }
 
 export function authenticateUser(){

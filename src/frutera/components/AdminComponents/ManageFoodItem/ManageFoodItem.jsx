@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import ProductElement from "./ProductElement";
 import FoodItemForm from "./FoodItemForm";
 import PopUp from "../../../../Utils/PopUp";
+import axios, {refresher} from "../../../../Utils/axios"
 
 let demoProductsList = [
    {
@@ -93,16 +94,23 @@ export default function ManageFoodItem() {
    const [loading, setLoading] = useState(true)
    const [trigger,setTrigger]= useState(false)
    const [editElement,setEditElement] = useState({})
+   const [data,setData] = useState(null)
 
-   const loadingPage = () => {
-      setProductList(demoProductsList)
-      if( productsList!= null){
-         setLoading(false)
+   const loadingPage = async () => {
+      try{
+         const response = await (await axios.get("/api/products/GetAllProducts"))
+         setProductList(response?.data)
+         if( productsList!= null){
+            setLoading(false)
+         }
+      }catch (err){
+
       }
    }
 
    useEffect(() => {
       loadingPage()
+      refresher(loadingPage)
    },[])
 
    const openForm = () => {

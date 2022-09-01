@@ -1,0 +1,110 @@
+@import '../ScssVariables.scss';
+
+.CommentContainer1 {
+   width: 100%;
+
+   h1 {
+      font-family: $TitleFontFamily;
+   }
+
+   h3 {
+      font-family: $TitleFontFamily2;
+   }
+
+   .CPUserMyPart_UserName, .CPUserMyPart_SendDate, .commentsPart_Action, .CPUserMyPart_Comment {
+      font-family: $textFontFamily;
+
+   }
+   .CommentForm {
+      .CommentForm_textarea {
+         resize: none;
+         outline: none;
+         border: $orangeColor 1px solid;
+         width: 100%;
+         padding: 10px;
+         border-radius: 10px;
+         font-size: 14px;
+         height: 15vh;
+      }
+      .CommentForm_button_div {
+         display: flex;
+         justify-content: right;
+      }
+      .CommentForm_button {
+
+         outline: none;
+         border: none;
+         background: $orangeColor;
+         color: white;
+         padding: 5px 20px;
+         cursor: pointer;
+         font-size: 16px;
+         border-radius: 5px;
+         margin: 20px 0;
+
+         &:hover {
+            background-color: $orangeColor2;
+         }
+      }
+   }
+
+   .CommentContainer2 {
+      align-items: center;
+      .commentsPart {
+         display: flex;
+         // border-bottom: $frame;
+         border-top: $orangeColor 1px solid;
+
+         .CPUserPart {
+            padding: 10px 0;
+            .CPUserMyPart {
+               display: flex;
+               align-items: center;
+               width: 200px;
+
+               .CPUserMyPart_icon img {
+                  width: 40px;
+               }
+
+               .CPUserMyPart_UserName {
+                  padding-left: 10px;
+               }
+            }
+
+            .CPUserMyPart_Comment {
+               padding: 10px 0;
+               margin-top: 10px;
+               width: 40vw;
+            }
+         }
+      }
+   }
+
+   .comment-text {
+      margin: 20px 10px;
+   }
+
+   .commentsPart_Actions {
+      display: flex;
+      align-items: center;
+   }
+   .commentsPart_Action {
+      display: flex;
+      justify-content: center;
+      outline: none;
+      border: none;
+      background: $orangeColor;
+      color: white;
+      padding: 5px 15px;
+      width: 5vw;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin: 20px 0;
+      margin-right: 20px;
+
+      &:hover {
+         background-color: $orangeColor2;
+      }
+   }
+}

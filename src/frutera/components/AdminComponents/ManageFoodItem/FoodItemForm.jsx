@@ -16,7 +16,6 @@ export default function FoodItemForm({props,close}){
             setName(props.name)
             setPrice(props.price)
             setDes(props.description)
-            setDiscount(props.discount)
             setImg(props.img)
             if(!props.stock){
                 setStock("OS")

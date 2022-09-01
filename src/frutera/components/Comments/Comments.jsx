@@ -1,12 +1,13 @@
+import "./Commnet.scss"
 import { useState, useEffect } from "react";
-import CommentForm from "../../components/BlogPage/CommentForm";
+import CommentForm from "../../components/Comments/CommentForm";
 import Comment from "./Comment";
 import {
   getComments as getCommentsApi,
   createComment as createCommentApi,
   updateComment as updateCommentApi,
-  deleteComment as deleteCommentApi,
-} from "../../BlogPage/api";
+  deleteComment as deleteCommentApi,z
+} from "../../components/Comments/api";
 import {authenticateUser} from "../../../Utils/axios";
 import {Navigate, useLocation, useNavigate} from "react-router-dom";
 
@@ -28,10 +29,10 @@ const Comments = ({ commentsUrl, currentUserId }) => {
       );
   const addComment = (text, parentId) => {
     return auth === true ? (
-        console.log("added")
-    ) : (
-        navigate("/login",{replace: true, state: location.pathname})
-    );
+         console.log("added")
+     ) : (
+         navigate("/login",{replace: true, state: location.pathname})
+     );
   };
 
   const updateComment = (text, commentId) => {
@@ -64,9 +65,9 @@ const Comments = ({ commentsUrl, currentUserId }) => {
   }, []);
 
   return (
-    <div className="comments">
-      <CommentForm submitLabel="დაკომენტარება" handleSubmit={addComment} />
-      <div className="comments-container">
+    <div className="CommentContainer1">
+      <CommentForm submitLabel="Comment" handleSubmit={addComment} />
+      <div className="CommentContainer2">
         {rootComments.map((rootComment) => (
           <Comment
             key={rootComment.id}

@@ -6,6 +6,8 @@ const CommentForm = ({
   hasCancelButton = false,
   handleCancel,
   initialText = "",
+    isRepling,
+    setReplyFalse,
 }) => {
   const [text, setText] = useState(initialText);
   const isTextareaDisabled = text.length === 0;
@@ -13,24 +15,30 @@ const CommentForm = ({
     event.preventDefault();
     handleSubmit(text);
     setText("");
+    if(isRepling){
+      setReplyFalse()
+    }
   };
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="CommentForm">
       <textarea
-        className="comment-form-textarea"
+        className="CommentForm_textarea"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button className="comment-form-button" disabled={isTextareaDisabled}>
-        {submitLabel}
-      </button>
+      <div className="CommentForm_button_div">
+        <button className="CommentForm_button" disabled={isTextareaDisabled}>
+          {submitLabel}
+        </button>
+      </div>
+
       {hasCancelButton && (
         <button
           type="button"
           className="comment-form-button comment-form-cancel-button"
           onClick={handleCancel}
         >
-          გაუქმება
+          Cancel
         </button>
       )}
     </form>

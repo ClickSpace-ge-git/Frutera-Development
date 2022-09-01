@@ -13,6 +13,8 @@ function PageName() {
          return ("Products")
       case "/aboutus":
          return ("About Us")
+      case "/user":
+         return ("Profile")
       default:
          return ("")
    }
@@ -35,7 +37,7 @@ export default function Header2() {
                 <nav>
                    <ul className="nav_links">
                       {/* Add the " marked" class to make the button. for example "navBtn marked" */}
-                      <li className='navBtn'><a href="/">Home</a></li>
+                      <li className='navBtn'><a href="/home">Home</a></li>
                       <li className='navBtn'><a href="/products">Products</a></li>
                       <li className='navBtn'><a href="/aboutus">About Us</a></li>
                       <li className='navBtn'><a href="/blogs">Blog</a></li>
@@ -45,7 +47,7 @@ export default function Header2() {
                 <div className="btn">
                    <a href="/#"><i className="fa-solid fa-magnifying-glass"></i></a>
                    <a href="/cart"><i className="fa-solid fa-cart-shopping"></i></a>
-                   <a href="/user"><i className="fa-solid fa-user"></i></a>
+                   <a href="/#"><i className="fa-solid fa-user"></i></a>
                 </div>
                 <div className="LLContainer">
                    <LanguageList />
