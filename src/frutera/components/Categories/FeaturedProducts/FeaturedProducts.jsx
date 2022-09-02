@@ -1,4 +1,6 @@
 import './FeaturedProducts.scss'
+import {useEffect, useState} from "react";
+import {refresher} from "../../../../Utils/axios";
 
 function Filter(n) {
    var product = document.getElementsByClassName("product")
@@ -22,6 +24,25 @@ function ChangeProductType(i) {
 }
 
 export default function FeaturedProducts() {
+   const [categories,setCategories] = useState([])
+   const [loading,setLoading] = useState(true)
+
+   const loadingPage = async () => {
+      try{
+         setCategories([])
+         if( categories!= null){
+            setLoading(false)
+         }
+      }catch (err){
+
+      }
+   }
+
+   useEffect(() => {
+      loadingPage()
+      refresher(loadingPage)
+   },[])
+
    return (
       <>
          <div className='FPcontainer'>

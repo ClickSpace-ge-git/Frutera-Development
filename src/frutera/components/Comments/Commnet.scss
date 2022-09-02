@@ -42,6 +42,10 @@
          border-radius: 5px;
          margin: 20px 0;
 
+         &:not(:last-child){
+            margin-right: 10px;
+         }
+
          &:hover {
             background-color: $orangeColor2;
          }

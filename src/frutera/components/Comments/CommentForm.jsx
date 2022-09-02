@@ -30,17 +30,16 @@ const CommentForm = ({
         <button className="CommentForm_button" disabled={isTextareaDisabled}>
           {submitLabel}
         </button>
+        {hasCancelButton && (
+            <button
+                type="button"
+                className="CommentForm_button"
+                onClick={handleCancel}
+            >
+              Cancel
+            </button>
+        )}
       </div>
-
-      {hasCancelButton && (
-        <button
-          type="button"
-          className="comment-form-button comment-form-cancel-button"
-          onClick={handleCancel}
-        >
-          Cancel
-        </button>
-      )}
     </form>
   );
 };

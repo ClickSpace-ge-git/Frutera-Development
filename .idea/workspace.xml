@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Iraklis Blogs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/CommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/CommentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,11 @@
       <workItem from="1662021921556" duration="7222000" />
       <workItem from="1662029600755" duration="12168000" />
       <workItem from="1662049144340" duration="40000" />
-      <workItem from="1662058267396" duration="8586000" />
+      <workItem from="1662058267396" duration="8945000" />
+      <workItem from="1662083713650" duration="180000" />
+      <workItem from="1662097230745" duration="108000" />
+      <workItem from="1662097584990" duration="74000" />
+      <workItem from="1662097683007" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -215,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662082435068</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented Iraklis Blogs">
+      <created>1662083110478</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662083110478</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +258,7 @@
     <MESSAGE value="Update to Admin&#10;Implemented Ioanes fixes&#10;Added Blogs Section" />
     <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
     <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
+    <MESSAGE value="Implemented Iraklis Blogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Iraklis Blogs" />
   </component>
 </project>
