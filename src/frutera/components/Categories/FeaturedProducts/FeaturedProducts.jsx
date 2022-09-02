@@ -39,7 +39,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 1 -------------------- */}
                   <div className='product none' id="fruitChips">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/apple1.PNG")} alt="apple1" />
+                        <img src={require("../../../../images/Frutera/original/apple1.PNG")} alt="apple1" />
                      </div>
                      <div className='text'>
                         <h4>Semi-sweet red apple chips</h4>
@@ -52,7 +52,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 2 -------------------- */}
                   <div className='product none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/peach1.PNG")} alt="peach1" />
+                        <img src={require("../../../../images/Frutera/original/peach1.PNG")} alt="peach1" />
                      </div>
                      <div className='text'>
                         <h4>Dried peaches</h4>
@@ -65,7 +65,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 3 -------------------- */}
                   <div className='product discount none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/plum2.PNG")} alt="plum2" />
+                        <img src={require("../../../../images/Frutera/original/plum2.PNG")} alt="plum2" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>
@@ -78,7 +78,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 4 -------------------- */}
                   <div className='product none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/plum1.PNG")} alt="apple2" />
+                        <img src={require("../../../../images/Frutera/original/plum1.PNG")} alt="apple2" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>
@@ -91,7 +91,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 5 -------------------- */}
                   <div className='product none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/apple2.PNG")} alt="plum1" />
+                        <img src={require("../../../../images/Frutera/original/apple2.PNG")} alt="plum1" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>
@@ -104,7 +104,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 6 -------------------- */}
                   <div className='product none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/apple3.PNG")} alt="apple3" />
+                        <img src={require("../../../../images/Frutera/original/apple3.PNG")} alt="apple3" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>
@@ -116,7 +116,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 7 -------------------- */}
                   <div className='product none' id="driedFruit">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/apple4.PNG")} alt="apple4" />
+                        <img src={require("../../../../images/Frutera/original/apple4.PNG")} alt="apple4" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>
@@ -128,7 +128,7 @@ export default function FeaturedProducts() {
                   {/* -------------------- Product 8 -------------------- */}
                   <div className='product discount none' id="fruitChips">
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/original/apple5.PNG")} alt="apple5" />
+                        <img src={require("../../../../images/Frutera/original/apple5.PNG")} alt="apple5" />
                      </div>
                      <div className='text'>
                         <h4>Dried whole plums</h4>

@@ -7,7 +7,7 @@ import LoginPage from './frutera/LoginPage/LoginPage'
 import UserPage from './frutera/UserPage/UserPage'
 import BlogsPage from './frutera/BlogsPage/BlogsPage.jsx';
 import Blog from "./frutera/BlogPage/Blog";
-import Product from "./frutera/Product/Product";
+import ProductPage from "./frutera/ProductPage/ProductPage";
 import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
 
@@ -37,7 +37,7 @@ export default function App() {
                     </RouteProtector>
                 }>
                 </Route>
-                <Route path='/products/:productId' element={<Product/>}/>
+                <Route path='/products/:productId' element={<ProductPage/>}/>
                 <Route path='/category' element={<ProductsPage/>}/>
                 <Route path='/dashboard' element={
                     <RouteProtector>
