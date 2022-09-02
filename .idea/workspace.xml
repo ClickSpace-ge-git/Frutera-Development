@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Iraklis Blogs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/CommentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/CommentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +40,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/frutera/ContactUs",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\ContactUs" />
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Blogs" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Voucher" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Orders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\Categories" />
@@ -118,7 +117,7 @@
       <workItem from="1662083713650" duration="180000" />
       <workItem from="1662097230745" duration="108000" />
       <workItem from="1662097584990" duration="74000" />
-      <workItem from="1662097683007" duration="1620000" />
+      <workItem from="1662097683007" duration="1988000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662083110478</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implemented Iraklis Blogs">
+      <created>1662103493534</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662103493534</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

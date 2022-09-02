@@ -14,6 +14,7 @@ import AdminPage from "./frutera/AdminPage/AdminPage";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import './App.scss';
+import ContactUsPage from "./frutera/ContactUs/ContactUsPage";
 
 export default function App() {
     return (
@@ -44,6 +45,7 @@ export default function App() {
                         <AdminPage/>
                     </RouteProtector>
                 }/>
+                <Route path='/contactus' element={<ContactUsPage/>}/>
             </Routes>
 
         </BrowserRouter>
