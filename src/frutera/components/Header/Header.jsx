@@ -1,7 +1,7 @@
 import './Header.scss';
-import LanguageBar from '../LanguageList/LanguageList'
+import LanguageBar from '../LanguageBar/LanguageBar'
 
-export default function Header() {
+export default function MainHeader() {
    return (
        <>
           <div className='Hcontainer'>
@@ -21,22 +21,22 @@ export default function Header() {
                    </div>
                    <div className='rightPart'>
                       <input type="checkbox" id="check" />
-                      <label htmlFor="check" className="checkbtn">
-                         <i className="fa-solid fa-bars"></i>
+                      <label for="check" class="checkbtn">
+                         <i class="fa-solid fa-bars"></i>
                       </label>
 
                       <ul className="nav_links">
-                         <label htmlFor="check" className="closeBtn">
+                         <label for="check" class="closeBtn">
                             <i className="fa-solid fa-xmark"></i>
                          </label>
-                         <li className='navBtn marked'><a href="/">Home</a></li>
-                         <li className='navBtn'><a href="/products">Products</a></li>
+                         <li className='navBtn marked'><a href="/home">Home</a></li>
                          <li className='navBtn'><a href="/aboutus">About Us</a></li>
-                         <li className='navBtn'><a href="/blogs">Blog</a></li>
+                         <li className='navBtn'><a href="/products">Products</a></li>
+                         <li className='navBtn'><a href="/blogs">Blogs</a></li>
+                         <li className='navBtn'><a href="/contactus">Contact Us</a></li>
                       </ul>
 
                       <div className="btn">
-                         <a href="/#"><i className="fa-solid fa-magnifying-glass"></i></a>
                          <a href="/cart"><i className="fa-solid fa-cart-shopping"></i></a>
                          <a href="/user"><i className="fa-solid fa-user"></i></a>
                       </div>

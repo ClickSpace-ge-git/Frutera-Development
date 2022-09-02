@@ -2,14 +2,15 @@ import AboutUsPage from './frutera/AboutUsPage/AboutUsPage'
 import HomePage from './frutera/HomePage/HomePage'
 import ProductsPage from "./frutera/ProductsPage/ProductsPage"
 import CartPage from "./frutera/CartPage/CartPage";
-import RegisterPage from './frutera/RegisterPage/RegisterPage'
-import LoginPage from './frutera/LoginPage/LoginPage'
+import LoginPage from "./frutera/LoginPage/LoginPage";
+import RegisterPage from "./frutera/RegisterPage/RegisterPage.jsx";
 import UserPage from './frutera/UserPage/UserPage'
 import BlogsPage from './frutera/BlogsPage/BlogsPage.jsx';
 import Blog from "./frutera/BlogPage/Blog";
 import ProductPage from "./frutera/ProductPage/ProductPage";
 import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
+import CardPayment from "./frutera/CheckOutPage/CardPayment";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -46,6 +47,7 @@ export default function App() {
                     </RouteProtector>
                 }/>
                 <Route path='/contactus' element={<ContactUsPage/>}/>
+                <Route path='/checkout' element={<CardPayment/>}/>
             </Routes>
 
         </BrowserRouter>

@@ -1,0 +1,86 @@
+@import '../components/ScssVariables.scss';
+
+.LoginPage_container {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   height: 582px;
+
+   h1 {
+      font-family: $TitleFontFamily;
+   }
+
+   label, textarea, p, h3, a, td, input {
+      font-family: $textFontFamily;
+   }
+
+   .LP_box {
+      background: white;
+      display: flex;
+      border: $orangeColor 1px solid;
+
+      label {
+         margin-bottom: 6px;
+         display: block;
+         color: $orangeColor;
+         font-size: 17px;
+      }
+
+      
+      .LoginPage_imagePart {
+         img {
+            width: 33vw;
+         }
+      }
+
+      .LP_RightPart {
+         margin: 50px 100px 0px 50px;
+         margin-top: 15vh;
+
+         .LP_MainTitle {
+            display: flex;
+            justify-content: center;
+         }
+         h1 {
+            color: $orangeColor;
+            font-weight: 600;
+            margin-bottom: 30px;
+         }
+
+         .LP_input_components {
+            padding: 20px 0;
+
+            input {
+               width: 30vw;
+               border: none;
+               border-bottom: 1px solid #ffc8af;
+               outline: none;
+               padding-bottom: 5px;
+               font-size: 15px;
+            }
+         }
+
+         .LP_Lsubmit {
+            display: flex;
+            justify-content: center;
+
+            button {
+               background: $orangeColor;
+               width: 25vw;
+               border: none;
+               outline: none;
+               color: white;
+               height: 35px;
+               border-radius: 7px;
+               margin-top: 20px;
+               font-size: 17px;
+               cursor: pointer;
+
+               &:hover {
+                  background: $orangeColor2;
+               }
+            }
+         }
+      }
+   }
+}

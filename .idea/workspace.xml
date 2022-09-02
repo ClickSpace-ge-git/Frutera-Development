@@ -4,10 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Iraklis Blogs">
-      <change afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.scss" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Added Ioanes Contact page with functionality">
+      <change afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/American_Express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/Discover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/MasterCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/Paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/UserPage/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageList/LanguageList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageList/LanguageList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Login/Login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Register/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Register/Register.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +69,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/frutera/ContactUs",
+    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/frutera/components",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,11 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\ContactUs" />
-      <recent name="D:\reactProjects\Frutera-Development\src\images" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Blogs" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Voucher" />
+      <recent name="D:\reactProjects\Frutera-Development\src\images" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\LoginPage" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\CheckOutPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\Categories" />
@@ -117,7 +141,8 @@
       <workItem from="1662083713650" duration="180000" />
       <workItem from="1662097230745" duration="108000" />
       <workItem from="1662097584990" duration="74000" />
-      <workItem from="1662097683007" duration="1988000" />
+      <workItem from="1662097683007" duration="2423000" />
+      <workItem from="1662104548602" duration="2793000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -231,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662103493534</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added Ioanes Contact page with functionality">
+      <created>1662104079359</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662104079359</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +297,7 @@
     <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
     <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
     <MESSAGE value="Implemented Iraklis Blogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Iraklis Blogs" />
+    <MESSAGE value="Added Ioanes Contact page with functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Ioanes Contact page with functionality" />
   </component>
 </project>

@@ -7,7 +7,7 @@
       background-color: $orangeColor2;
       width: 160px;
       height: 50px;
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 10px;
       padding: 10px;
       cursor: pointer;
 
@@ -16,17 +16,14 @@
          background-color: $orangeColor;
       }
    
-      a {
+      label {
          font-size: 16px;
          font-weight: 600;
          display: flex;
          color: $backgroundColor;
          text-decoration: none;
-
-         &:hover {
-            background: $orangeColor;
-            transition: 0.2s;
-         }
+         font-family: $textFontFamily;
+         cursor: pointer;
 
          img {
             width: 30px;
@@ -47,12 +44,13 @@
       border-radius: 0 0 10px 10px;
 
       li {
-         a {
+         label {
             padding: 10px 15px;
             display: flex;
             color: $backgroundColor;
             text-decoration: none;
             font-weight: 600;
+            cursor: pointer;
             img {
                width: 30px;
             }

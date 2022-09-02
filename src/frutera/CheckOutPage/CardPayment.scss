@@ -1,0 +1,146 @@
+@import '../components/ScssVariables.scss';
+
+.CardPayment_container {
+   display: flex;
+   justify-content: center;
+   h1 {
+      font-family: $TitleFontFamily;
+   }
+
+   h3 {
+      font-family: $TitleFontFamily2;
+   }
+
+   button, .CardPayment_Form, input {
+      font-family: $textFontFamily;
+   }
+
+   .CardPayment_container2 {
+      border: $orangeColor 1px solid;
+      // padding: 20px;
+      border-radius: 5px;
+      width: 27vw;
+
+      .CardPayment_UpperPart {
+         margin: 15px;
+         display: flex;
+         justify-content: center;
+         button {
+            outline: none;
+            border: $orangeColor 1px solid;
+            border-radius: 10px;
+            background-color: white;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:not(:last-child) {
+               margin-right: 20px;
+            }
+
+            &:hover {
+               background-color: #ffc7ad;
+            }
+            img {
+               width: 80px;
+            }
+         }
+
+      }
+
+      .CardPayment_Form {
+         display: flex;
+         justify-content: center;
+
+         .CardPayment_Form_container {
+            width: 100%;
+            border: $orangeColor 1px solid;
+            border-left: none;
+            border-right: none;
+            padding: 20px;
+
+         }
+         h3 {
+            padding-bottom: 10px;
+         }
+
+         input {
+            outline: none;
+            padding-left: 10px;
+         }
+
+         .CardPayment_Form_UpperPart, .CardPayment_Form_LowerPart {
+
+            .CardPayment_Form_components {
+               display: flex;
+            }
+            input {
+               width: 100%;
+               outline: none;
+               padding-left: 10px;
+            }
+
+            label {
+               background: $orangeColor;
+               border-radius: 0 5px 5px 0;
+               color: white;
+               padding: 5px;
+            }
+         }
+
+         .CardPayment_Form_UpperPart {
+            margin-bottom: 10px;
+            input {
+               border: $orangeColor 1px solid;
+               border-radius: 5px 0 0 5px;
+            }
+         }
+
+         .CardPayment_Form_MiddlePart {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .CardPayment_Form_components {
+               input {
+                  width: 130px;
+                  border: $orangeColor 1px solid;
+                  border-radius: 5px;
+                  height: 30px;
+               }
+            }
+
+            .CP_MoreStyle {
+               input {
+                  width: 200px;
+               }
+            }
+         }
+
+         .CardPayment_Form_LowerPart {
+            input {
+               border: $orangeColor 1px solid;
+               border-radius: 5px;
+               height: 30px;
+            }
+         }
+      }
+
+      .CardPayment_LowerPart {
+         margin: 15px;
+         .CardPayment_Confirm {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: $orangeColor;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover {
+               background-color: $orangeColor2;
+            }
+         }
+      }
+   }
+}
