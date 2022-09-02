@@ -4,50 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Ioanes Blogs&#10;Changed Header">
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/PopularElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/PopularProducts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/OneProduct/001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/OneProduct/002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/OneProduct/003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/OneProduct/004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductCategories/dried_apple_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductCategories/dried_peach_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductCategories/dried_pear_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductCategories/dried_plum_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/apple1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/apple2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/apple3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/apple4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/apple5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/peach1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/peach2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/pear1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/plum1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductPage/ProductList/plum2.png" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/Product/Product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/Product/product.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/ProductsPage/ProductsPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/ProductsPage/productsPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/ProductPage/ProductPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/FeaturedProducts/FeaturedProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/FeaturedProducts/PopularElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/ProductsPage/ProductsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductCard/ProductCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductCard/productcard.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductGrid/ProductGrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductGrid/productGrid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/ProductShowcase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductShowcase/productShowcase.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Productleftside/LeftSideElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Productleftside/leftside.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +115,7 @@
       <workItem from="1662021921556" duration="7222000" />
       <workItem from="1662029600755" duration="12168000" />
       <workItem from="1662049144340" duration="40000" />
-      <workItem from="1662058267396" duration="7919000" />
+      <workItem from="1662058267396" duration="8586000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -246,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662041349446</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks">
+      <created>1662082435068</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662082435068</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +247,7 @@
     <MESSAGE value="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform" />
     <MESSAGE value="Update to Admin&#10;Implemented Ioanes fixes&#10;Added Blogs Section" />
     <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Ioanes Blogs&#10;Changed Header" />
+    <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
   </component>
 </project>

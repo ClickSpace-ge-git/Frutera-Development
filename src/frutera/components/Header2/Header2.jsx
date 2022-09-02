@@ -41,7 +41,6 @@ export default function Header2() {
                       <li className='navBtn'><a href="/products">Products</a></li>
                       <li className='navBtn'><a href="/aboutus">About Us</a></li>
                       <li className='navBtn'><a href="/blogs">Blog</a></li>
-                      <li className='navBtn'><a href="/category">Category</a></li>
                    </ul>
                 </nav>
                 <div className="btn">
