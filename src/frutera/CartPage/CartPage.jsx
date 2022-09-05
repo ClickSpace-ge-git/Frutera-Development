@@ -4,6 +4,7 @@ import CartProducts from "../components/CartProduct/CartProducts"
 import Header2 from '../components/Header2/Header2'
 import Footer from '../components/Footer/Footer'
 import {useEffect, useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 let productList = [
     {
@@ -59,6 +60,8 @@ export default function CartPage() {
             setLoading(false)
         }
     }
+
+    let navigate = useNavigate()
 
 
     const shippingHandler = (e) => {
@@ -154,7 +157,7 @@ export default function CartPage() {
                       <h4>{Math.round((shippingCost + totalCost*discountMod)*100)/100} GEL</h4>
                   </div>
 
-                  <button className='checkoutBtn'>BUY</button>
+                  <button className='checkoutBtn' onClick={(e) => {navigate("/checkout")}}>BUY</button>
               </div>
           </div>
          <Footer />

@@ -7,12 +7,12 @@ const btn = document.getElementsByClassName("dropBtn");
 var index = 0;
 const languages = [
    {
-      id: "ge",
-      label: "ქართული"
-   },
-   {
       id: "us",
       label: "English"
+   },
+   {
+      id: "ge",
+      label: "ქართული"
    },
    {
       id: "de",

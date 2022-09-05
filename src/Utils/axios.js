@@ -13,18 +13,6 @@ export const sendRequest = async (url,props) =>{
     return(response?.data)
 }
 
-export function sendPost({url,props}){
-    return({})
-}
-
-export function sendRequestPrivate({url,props}){
-    return({})
-}
-
-export function sendPostPrivate({url,props}){
-    return({})
-}
-
 export function authenticateUser(){
     return(true)
 }

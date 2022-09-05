@@ -31,8 +31,8 @@ function SwitchColor() {
                  (<li className='navBtn'><a href="/aboutus">About Us</a></li>)}
              {location.pathname === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
                  (<li className='navBtn'><a href="/products">Products</a></li>)}
-             {location.pathname === "/blog" ? (<li className='navBtn marked'><a href="/blog">Blog</a></li>) :
-                 (<li className='navBtn'><a href="/blog">Blog</a></li>)}
+             {location.pathname === "/blogs" ? (<li className='navBtn marked'><a href="/blogs">Blog</a></li>) :
+                 (<li className='navBtn'><a href="/blogs">Blog</a></li>)}
              {location.pathname === "/contactus" ? (<li className='navBtn marked'><a href="/contactus">Contact Us</a></li>) :
                  (<li className='navBtn'><a href="/contactus">Contact Us</a></li>)}
 

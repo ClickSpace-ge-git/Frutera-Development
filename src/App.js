@@ -49,7 +49,6 @@ export default function App() {
                 <Route path='/contactus' element={<ContactUsPage/>}/>
                 <Route path='/checkout' element={<CardPayment/>}/>
             </Routes>
-
         </BrowserRouter>
     );
 }
