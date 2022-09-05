@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo">
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +123,7 @@
       <workItem from="1662097584990" duration="74000" />
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
-      <workItem from="1662352253902" duration="13813000" />
+      <workItem from="1662352253902" duration="13844000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -256,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662391589958</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Initializing project demo">
+      <created>1662391735921</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662391735921</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
