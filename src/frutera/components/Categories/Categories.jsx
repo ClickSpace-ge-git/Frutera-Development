@@ -1,5 +1,55 @@
 import './Categories.scss'
 
+let HomePageCategoryList = [
+   {
+      id: "0",
+      name: "Dried Apples",
+      image: require("../../../images/Frutera/Categories/apple1.PNG"),
+      backgroundColor: "#f3925f"
+   },
+
+   {
+      id: "1",
+      name: "Dried Plums",
+      image: require("../../../images/Frutera/Categories/plum1.PNG"),
+      backgroundColor: "#9ba4c5"
+   },
+
+   {
+      id: "2",
+      name: "Dried Pears",
+      image: require("../../../images/Frutera/Categories/pear1.PNG"),
+      backgroundColor: "#d38b27"
+   },
+
+   {
+      id: "3",
+      name: "Dried Peaches",
+      image: require("../../../images/Frutera/Categories/peach1.PNG"),
+      backgroundColor: "#a6ab8d"
+   }
+]
+
+function ShowHomePageCategoryList() {
+   return (
+      HomePageCategoryList.map( category => {
+         return (
+            <>
+               <div className='HPCategoryCard' style={{backgroundColor: category.backgroundColor}}>
+                  <div className='HPC_TextPart'>
+                     <h1 className='HPC_Title'>{category.name}</h1>
+                     <p>200 items</p>
+                  </div>
+                  <div className="HPC_ImagePart">
+                     <img src={category.image} alt={`Image_${category.id + 1}`} />
+                  </div>
+               </div>
+            </>
+         )
+      })
+   )
+}
+
 function Filter() {
    var category = document.getElementsByClassName("Category")
    var select = document.getElementById("select")
@@ -15,11 +65,11 @@ function Filter() {
 export default function Categories() {
    return (
       <>
-         <div className='Ccontainer'>
-            <div className='Ccontainer2'>
-               <div className='header'>
-                  <h1>Categories</h1>
-                  <select className='categories' name="" id="select" onChange={Filter}>
+         <div className='Categories_container'>
+            <div className='Categories_container2'>
+               <div className='Categories_UpperPart'>
+                  <h1 className='Categories_Header'>Categories</h1>
+                  <select className='Categories_Select' id="select" onChange={Filter}>
                      <option value="all">All Categories</option>
                      <option value="apple">Apple</option>
                      <option value="plum">Plum</option>
@@ -27,64 +77,8 @@ export default function Categories() {
                      <option value="peach">Peach</option>
                   </select>
                </div>
-               <div className='categoriesList'>
-                  {/* -------------------- Category 1 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#f3925f"}} id="apple">
-                     <img src={require("../../../images/Frutera/Categories/apple1.PNG")} alt="apple1" />
-                     <div className='text'>
-                        <h1 className='title'>Apple</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-                  </div>
-
-                  {/* -------------------- Category 2 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#80101c"}} id="apple">
-                     <img src={require("../../../images/Frutera/Categories/apple3.PNG")} alt="apple1" />
-                     <div className='text'>
-                        <h1 className='title'>Red Apple</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-
-                  </div>
-                  {/* -------------------- Category 3 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#9ba4c5"}} id="plum">
-                     <img src={require("../../../images/Frutera/Categories/plum2.PNG")} alt="plum1" />
-                     <div className='text'>
-                        <h1 className='title'>Plum</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-                  </div>
-                  {/* -------------------- Category 4 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#d38b27"}} id="peach">
-                     <img src={require("../../../images/Frutera/Categories/peach1.PNG")} alt="apple1" />
-                     <div className='text'>
-                        <h1 className='title'>Peach</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-
-                  </div>
-                  {/* -------------------- Category 5 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#a6ab8d"}} id="pear">
-                     <img src={require("../../../images/Frutera/Categories/pear1.PNG")} alt="plum1" />
-                     <div className='text'>
-                        <h1 className='title'>Pear</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-                  </div>
-                  {/* -------------------- Category 6 -------------------- */}
-                  <div className='Category none' style={{backgroundColor: "#9ba4c5"}} id="plum">
-                     <img src={require("../../../images/Frutera/Categories/plum1.PNG")} alt="plum1" />
-                     <div className='text'>
-                        <h1 className='title'>Black Plum</h1>
-                        <p>200 items</p>
-                        <button>View All</button>
-                     </div>
-                  </div>
+               <div className='Categories_CategoryList'>
+                  {ShowHomePageCategoryList()}
                </div>
             </div>
          </div>

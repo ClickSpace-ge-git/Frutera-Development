@@ -4,34 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Added Ioanes Contact page with functionality">
-      <change afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/American_Express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/Discover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/MasterCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/CardPayment/Paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/UserPage/background.png" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/CategoriesElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/CategoriesElement.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageList/LanguageList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageList/LanguageList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Login/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Login/Login.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Register/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Register/Register.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubProjectSettings">
@@ -76,7 +67,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
+    "settings.editor.selected.configurable": "reference.idesettings.emmet",
     "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -143,6 +134,7 @@
       <workItem from="1662097584990" duration="74000" />
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
+      <workItem from="1662352253902" duration="13225000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -299,5 +291,16 @@
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Ioanes Contact page with functionality" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/frutera/components/Header/Header.jsx</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
