@@ -1,7 +1,7 @@
 import './LoginPage.scss'
 import {useState} from "react";
 import {axiosPrivate} from "../../Utils/axios";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const LOGIN_URL = '/api/User/LoginUser';
 
@@ -30,7 +30,6 @@ export default function LoginPage() {
             setEmail('');
             setPassword('');
             localStorage.setItem('token', JSON.stringify(tokenObject));
-            console.log(tokenObject);
             navigate("/user", { replace: true });
          }
          else{
