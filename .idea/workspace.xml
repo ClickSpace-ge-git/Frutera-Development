@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/CategoriesElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/CategoriesElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +28,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -134,7 +124,7 @@
       <workItem from="1662097584990" duration="74000" />
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
-      <workItem from="1662352253902" duration="13225000" />
+      <workItem from="1662352253902" duration="13669000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -255,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662104079359</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Initializing project demo">
+      <created>1662391430786</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662391430786</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +270,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initializing project demo" />
     <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page" />
     <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder" />
     <MESSAGE value="optimized Cart system&#10;implemented mock voucher system" />
@@ -290,7 +286,8 @@
     <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Ioanes Contact page with functionality" />
+    <MESSAGE value="Initializing project demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initializing project demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
