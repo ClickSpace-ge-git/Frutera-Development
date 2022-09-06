@@ -1,7 +1,9 @@
 import './Header.scss';
 import LanguageBar from '../LanguageBar/LanguageBar'
+import {useTranslation} from "react-i18next";
 
 export default function MainHeader() {
+   const {t} = useTranslation()
    return (
       <>
          <div className='Hcontainer'>
@@ -31,7 +33,7 @@ export default function MainHeader() {
                            <i className="fa-solid fa-xmark"></i>
                         </label>
 
-                        <li className='navBtn marked'><a href="/home">Home</a></li>
+                        <li className='navBtn marked'><a href="/home">{t("home")}</a></li>
                         <li className='navBtn'><a href="/aboutus">About Us</a></li>
                         <li className='navBtn'><a href="/products">Products</a></li>
                         <li className='navBtn'><a href="/blogs">Blogs</a></li>

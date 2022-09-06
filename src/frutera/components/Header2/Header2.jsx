@@ -1,6 +1,7 @@
 import './Header2.scss'
 import LanguageList from '../LanguageBar/LanguageBar'
 import {useLocation} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function PageName() {
    let location = useLocation()
@@ -21,12 +22,13 @@ function PageName() {
 }
 
 function SwitchColor() {
+   let {t} = useTranslation()
    let location = useLocation()
 
    return (
        <>
           <ul className="nav_links">
-             <li className='navBtn'><a href="/home">Home</a></li>
+             <li className='navBtn'><a href="/home">{t('home')}</a></li>
              {location.pathname === "/aboutus" ? (<li className='navBtn marked'><a href="/aboutus">About Us</a></li>) :
                  (<li className='navBtn'><a href="/aboutus">About Us</a></li>)}
              {location.pathname === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
