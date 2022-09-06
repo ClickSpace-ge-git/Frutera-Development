@@ -2,6 +2,7 @@ import './OneProduct.scss'
 import {useEffect, useState} from "react";
 import {refresher} from "../../../Utils/axios";
 import PopularProducts from "./PopularProducts";
+import {useNavigate} from "react-router-dom";
 
 let oneProductDemo = {
    id: "0",
@@ -69,6 +70,8 @@ export default function OneProduct() {
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
 
+   let navigate = useNavigate()
+
    const loadingPage = async () => {
       try{
          setProductPage(oneProductDemo)
@@ -119,7 +122,8 @@ export default function OneProduct() {
                        </div>
 
                        <div className='OPCD_image'>
-                          <img src={product.image} alt={`00${product.id + 1}`} />
+                          <img src={product.image} alt={`00${product.id + 1}`}
+                               onClick={(e) => {navigate("/products/"+product.id)}} />
                        </div>
 
                        <div className='OPCD_text'>
