@@ -25,9 +25,49 @@ let oneProductDemo = {
    ]
 }
 
+let productCardList = [
+   {
+      id: "0",
+      name: "Pitted Black Prunes",
+      weight: 100,
+      price: 10.96,
+      discount: 10,
+      image: require("../../../images/ProductPage/ProductList/apple1.png")
+   },
+
+   {
+      id: "1",
+      name: "Dried Red Apple (Idared)",
+      weight: 200,
+      price: 11.96,
+      discount: null,
+      image: require("../../../images/ProductPage/ProductList/apple5.png")
+   },
+
+   {
+      id: "2",
+      name: "Dried Yellow Apple (Golden)",
+      weight: 300,
+      price: 13.96,
+      discount: 30,
+      image: require("../../../images/ProductPage/ProductList/peach2.png")
+   },
+
+   {
+      id: "3",
+      name: "Dried Red Apple (Jona Gold)",
+      weight: 400,
+      price: 14.96,
+      discount: null,
+      image: require("../../../images/ProductPage/ProductList/plum2.png")
+   }
+]
+
+
 export default function OneProduct() {
    const [productPage,setProductPage] = useState([])
    const [loading, setLoading] = useState(true)
+   const [quantity,setQuantity] = useState(1)
 
    const loadingPage = async () => {
       try{
@@ -40,10 +80,82 @@ export default function OneProduct() {
       }
    }
 
+   const changeQuantity = (e) => {
+      const re = /^[0-9\b]+$/;
+      if(e.target.value === '' || re.test(e.target.value)){
+         setQuantity(Number(e.target.value))
+      }
+   }
+
+   const decr = () => {
+      if(quantity > 1){
+         setQuantity(quantity-1)
+      }
+   }
+
    useEffect(() => {
       loadingPage()
       refresher(loadingPage)
    },[])
+
+   function ShowProductCardList(props) {
+      return (
+          props.map( product => {
+             return (
+                    <div className="OneProductCardDiv" key={product.id}>
+                       <div className='OPCD_UpperPart'>
+                          <div className="OPCD_reaction">
+                             <i class="fa-solid fa-heart"></i>
+                          </div>
+                          {product.discount === null ? (
+                                  <></>
+                              ) :
+                              (
+                                  <div className='OPCD_discount'>
+                                     {product.discount}% Sale
+                                  </div>
+                              )
+                          }
+                       </div>
+
+                       <div className='OPCD_image'>
+                          <img src={product.image} alt={`00${product.id + 1}`} />
+                       </div>
+
+                       <div className='OPCD_text'>
+                          <div className='OPCD_title'><h3>{product.name}</h3></div>
+                          <div className='OPCD_priceDiv'>
+                             <div className='OPCD_price'>
+                                {product.discount === null ? (
+                                        <h4 className='OPCD_onlyPrice'>{product.price} GEL</h4>
+                                    ) :
+                                    (
+                                        <div className='OPCD_onlyPriceWithDiscount'>
+                                           <h4 className='OPCD_priceDiscount'>
+                                              {
+                                                  Math.round((product.price * (product.discount / 100)) * 100) / 100
+                                              } GEL
+                                           </h4>
+                                           <h4 className='OPCD_OldPrice'>{product.price} GEL</h4>
+                                        </div>
+                                    )
+                                }
+                             </div>
+                          </div>
+                          <div className='OPCD_width'><h4>{product.weight} g</h4></div>
+                       </div>
+
+                       <div className="OPCD_action">
+                          <button className='OPCD_Btn'>
+                             Add To Cart
+                             <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                       </div>
+                    </div>
+             )
+          })
+      )
+   }
 
    return (
       <>
@@ -75,9 +187,9 @@ export default function OneProduct() {
                          <div className="OP_actions">
                             <div className="OP_actions_LeftPart">
                                <h3>Quantity: </h3>
-                               <button>+</button>
-                               <input type="text"/>
-                               <button>-</button>
+                               <button onClick={(e) => {setQuantity(quantity + 1)}}>+</button>
+                               <input type="text" value={quantity} onChange={changeQuantity}/>
+                               <button onClick={(e) => {decr()}}>-</button>
                             </div>
 
                             <div className="OP_actions_RightPart">
@@ -89,13 +201,19 @@ export default function OneProduct() {
                                <button className="PCD_Btn_favorite">
                                   <i className="fa-solid fa-heart"></i>
                                </button>
-
                             </div>
-
                          </div>
                       </div>
                    </div>
                    :""}
+               <div className="OP_moreProducts">
+                  <div className="OP_moreProducts_Title">
+                     <h1>Similar Products</h1>
+                  </div>
+                  <div className="OP_moreProducts_List">
+                     {ShowProductCardList(productCardList)}
+                  </div>
+               </div>
             </div>
          </div>
       </>

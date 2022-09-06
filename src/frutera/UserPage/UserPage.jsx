@@ -8,9 +8,7 @@ function UserPage() {
     <Header2 />
     <User />
     <Footer />
-    {/* <Login /> */}
     </>
-    
   );
 }
 

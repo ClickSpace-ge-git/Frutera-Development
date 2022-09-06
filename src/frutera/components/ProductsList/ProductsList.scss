@@ -1,21 +1,23 @@
 @import '../ScssVariables.scss';
 
-$gridColumnSize: 310px;
+$gridColumnSize: 20rem;
+
 
 
 .ProductsListContainer {
    display: flex;
    justify-content: center;
    margin-bottom: 50px;
+   margin-left: 2rem;
 
    h1, h3 {
       font-family: $TitleFontFamily;
    }
-   
+
    .PCD_discount, .PCD_price, h4 {
       font-family: $textFontFamily;
    }
-   
+
    .CLHeaderTitle {
       color: $orangeColor;
       padding: 20px 0;
@@ -48,7 +50,7 @@ $gridColumnSize: 310px;
             img {
                width: 100px;
                border-radius: 15px;
-            }  
+            }
          }
 
          .CCD_title {
@@ -56,6 +58,8 @@ $gridColumnSize: 310px;
          }
       }
    }
+
+
 
 
 
@@ -69,21 +73,21 @@ $gridColumnSize: 310px;
          display: grid;
          grid-template-columns: $gridColumnSize $gridColumnSize $gridColumnSize $gridColumnSize;
          grid-row-gap: 20px;
-      
-   
-      
+
+
+
          .ProductCardDiv {
             border: #b5b5b5 1px solid;
             border-radius: 10px;
             width: 290px;
             align-items: center;
             padding: 20px;
-      
+
             .PCD_UpperPart {
                display: flex;
                justify-content: space-between;
                align-items: center;
-      
+
                .PCD_reaction {
                   display: flex;
                   justify-content: center;
@@ -92,7 +96,7 @@ $gridColumnSize: 310px;
                   color: white;
                   border-radius: 6px;
                   cursor: pointer;
-                  
+
                   &:hover {
                      i {
                         transition: 0.2s;
@@ -100,7 +104,7 @@ $gridColumnSize: 310px;
                      }
                   }
                }
-      
+
                .PCD_discount {
                   background-color: #ffdbca;
                   color: #ff5100;
@@ -110,7 +114,7 @@ $gridColumnSize: 310px;
                   border-radius: 5px;
                }
             }
-      
+
             .PCD_image {
                display: flex;
                justify-content: center;
@@ -118,16 +122,16 @@ $gridColumnSize: 310px;
                img {
                   width: 180px;
                   border-radius: 15px;
-                  transition: 0.5s;
+                  transition: 0.2s;
                   cursor: pointer;
 
                   &:hover {
-                     transition: 0.5s;
-                     width: 185px;
+                     transition: 0.4s;
+                     transform: scale(1.1);
                   }
                }
             }
-      
+
             .PCD_text {
                padding-bottom: 15px;
 
@@ -138,7 +142,7 @@ $gridColumnSize: 310px;
                   height: 50px;
                   cursor: pointer;
                }
-      
+
                .PCD_priceDiv {
                   display: flex;
                   justify-content: center;
@@ -146,22 +150,22 @@ $gridColumnSize: 310px;
                .PCD_price {
                   display: flex;
                   justify-content: center;
-      
+
                   .PCD_onlyPrice {
                      color: $orangeColor;
                      margin: 10px 0;
                   }
-      
+
                   .PCD_onlyPriceWithDiscount {
                      display: flex;
                      justify-content: space-between;
                      width: 145px;
                      margin: 10px 0;
-      
+
                      .PCD_priceDiscount {
                         color: $orangeColor;
                      }
-      
+
                      .PCD_OldPrice {
                         text-decoration: line-through;
                         color: #868686;
@@ -177,11 +181,11 @@ $gridColumnSize: 310px;
                   justify-content: center;
                }
             }
-      
+
             .PCD_action {
                display: flex;
                justify-content: center;
-      
+
                .PCD_Btn {
                   outline: none;
                   border: none;
@@ -196,7 +200,7 @@ $gridColumnSize: 310px;
                   i {
                      padding-left: 10px;
                   }
-      
+
                   &:hover {
                      color: white;
                      background-color: $orangeColor;
@@ -206,4 +210,225 @@ $gridColumnSize: 310px;
          }
       }
    }
+}
+
+
+
+@media (max-width: 1279px){
+   .ProductsListContainer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      h1, h3 {
+         font-family: $TitleFontFamily;
+      }
+
+      .PCD_discount, .PCD_price, h4 {
+         font-family: $textFontFamily;
+      }
+
+      .CLHeaderTitle {
+         display: flex;
+         justify-content: center;
+         color: $orangeColor;
+         padding: 20px 0;
+      }
+      .CategorieListDiv {
+         display: grid;
+         grid-template-columns: $gridColumnSize $gridColumnSize;
+
+         .CategoryCardDiv {
+            margin: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: $orangeColor 1px solid;
+            border-radius: 10px;
+            width: 290px;
+            padding: 10px 20px;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:not(:last-child) {
+               margin-right: 20px;
+            }
+
+            &:hover {
+               background: $orangeColor;
+               .CCD_title {
+                  color: white;
+               }
+            }
+            .CCD_image {
+               img {
+                  width: 100px;
+                  border-radius: 15px;
+               }
+            }
+
+            .CCD_title {
+               color: $orangeColor;
+            }
+         }
+      }
+
+
+
+
+
+
+      .ProductListCont {
+         .PLHeaderTitle {
+            display: flex;
+            justify-content: center;
+            color: $orangeColor;
+            padding: 20px 0;
+         }
+         .ProductsListDiv {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: $gridColumnSize $gridColumnSize;
+            grid-row-gap: 20px;
+
+
+
+            .ProductCardDiv {
+               border: #b5b5b5 1px solid;
+               border-radius: 10px;
+               width: 290px;
+               align-items: center;
+               padding: 20px;
+
+               .PCD_UpperPart {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  .PCD_reaction {
+                     display: flex;
+                     justify-content: center;
+                     background-color: #ffbada;
+                     padding: 7px;
+                     color: white;
+                     border-radius: 6px;
+                     cursor: pointer;
+
+                     &:hover {
+                        i {
+                           transition: 0.2s;
+                           color: red;
+                        }
+                     }
+                  }
+
+                  .PCD_discount {
+                     background-color: #ffdbca;
+                     color: #ff5100;
+                     font-size: 16px;
+                     font-weight: bold;
+                     padding: 5px;
+                     border-radius: 5px;
+                  }
+               }
+
+               .PCD_image {
+                  display: flex;
+                  justify-content: center;
+                  margin: 20px;
+                  img {
+                     width: 180px;
+                     border-radius: 15px;
+                     transition: 0.2s;
+                     cursor: pointer;
+
+                     &:hover {
+                        transition: 0.4s;
+                        transform: scale(1.1);
+                     }
+                  }
+               }
+
+               .PCD_text {
+                  padding-bottom: 15px;
+
+                  .PCD_title {
+                     display: flex;
+                     justify-content: center;
+                     text-align: center;
+                     height: 50px;
+                     cursor: pointer;
+                  }
+
+                  .PCD_priceDiv {
+                     display: flex;
+                     justify-content: center;
+                  }
+                  .PCD_price {
+                     display: flex;
+                     justify-content: center;
+
+                     .PCD_onlyPrice {
+                        color: $orangeColor;
+                        margin: 10px 0;
+                     }
+
+                     .PCD_onlyPriceWithDiscount {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 145px;
+                        margin: 10px 0;
+
+                        .PCD_priceDiscount {
+                           color: $orangeColor;
+                        }
+
+                        .PCD_OldPrice {
+                           text-decoration: line-through;
+                           color: #868686;
+                        }
+                     }
+                     .PCD_priceDiscount {
+                        color: $orangeColor;
+                     }
+                  }
+
+                  .PCD_width {
+                     display: flex;
+                     justify-content: center;
+                  }
+               }
+
+               .PCD_action {
+                  display: flex;
+                  justify-content: center;
+
+                  .PCD_Btn {
+                     outline: none;
+                     border: none;
+                     align-items: center;
+                     padding: 10px 35px;
+                     border-radius: 100px;
+                     background-color: #ffdbca;
+                     color: #ff5100;
+                     font-size: 16px;
+                     cursor: pointer;
+                     transition: 0.2s;
+                     i {
+                        padding-left: 10px;
+                     }
+
+                     &:hover {
+                        color: white;
+                        background-color: $orangeColor;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+
+
 }

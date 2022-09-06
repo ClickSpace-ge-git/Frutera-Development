@@ -1,4 +1,6 @@
 @import '../ScssVariables.scss';
+$gridColumnSize: 20rem;
+
 
 .OneProductContainer {
    display: flex;
@@ -23,14 +25,14 @@
 
          .OP_imagePart {
             align-items: center;
-            
+
             .OP_imagePart_UpperPart {
                img {
                   width: 350px;
                   border-radius: 10px;
                }
             }
-      
+
             .OP_imagePart_LowerParts {
                margin-top: 20px;
                img {
@@ -43,38 +45,38 @@
                }
             }
          }
-      
+
          .OP_textPart {
             margin-left: 20px;
-      
+
             .OP_MainTitle h1{
                font-size: 32px;
                color: $orangeColor;
             }
-      
+
             .OP_description {
                margin-top: 20px;
                padding-bottom: 20px;
                width: 50vw;
                font-size: 20px;
             }
-      
+
             .OP_price {
                border-top: #d3d3d3 2px solid;
                border-bottom: #d3d3d3 2px solid;
                padding: 20px 0;
                color: $orangeColor;
             }
-      
+
             .OP_actions {
                display: flex;
                justify-content: space-between;
                margin-top: 20px;
-      
+
                .OP_actions_LeftPart {
                   display: flex;
                   align-items: center;
-         
+
                   h3 {
                      margin-right: 10px;
                      color: $orangeColor;
@@ -89,27 +91,27 @@
                      cursor: pointer;
                      font-size: 16px;
                      border-radius: 5px;
-         
+
                      &:hover {
                         background-color: $orangeColor2;
                      }
                   }
-         
+
                   input {
                      outline: none;
                      border: $orangeColor 1px solid;
                      margin: 0 10px;
                      width: 50px;
                      height: 30px;
-         
+
                      text-align: center;
                   }
                }
-      
+
                .OP_actions_RightPart {
                   margin-left: 30px;
                   display: flex;
-      
+
                   .OP_Btn {
                      outline: none;
                      border: none;
@@ -119,7 +121,7 @@
                      cursor: pointer;
                      font-size: 16px;
                      border-radius: 5px;
-                     
+
                      i {
                         padding-left: 10px;
                      }
@@ -128,7 +130,7 @@
                         background-color: $orangeColor2;
                      }
                   }
-      
+
                   .PCD_Btn_favorite {
                      outline: none;
                      border: none;
@@ -140,7 +142,7 @@
                      color: white;
                      border-radius: 6px;
                      cursor: pointer;
-                     
+
                      &:hover {
                         i {
                            transition: 0.2s;
@@ -173,12 +175,12 @@
             &:not(:last-child) {
                margin-right: 20px;
             }
-      
+
             .OPCD_UpperPart {
                display: flex;
                justify-content: space-between;
                align-items: center;
-      
+
                .OPCD_reaction {
                   display: flex;
                   justify-content: center;
@@ -187,7 +189,7 @@
                   color: white;
                   border-radius: 6px;
                   cursor: pointer;
-                  
+
                   &:hover {
                      i {
                         transition: 0.2s;
@@ -195,7 +197,7 @@
                      }
                   }
                }
-      
+
                .OPCD_discount {
                   background-color: #ffdbca;
                   color: #ff5100;
@@ -205,28 +207,34 @@
                   border-radius: 5px;
                }
             }
-      
+
             .OPCD_image {
                display: flex;
                justify-content: center;
                margin: 20px;
-               
+
                img {
                   width: 180px;
                   border-radius: 15px;
+                  transition: 0.2s;
+
+               }
+               img:hover {
+                  transition: 0.4s;
+                  transform: scale(1.1);
                }
             }
-      
+
             .OPCD_text {
                padding-bottom: 15px;
-   
+
                .OPCD_title {
                   display: flex;
                   justify-content: center;
                   text-align: center;
                   height: 50px;
                }
-      
+
                .OPCD_priceDiv {
                   display: flex;
                   justify-content: center;
@@ -234,22 +242,22 @@
                .OPCD_price {
                   display: flex;
                   justify-content: center;
-      
+
                   .OPCD_onlyPrice {
                      color: $orangeColor;
                      margin: 10px 0;
                   }
-      
+
                   .OPCD_onlyPriceWithDiscount {
                      display: flex;
                      justify-content: space-between;
                      width: 145px;
                      margin: 10px 0;
-      
+
                      .OPCD_priceDiscount {
                         color: $orangeColor;
                      }
-      
+
                      .OPCD_OldPrice {
                         text-decoration: line-through;
                         color: #868686;
@@ -259,17 +267,17 @@
                      color: $orangeColor;
                   }
                }
-   
+
                .OPCD_width {
                   display: flex;
                   justify-content: center;
                }
             }
-      
+
             .OPCD_action {
                display: flex;
                justify-content: center;
-      
+
                .OPCD_Btn {
                   outline: none;
                   border: none;
@@ -282,11 +290,11 @@
                   cursor: pointer;
                   transition: 0.2s;
                   width: 300px;
-                  
+
                   i {
                      padding-left: 10px;
                   }
-      
+
                   &:hover {
                      color: white;
                      background-color: $orangeColor;
@@ -296,4 +304,321 @@
          }
       }
    }
+}
+
+
+@media (max-width: 1279px){
+
+   .OneProductContainer {
+      display: flex;
+      justify-content: center;
+
+      h1, h3 {
+         font-family: $TitleFontFamily2;
+      }
+
+      p, h2, input, .OPCD_text, .OPCD_discount {
+         font-family: $textFontFamily;
+      }
+
+      .OneProductContainer2 {
+         margin-top: 30px;
+
+
+         .OneProductCard {
+            display: flex;
+            border: $orangeColor 1px solid;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 960px;
+
+            .OP_imagePart {
+               align-items: center;
+
+               .OP_imagePart_UpperPart {
+                  img {
+                     width: 350px;
+                     border-radius: 10px;
+                  }
+               }
+
+               .OP_imagePart_LowerParts {
+                  margin-top: 20px;
+                  img {
+                     width: 80px;
+                     border-radius: 10px;
+                     &:not(:first-child) {
+                        margin-left: 10px;
+                     }
+                     cursor: pointer;
+                  }
+               }
+            }
+
+            .OP_textPart {
+               margin-left: 20px;
+
+               .OP_MainTitle h1{
+                  font-size: 32px;
+                  color: $orangeColor;
+               }
+
+               .OP_description {
+                  margin-top: 20px;
+                  padding-bottom: 20px;
+                  width: 50vw;
+                  font-size: 20px;
+               }
+
+               .OP_price {
+                  border-top: #d3d3d3 2px solid;
+                  border-bottom: #d3d3d3 2px solid;
+                  padding: 20px 0;
+                  color: $orangeColor;
+               }
+
+               .OP_actions {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 20px;
+
+                  .OP_actions_LeftPart {
+                     display: flex;
+                     align-items: center;
+
+                     h3 {
+                        margin-right: 10px;
+                        color: $orangeColor;
+                     }
+                     button {
+                        outline: none;
+                        border: none;
+                        width: 30px;
+                        height: 30px;
+                        background: $orangeColor;
+                        color: white;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+
+                        &:hover {
+                           background-color: $orangeColor2;
+                        }
+                     }
+
+                     input {
+                        outline: none;
+                        border: $orangeColor 1px solid;
+                        margin: 0 10px;
+                        width: 50px;
+                        height: 30px;
+
+                        text-align: center;
+                     }
+                  }
+
+                  .OP_actions_RightPart {
+                     margin-left: 30px;
+                     display: flex;
+
+                     .OP_Btn {
+                        outline: none;
+                        border: none;
+                        background: $orangeColor;
+                        color: white;
+                        padding: 5px 20px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-radius: 5px;
+
+                        i {
+                           padding-left: 10px;
+                        }
+
+                        &:hover {
+                           background-color: $orangeColor2;
+                        }
+                     }
+
+                     .PCD_Btn_favorite {
+                        outline: none;
+                        border: none;
+                        justify-content: center;
+                        background-color: #ffbada;
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 20px;
+                        color: white;
+                        border-radius: 6px;
+                        cursor: pointer;
+
+                        &:hover {
+                           i {
+                              transition: 0.2s;
+                              color: red;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+         .OP_moreProducts {
+            margin-bottom: 30px;
+         }
+         .OP_moreProducts_Title {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: $orangeColor;
+         }
+         .OP_moreProducts_List {
+            display: grid;
+            grid-template-columns: $gridColumnSize $gridColumnSize;
+            justify-content: center;
+
+
+            .OneProductCardDiv {
+               border: #b5b5b5 1px solid;
+               border-radius: 10px;
+               width: 290px;
+               align-items: center;
+               padding: 20px;
+               margin:1rem;
+
+               &:not(:last-child) {
+                  margin-right: 20px;
+               }
+
+               .OPCD_UpperPart {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  .OPCD_reaction {
+                     display: flex;
+                     justify-content: center;
+                     background-color: #ffbada;
+                     padding: 7px;
+                     color: white;
+                     border-radius: 6px;
+                     cursor: pointer;
+
+                     &:hover {
+                        i {
+                           transition: 0.2s;
+                           color: red;
+                        }
+                     }
+                  }
+
+                  .OPCD_discount {
+                     background-color: #ffdbca;
+                     color: #ff5100;
+                     font-size: 16px;
+                     font-weight: bold;
+                     padding: 5px;
+                     border-radius: 5px;
+                  }
+               }
+
+               .OPCD_image {
+                  display: flex;
+                  justify-content: center;
+                  margin: 20px;
+
+                  img {
+                     width: 180px;
+                     border-radius: 15px;
+                     transition: 0.2s;
+
+                  }
+                  img:hover {
+                     transition: 0.4s;
+                     transform: scale(1.1);
+                  }
+               }
+
+               .OPCD_text {
+                  padding-bottom: 15px;
+
+                  .OPCD_title {
+                     display: flex;
+                     justify-content: center;
+                     text-align: center;
+                     height: 50px;
+                  }
+
+                  .OPCD_priceDiv {
+                     display: flex;
+                     justify-content: center;
+                  }
+                  .OPCD_price {
+                     display: flex;
+                     justify-content: center;
+
+                     .OPCD_onlyPrice {
+                        color: $orangeColor;
+                        margin: 10px 0;
+                     }
+
+                     .OPCD_onlyPriceWithDiscount {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 145px;
+                        margin: 10px 0;
+
+                        .OPCD_priceDiscount {
+                           color: $orangeColor;
+                        }
+
+                        .OPCD_OldPrice {
+                           text-decoration: line-through;
+                           color: #868686;
+                        }
+                     }
+                     .OPCD_priceDiscount {
+                        color: $orangeColor;
+                     }
+                  }
+
+                  .OPCD_width {
+                     display: flex;
+                     justify-content: center;
+                  }
+               }
+
+               .OPCD_action {
+                  display: flex;
+                  justify-content: center;
+
+                  .OPCD_Btn {
+                     outline: none;
+                     border: none;
+                     align-items: center;
+                     padding: 10px 35px;
+                     border-radius: 100px;
+                     background-color: #ffdbca;
+                     color: #ff5100;
+                     font-size: 16px;
+                     cursor: pointer;
+                     transition: 0.2s;
+                     width: 300px;
+
+                     i {
+                        padding-left: 10px;
+                     }
+
+                     &:hover {
+                        color: white;
+                        background-color: $orangeColor;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
 }

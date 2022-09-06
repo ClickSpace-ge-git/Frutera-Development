@@ -32,7 +32,7 @@ function User() {
         if(id === "confirmPassword"){
             setConfirmPassword(value);
         }
-        if(id == "phoneNumber"){
+        if(id === "phoneNumber"){
             setPhoneNumber(value);
         }
     }
@@ -56,7 +56,7 @@ function User() {
               </div>
           </div>
           <div class="secondCont" >
-            <form action="#">
+            <form onSubmit={handleSubmit}>
               <div class="user-details">
                 <div class="input-box">
                   <span class="details">First Name</span>

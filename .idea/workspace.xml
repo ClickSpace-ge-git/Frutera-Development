@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Checkout, hanged Headers, and login and register">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented login and register with database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/PopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/PopUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/i18n.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/UserPage/UserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/UserPage/UserPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +127,8 @@
       <workItem from="1662104548602" duration="4399000" />
       <workItem from="1662118206751" duration="3580000" />
       <workItem from="1662368549683" duration="158000" />
-      <workItem from="1662387440040" duration="4743000" />
+      <workItem from="1662387440040" duration="7712000" />
+      <workItem from="1662487120438" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -256,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662391027772</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implemented login and register with database">
+      <created>1662393968118</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662393968118</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +306,7 @@
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
     <MESSAGE value="Implemented Checkout, hanged Headers, and login and register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Checkout, hanged Headers, and login and register" />
+    <MESSAGE value="Implemented login and register with database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented login and register with database" />
   </component>
 </project>
