@@ -12,7 +12,7 @@
 
    .backgroundImage {
       img {
-         width:100%;
+         width: 100%;
          max-width: 1440px;
       }
    }
@@ -20,7 +20,7 @@
    .backgroundImage2 {
       display: none;
       img {
-         width:100%;
+         width: 100%;
          max-width: 1440px;
       }
    }
@@ -28,6 +28,7 @@
       display: flex;
       align-items: center;
    }
+
    @media (max-width: 1280px) {
       .backgroundImage {
          display: none;
@@ -88,9 +89,13 @@
          list-style: none;
 
          .navBtn {
-            margin: 13px;
+            margin: 10px;
             transition: 0.3s;
             cursor: pointer;
+
+            &:not(:last-child) {
+               margin-right: 13px;
+            }
 
             a {
                text-decoration: none;

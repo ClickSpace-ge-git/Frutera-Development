@@ -189,15 +189,3 @@ export default function Slider() {
       </>
    )
 }
-
-
-
-
-/*
-<div>
-<div className='tester'>
-   <button onClick={() => {BeforSlide()}}>Before</button>
-   <button onClick={() => {NextSlide()}}>Next</button>
-</div>
-</div>
-*/
