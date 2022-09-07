@@ -9,7 +9,7 @@ let productCardList = [
       name: "Pitted Black Prunes",
       weight: 100,
       price: 10.96,
-      discount: 10,
+      discount: 30,
       image: require("../../../images/ProductPage/OneProduct/001.png")
    },
 
@@ -130,7 +130,7 @@ function ShowProductCardList(props,goToProduct) {
                <div className="ProductCardDiv" key={product.id} onClick={(e) => {goToProduct(product.id)}}>
                   <div className='PCD_UpperPart'>
                      <div className="PCD_reaction">
-                        <i class="fa-solid fa-heart"></i>
+                        <i className="fa-solid fa-heart"></i>
                      </div>
                      {product.discount === null ? (
                            <></>
@@ -173,7 +173,7 @@ function ShowProductCardList(props,goToProduct) {
                   <div className="PCD_action">
                      <button className='PCD_Btn'>
                         Add To Cart
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                      </button>
                   </div>
                </div>

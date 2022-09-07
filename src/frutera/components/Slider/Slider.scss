@@ -1,15 +1,17 @@
 @import "../ScssVariables";
 
-$lightOrangeColor: #f9f0ed;
-$orangeColor: #f76c2b;
-$hoverLightOrangeColor: #ffbea4;
-
-
 .Scontainer {
    display: flex;
    justify-content: center;
    margin: 100px;
-   font-family: 'SamsungOne', sans-serif;
+
+   h1 {
+      font-family: $TitleFontFamily;
+   }
+
+   p, .slideBtns, .slideBtn1, .slideBtn2 {
+      font-family: $textFontFamily;
+   }
 
    .slide {
       display: none;
@@ -27,7 +29,6 @@ $hoverLightOrangeColor: #ffbea4;
             width: 500px;
             line-height: 70px;
             font-size: 50px;
-            font-family: 'Samsung Sharp Sans', sans-serif;
             margin-bottom: 20px;
          }
 
@@ -61,7 +62,7 @@ $hoverLightOrangeColor: #ffbea4;
          display: flex;
          justify-content: center;
          align-items: center;
-         color: $lightOrangeColor;
+         color: $backgroundColor;
          background: rgba(247, 107, 42, 0.4);
          border-radius: 50%;
          width: 40px;
@@ -173,7 +174,7 @@ $hoverLightOrangeColor: #ffbea4;
       border-radius: 50px;
       padding: 9px 25px;
       background-color: $orangeColor;
-      color: $lightOrangeColor;
+      color: $backgroundColor;
       transition: 0.3s;
 
       &:hover {
@@ -183,26 +184,26 @@ $hoverLightOrangeColor: #ffbea4;
 
    .whiteMode {
       .Title, .text{
-         color: $lightOrangeColor;
+         color: $backgroundColor;
       }
-   
+
       .moveBtn {
          background-color: rgba(247, 107, 42, 0.2);
-         color: $lightOrangeColor;
+         color: $backgroundColor;
       }
-   
+
       .moreStyle{
-         background-color: $lightOrangeColor;
+         background-color: $backgroundColor;
          color: $orangeColor;
          &:hover {
             background-color: rgb(255, 215, 199);
          }
       }
       .lineBox{
-   
+
          &:hover{
             p {
-               color: $lightOrangeColor;
+               color: $backgroundColor;
             }
             .line {
                background-color: rgba(255, 255, 255, 0.45);
@@ -212,11 +213,11 @@ $hoverLightOrangeColor: #ffbea4;
             background-color: rgba(255, 255, 255, 0.2);
          }
          .progress {
-            background-color: $lightOrangeColor;
+            background-color: $backgroundColor;
          }
       }
       .autoMode i{
-         color: $lightOrangeColor;
+         color: $backgroundColor;
       }
    }
    

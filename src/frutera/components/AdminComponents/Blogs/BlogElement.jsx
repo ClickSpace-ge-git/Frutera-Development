@@ -20,17 +20,17 @@ export default function BlogElement({props,handleEdit,handleList}){
 
     return(
         <tr>
-            <td className='OfullName'>{props.title}</td>
-            <td className='Oemail'>{displayDate(props.date)}</td>
-            <td className='OphoneNumber'>{props.headerparagraph}</td>
-            <td className='OorderList'>
+            <td className='BTitle'>{props.title}</td>
+            <td className='BDate'>{displayDate(props.date)}</td>
+            <td className='BHeaderParagraph'><p>{props.headerparagraph}</p></td>
+            <td className='BMoreText'>
                 <button className='Obtn' onClick={() => {
                     listHandler()
-                }}>show paragraphs
+                }}>More Text
                 </button>
             </td>
-            <td className='OtotalPrice'>{props.footerparagraph}</td>
-            <td className='Oaction'>
+            <td className='BFooterParagraph'><p>{props.footerparagraph}</p></td>
+            <td className='Baction'>
                 <button className='penBtn' onClick={() => {editHandler()}}><i className="fa-solid fa-pen-to-square"></i></button>
                 <button className='trashBtn' ><i className="fa-solid fa-trash"></i></button>
             </td>

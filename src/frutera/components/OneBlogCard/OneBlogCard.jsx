@@ -28,7 +28,7 @@ let oneBlogCardsList = [
 ]
 
 let blogPageJson = {
-   title: "",
+   title: "Why is fruit useful?",
    date: "2002-02-02",
    similar: oneBlogCardsList,
    paragraphs: [

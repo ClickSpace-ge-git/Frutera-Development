@@ -63,7 +63,7 @@ function NextSlide() {
 function BeforSlide() {
    AutoMover(false);
    slideIndex--;
-   if(slideIndex === 0) {slideIndex = slides.length;};
+   if(slideIndex === 0) {slideIndex = slides.length;}
    ShowSlide(slideIndex);
    if(isChecked2) AutoMover(true, NextSlide, 8000);
 }
@@ -97,7 +97,7 @@ function ShowSlide(index) {
       controller[0].className = "controller";
       moveButtons[0].className = "moveBtns";
       slides[index].className = slides[index].className.replace(" whiteMode", "");
-   };
+   }
 
 }
 // --------------------------------------------------------------

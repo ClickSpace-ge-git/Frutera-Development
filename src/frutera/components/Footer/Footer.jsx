@@ -3,7 +3,7 @@ import logo from "../../../images/Frutera/logo.png"
 
 export default function Footer() {
    return (
-      <div className="footer">
+      <div className="FooterContainer">
          <footer>
             <div className="Fcontainer">
                <div className='otherComponents'>

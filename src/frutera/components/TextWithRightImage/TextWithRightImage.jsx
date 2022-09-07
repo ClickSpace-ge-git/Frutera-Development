@@ -1,5 +1,4 @@
 import './TextWithRightImage.scss'
-import img2 from "../../../images/Frutera/img2.jpg"
 
 export default function TextWithRightImage() {
 return (
@@ -17,7 +16,7 @@ return (
                <a href='/aboutus' className="btn moreStyle">Learn More</a>
             </div>
          </div>
-         <img src={img2}/>
+         <img src={require("../../../images/Frutera/img2.jpg")}/>
       </div>
    </div>
 )
