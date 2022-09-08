@@ -11,6 +11,7 @@ import ProductPage from "./frutera/ProductPage/ProductPage";
 import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
 import CardPayment from "./frutera/CheckOutPage/CardPayment";
+import Messenger from "./frutera/Messenger/Messenger";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -24,6 +25,7 @@ export default function App() {
         <Suspense fallback="loading...">
             <BrowserRouter>
                 <Routes>
+                    <Route path='/chat' element={<Messenger/>}/>
                     <Route path='' element={<HomePage/>}/>
                     <Route path='/home' element={<HomePage/>}/>
                     <Route path='/aboutus' element={<AboutUsPage/>}/>
