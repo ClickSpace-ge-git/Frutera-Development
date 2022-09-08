@@ -6,33 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/Commnet.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ScssVariables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ScssVariables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Video/Video.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Video/Video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Video/Video.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +128,9 @@
       <workItem from="1662461189286" duration="629000" />
       <workItem from="1662474998373" duration="599000" />
       <workItem from="1662478464457" duration="1005000" />
-      <workItem from="1662529320722" duration="13235000" />
+      <workItem from="1662529320722" duration="13607000" />
+      <workItem from="1662580107381" duration="66000" />
+      <workItem from="1662639448018" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -303,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662391767667</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Initializing project demo">
+      <created>1662576090927</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662576090927</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

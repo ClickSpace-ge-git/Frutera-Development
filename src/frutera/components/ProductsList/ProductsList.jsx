@@ -158,7 +158,7 @@ function ShowProductCardList(props,goToProduct) {
                                  <div className='PCD_onlyPriceWithDiscount'>
                                     <h4 className='PCD_priceDiscount'>
                                        {
-                                          Math.round((product.price * (product.discount / 100)) * 100) / 100
+                                          Math.round((product.price - (product.price * (product.discount / 100))) * 100) / 100
                                        } GEL
                                     </h4>
                                     <h4 className='PCD_OldPrice'>{product.price} GEL</h4>
