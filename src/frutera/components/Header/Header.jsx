@@ -34,10 +34,10 @@ export default function MainHeader() {
                         </label>
 
                         <li className='navBtn marked'><a href="/home">{t("home")}</a></li>
-                        <li className='navBtn'><a href="/aboutus">About Us</a></li>
-                        <li className='navBtn'><a href="/products">Products</a></li>
-                        <li className='navBtn'><a href="/blogs">Blogs</a></li>
-                        <li className='navBtn'><a href="/contactus">Contact Us</a></li>
+                        <li className='navBtn'><a href="/aboutus">{t("aboutus")}</a></li>
+                        <li className='navBtn'><a href="/products">{t("products")}</a></li>
+                        <li className='navBtn'><a href="/blogs">{t("blogs")}</a></li>
+                        <li className='navBtn'><a href="/contactus">{t("contsctus")}</a></li>
                      </ul>
 
                      <div className="btn">
@@ -52,9 +52,9 @@ export default function MainHeader() {
                </div>
 
                <div className='text'>
-                  <h1>The best dried fruit</h1>
-                  <p>Dried peaches, pears, plums and various apples and chips.</p>
-                  <button>Learn More</button>
+                  <h1>{t("bestfruit")}</h1>
+                  <p>{t("belowbestfruit")}</p>
+                  <button>{t("learnm")}</button>
                </div>
 
             </header>

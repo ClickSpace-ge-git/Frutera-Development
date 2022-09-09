@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="implemented functionality and future database compatibility for products and featured products">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="setup language changer api&#10;changed flag names to match language tags&#10;implemented translation for navbar &quot;home&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/i18n.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/i18n.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Frutera/flags/ge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/Frutera/flags/ka.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Frutera/flags/us.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/Frutera/flags/en.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +130,11 @@
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
       <workItem from="1662352253902" duration="13844000" />
-      <workItem from="1662490640357" duration="3541000" />
+      <workItem from="1662490640357" duration="4481000" />
+      <workItem from="1662545882039" duration="4330000" />
+      <workItem from="1662566547051" duration="1736000" />
+      <workItem from="1662644217995" duration="791000" />
+      <workItem from="1662729190122" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -287,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662490367704</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="setup language changer api&#10;changed flag names to match language tags&#10;implemented translation for navbar &quot;home&quot;">
+      <created>1662494367339</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662494367339</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +334,7 @@
     <MESSAGE value="Initializing project demo" />
     <MESSAGE value="ioane merge test" />
     <MESSAGE value="implemented functionality and future database compatibility for products and featured products" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented functionality and future database compatibility for products and featured products" />
+    <MESSAGE value="setup language changer api&#10;changed flag names to match language tags&#10;implemented translation for navbar &quot;home&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup language changer api&#10;changed flag names to match language tags&#10;implemented translation for navbar &quot;home&quot;" />
   </component>
 </project>

@@ -2,6 +2,7 @@ import axios from "axios";
 import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 const BASE_URL = "https://marketplacefrt.azurewebsites.net/"
+const REFRESH_METHOD_URL = '/api/User/refresh-token'
 
 export const refresher = (props) => {
     const interval = setInterval(() => props(), 1000);
@@ -27,33 +28,46 @@ export const axiosPrivate = axios.create({
     withCredentials:true
 })
 
-const useAxiosPrivate = () => {
-    let navigate = useNavigate()
-    useEffect(() => {
-        const requestInterceptor = axiosPrivate.interceptors.request.use(
-            config => {
-                if (!config.headers['Authorization']) {
-                    config.headers['Authorization'] = `Bearer ${localStorage.getItem("Frutera-User")?.token}`;
-                }
-                return config;
-            }, (err) => {
-                Promise.reject(err)
+export const useAxiosPrivate = async (props) => {
+    const tkn = sessionStorage.getItem('token');
+    const token = JSON.parse(tkn);
+
+    try{
+        const response = await axios.get(BASE_URL+props, {
+            headers: {
+                'Authorization': 'Bearer ' + token.accessToken,
+                'Content-Type': 'application/json',
+            }}
+        )
+        if(response.status > 240){
+            const isRefreshed = await refreshToken();
+            if(isRefreshed){
             }
-        );
+        }
+        return response;
+    }
+    catch(err){
+        const isRefreshed = false;
+        //await refreshToken();
+        if(isRefreshed){
+            //return axiosAuthGet(methodUrl);
+        }
+    }
+}
 
-        const responseInterceptor = axiosPrivate.interceptors.response.use(
-            response => response,
-            async(error) => {
-                const prevReq = error?.config;
-                if(error?.response?.status === 401){
-                    localStorage.removeItem("Frutera-User")
-                    navigate("/login");
-                }
-                return Promise.reject(error);
-            }
-        );
+const refreshToken = async () => {
 
-
-    },)
-    return axiosPrivate;
+    var tkn = sessionStorage.getItem('token');
+    var token = JSON.parse(tkn);
+    var tokenModel = token.refreshToken;
+    const response = await axios.post(BASE_URL + REFRESH_METHOD_URL, tokenModel, {
+        headers: {
+            'Content-Type': 'application/json'
+        }},
+    );
+    sessionStorage.setItem('token', JSON.stringify(response?.data));
+    if(response.status < 250){
+        return true;
+    }
+    return false;
 }

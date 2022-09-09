@@ -30,7 +30,7 @@ function SwitchColor() {
           <ul className="nav_links">
              <li className='navBtn'><a href="/home">{t('home')}</a></li>
              {location.pathname === "/aboutus" ? (<li className='navBtn marked'><a href="/aboutus">About Us</a></li>) :
-                 (<li className='navBtn'><a href="/aboutus">About Us</a></li>)}
+                 (<li className='navBtn'><a href="/aboutus">{t('aboutus')}</a></li>)}
              {location.pathname === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
                  (<li className='navBtn'><a href="/products">Products</a></li>)}
              {location.pathname === "/blogs" ? (<li className='navBtn marked'><a href="/blogs">Blog</a></li>) :

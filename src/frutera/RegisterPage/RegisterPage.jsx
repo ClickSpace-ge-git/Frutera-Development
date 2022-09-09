@@ -1,7 +1,7 @@
 import './RegisterPage.scss'
 import { useState} from "react";
-import {axiosPrivate} from "../../Utils/axios";
 import {useNavigate} from "react-router-dom";
+import axios from "../../Utils/axios";
 
 const REGISTER_URL = '/api/User/RegisterUser';
 
@@ -28,7 +28,7 @@ export default function RegisterPage() {
                "firstName": firstName,
                "lastName": lastName
             });
-            const response = await axiosPrivate.post(REGISTER_URL, model, {
+            const response = await axios.post(REGISTER_URL, model, {
                headers: {
                   'Content-Type': 'application/json'
                }}

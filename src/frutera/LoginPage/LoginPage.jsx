@@ -1,6 +1,6 @@
 import './LoginPage.scss'
 import {useState} from "react";
-import {axiosPrivate} from "../../Utils/axios";
+import axios from "../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 
 const LOGIN_URL = '/api/User/LoginUser';
@@ -19,7 +19,7 @@ export default function LoginPage() {
             "email": email,
             "password": password
          });
-         const response = await axiosPrivate.post(LOGIN_URL, model, {
+         const response = await axios.post(LOGIN_URL, model, {
             headers: {
                'Content-Type': 'application/json'
             }}
@@ -29,7 +29,7 @@ export default function LoginPage() {
             const tokenObject = response?.data;
             setEmail('');
             setPassword('');
-            localStorage.setItem('token', JSON.stringify(tokenObject));
+            sessionStorage.setItem('token', JSON.stringify(tokenObject));
             navigate("/user", { replace: true });
          }
          else{

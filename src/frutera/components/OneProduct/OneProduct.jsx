@@ -1,8 +1,10 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
-import {refresher} from "../../../Utils/axios";
+import {authenticateUser, useAxiosPrivate, refresher} from "../../../Utils/axios";
 import PopularProducts from "./PopularProducts";
 import {useNavigate} from "react-router-dom";
+
+const ADDTOCART_URL_First = '/api/Cart/AddInCart/'
 
 let oneProductDemo = {
    id: "0",
@@ -101,6 +103,15 @@ export default function OneProduct() {
       refresher(loadingPage)
    },[])
 
+   const AddToCart = async () =>{
+      const typingTimeOut = setTimeout(async function() {
+         //const response = await useAxiosPrivate('/api/Cart/AddInCart/' + productPage.id + '?quantity=' + quantity);
+      }, 500);
+      return () => {
+         clearTimeout(typingTimeOut);
+      }
+   }
+
    function ShowProductCardList(props) {
       return (
           props.map( product => {
@@ -150,7 +161,7 @@ export default function OneProduct() {
                        </div>
 
                        <div className="OPCD_action">
-                          <button className='OPCD_Btn'>
+                          <button className='OPCD_Btn' onClick={(e) => {AddToCart()}}>
                              Add To Cart
                              <i class="fa-solid fa-cart-shopping"></i>
                           </button>
@@ -197,7 +208,7 @@ export default function OneProduct() {
                             </div>
 
                             <div className="OP_actions_RightPart">
-                               <button className="OP_Btn">
+                               <button className="OP_Btn" onClick={(e) => {AddToCart()}}>
                                   Add To Cart
                                   <i className="fa-solid fa-cart-shopping"></i>
                                </button>
