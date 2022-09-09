@@ -4,6 +4,7 @@ export default function CardPayment() {
    return (
       <>
          <div className="CardPayment_container">
+
             <div className="CardPayment_container2">
                <div className='CardPayment_UpperPart'>
                   <button><img src={require("../../images/CardPayment/MasterCard.png")} alt="MasterCard.png" /></button>
@@ -15,28 +16,37 @@ export default function CardPayment() {
                <form className='CardPayment_Form'>
                   <div className="CardPayment_Form_container">
                      <div className='CardPayment_Form_UpperPart'>
-                        <h3>Card Number</h3>
-                        <div className='CardPayment_Form_components'>
-                        <input type="text" placeholder='Valid Card Number' />
-                        <label><i class="fa-solid fa-credit-card"></i></label>
+
+                        <div className='CardPayment_Form_Components'>
+                           <h3>card number</h3>
+                           <input type="text" placeholder='XXXX XXXX XXXX XXXX' />
+                        </div>
+
+                        <div className='CardPayment_Form_components CP_MoreStyle'>
+                           <h3>cvc</h3>
+                           <input type="text" placeholder='XXX' />
                         </div>
                      </div>
                      <div className='CardPayment_Form_MiddlePart'>
-                        <div className='CardPayment_Form_components CP_MoreStyle'>
-                           <h3>Expiration Date</h3>
-                           <input type="text" placeholder='MM/YY' />
-                        </div>
 
                         <div className='CardPayment_Form_components'>
-                           <h3>CV Code</h3>
-                           <input type="text" placeholder='CVC' />
+                           <h3>card holder name</h3>
+                           <input type="text" placeholder='Name Surname' />
                         </div>
                      </div>
 
                      <div className='CardPayment_Form_LowerPart'>
-                        <h3>Card Owner</h3>
+                        <h3>experition date</h3>
                         <div className='CardPayment_Form_components'>
-                           <input type="text" placeholder='Card Owner Name' />
+                           <select className="CardPayment_Form_components_SelectDay">
+                              <option value="1">1</option>
+                           </select>
+                           <select className="CardPayment_Form_components_SelectMonth">
+                              <option value="Jan">January</option>
+                           </select>
+                           <select className="CardPayment_Form_components_SelectYear">
+                              <option value="2022">2022</option>
+                           </select>
                         </div>
                      </div>
 

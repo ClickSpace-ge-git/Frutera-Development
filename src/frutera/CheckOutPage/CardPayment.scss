@@ -1,14 +1,29 @@
 @import '../components/ScssVariables.scss';
 
+
 .CardPayment_container {
+   position: absolute;
+   background-image: linear-gradient(
+                   115deg,
+                   rgba(14, 14, 14, 0.638),
+                   rgba(14, 14, 14, 0.659)
+   ),
+   url(../../images/Frutera/original/background1.PNG);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
    display: flex;
    justify-content: center;
+   width: 100%;
+   height: 100%;
+
    h1 {
       font-family: $TitleFontFamily;
    }
 
    h3 {
       font-family: $TitleFontFamily2;
+      text-transform: uppercase;
    }
 
    button, .CardPayment_Form, input {
@@ -16,15 +31,21 @@
    }
 
    .CardPayment_container2 {
-      border: $orangeColor 1px solid;
-      // padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       border-radius: 5px;
-      width: 27vw;
+      background: white;
+      height: 500px;
+      width: 380px;
+      margin-top: 100px;
+      padding: 10px;
 
       .CardPayment_UpperPart {
          margin: 15px;
          display: flex;
          justify-content: center;
+
          button {
             outline: none;
             border: $orangeColor 1px solid;
@@ -41,7 +62,8 @@
                background-color: #ffc7ad;
             }
             img {
-               width: 80px;
+               width: 60px;
+               margin: 5px;
             }
          }
 
@@ -53,12 +75,9 @@
 
          .CardPayment_Form_container {
             width: 100%;
-            border: $orangeColor 1px solid;
-            border-left: none;
-            border-right: none;
-            padding: 20px;
-
+            padding: 10px;
          }
+
          h3 {
             padding-bottom: 10px;
          }
@@ -66,61 +85,64 @@
          input {
             outline: none;
             padding-left: 10px;
-         }
-
-         .CardPayment_Form_UpperPart, .CardPayment_Form_LowerPart {
-
-            .CardPayment_Form_components {
-               display: flex;
-            }
-            input {
-               width: 100%;
-               outline: none;
-               padding-left: 10px;
-            }
-
-            label {
-               background: $orangeColor;
-               border-radius: 0 5px 5px 0;
-               color: white;
-               padding: 5px;
-            }
+            height: 40px;
+            border-radius: 4px;
+            border: $orangeColor 1px solid;
          }
 
          .CardPayment_Form_UpperPart {
-            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+
             input {
-               border: $orangeColor 1px solid;
-               border-radius: 5px 0 0 5px;
+               width: 200px;
+            }
+         }
+
+         .CP_MoreStyle {
+            input {
+               width: 90px;
             }
          }
 
          .CardPayment_Form_MiddlePart {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
+            margin: 30px 0;
 
             .CardPayment_Form_components {
-               input {
-                  width: 130px;
-                  border: $orangeColor 1px solid;
-                  border-radius: 5px;
-                  height: 30px;
-               }
-            }
+               width: 100%;
 
-            .CP_MoreStyle {
                input {
-                  width: 200px;
+                  width: 100%;
                }
             }
          }
 
          .CardPayment_Form_LowerPart {
-            input {
-               border: $orangeColor 1px solid;
-               border-radius: 5px;
-               height: 30px;
+            .CardPayment_Form_components {
+               display: flex;
+               justify-content: space-between;
+               height: 40px;
+
+               select {
+                  border: $Oframe;
+                  background: none;
+                  border-radius: 3px;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  cursor: pointer;
+               }
+
+               .CardPayment_Form_components_SelectDay {
+                  width: 60px;
+               }
+               .CardPayment_Form_components_SelectMonth {
+                  width: 120px;
+               }
+               .CardPayment_Form_components_SelectYear {
+                  width: 80px;
+               }
             }
          }
       }

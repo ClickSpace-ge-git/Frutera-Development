@@ -4,8 +4,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding-top: 130px;
-   padding-bottom: 170px;
+   padding: 100px 0;
+
+   h1, h3 {
+      font-family: $TitleFontFamily;
+   }
+   a, span, p, li {
+      font-family: $textFontFamily;
+   }
 
    .components {
       margin: auto;
@@ -18,7 +24,6 @@
       }
 
       h1 {
-         font-family: 'Samsung Sharp Sans', sans-serif;
          font-size: 40px;
          color: $orangeColor;
          font-weight: 700;

@@ -59,21 +59,24 @@ export default function BlogList({props, close}) {
                     <p>search: <input type="text"/></p>
                 </div>
             </div>
-            <table className='OPtable'>
-                <thead>
-                <tr className='headerPart'>
-                    <td>Image</td>
-                    <td>Title</td>
-                    <td>Text</td>
-                </tr>
-                </thead>
-                <tbody>
-                {!loading && productsList.length > 0 ? productsList.map(item => <BlogListElement close={openForm}
-                                                                                                 edit={editItemHandler}
-                                                                                                 props={item}
-                                                                                                 key={item.id}/>) : ""}
-                </tbody>
-            </table>
+            <div className="BOPtable">
+                <table className='OPtable'>
+                    <thead>
+                    <tr className='headerPart'>
+                        <td>Image</td>
+                        <td>Title</td>
+                        <td>Text</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {!loading && productsList.length > 0 ? productsList.map(item => <BlogListElement close={openForm}
+                                                                                                     edit={editItemHandler}
+                                                                                                     props={item}
+                                                                                                     key={item.id}/>) : ""}
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     )
 }

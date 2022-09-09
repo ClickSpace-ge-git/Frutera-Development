@@ -1,20 +1,19 @@
 import './Header2.scss'
 import LanguageList from '../LanguageBar/LanguageBar'
 import {useLocation} from "react-router-dom";
-import {useTranslation} from "react-i18next";
 
 function PageName() {
    let location = useLocation()
-   switch (location.pathname){
-      case "/aboutus":
+   switch (location.pathname.split("/").filter(e => e)[0]){
+      case "aboutus":
          return ("About Us")
-      case "/products":
+      case "products":
          return ("Products")
-      case "/blog":
+      case "blogs":
          return ("Blog")
-      case "/cart":
+      case "cart":
          return ("Cart")
-      case "/user":
+      case "user":
          return ("Profile")
       default:
          return ("")
@@ -22,18 +21,17 @@ function PageName() {
 }
 
 function SwitchColor() {
-   let {t} = useTranslation()
    let location = useLocation()
 
    return (
        <>
           <ul className="nav_links">
-             <li className='navBtn'><a href="/home">{t('home')}</a></li>
+             <li className='navBtn'><a href="/home">Home</a></li>
              {location.pathname === "/aboutus" ? (<li className='navBtn marked'><a href="/aboutus">About Us</a></li>) :
-                 (<li className='navBtn'><a href="/aboutus">{t('aboutus')}</a></li>)}
-             {location.pathname === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
+                 (<li className='navBtn'><a href="/aboutus">About Us</a></li>)}
+             {location.pathname.substring(0, 9) === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
                  (<li className='navBtn'><a href="/products">Products</a></li>)}
-             {location.pathname === "/blogs" ? (<li className='navBtn marked'><a href="/blogs">Blog</a></li>) :
+             {location.pathname.substring(0, 5) === "/blog" ? (<li className='navBtn marked'><a href="/blogs">Blog</a></li>) :
                  (<li className='navBtn'><a href="/blogs">Blog</a></li>)}
              {location.pathname === "/contactus" ? (<li className='navBtn marked'><a href="/contactus">Contact Us</a></li>) :
                  (<li className='navBtn'><a href="/contactus">Contact Us</a></li>)}
@@ -58,12 +56,6 @@ export default function Header2() {
              </div>
              <div className='navigationBar'>
                 <nav>
-                   {/* <ul className="nav_links">
-                     <li className='navBtn'><a href="/home">Home</a></li>
-                     <li className='navBtn'><a href="/aboutus">About Us</a></li>
-                     <li className='navBtn'><a href="/products">Products</a></li>
-                     <li className='navBtn'><a href="/blog">Blog</a></li>
-                  </ul> */}
                    {SwitchColor()}
                 </nav>
                 <div className="btn">
