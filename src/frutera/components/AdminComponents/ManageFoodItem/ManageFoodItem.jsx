@@ -4,6 +4,7 @@ import ProductElement from "./ProductElement";
 import FoodItemForm from "./FoodItemForm";
 import PopUp from "../../../../Utils/PopUp";
 import axios, {refresher} from "../../../../Utils/axios"
+import {useTranslation} from "react-i18next";
 
 let demoProductsList = [
    {
@@ -95,6 +96,7 @@ export default function ManageFoodItem() {
    const [trigger,setTrigger]= useState(false)
    const [editElement,setEditElement] = useState({})
    const [data,setData] = useState(null)
+   const {t} = useTranslation()
 
    const loadingPage = async () => {
       try{
@@ -134,23 +136,23 @@ export default function ManageFoodItem() {
             <div className="Flist">
                <div className="filterContainer">
                   <div className="firstPart">
-                     <h2>Product List</h2>
-                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ Add Food Item</button>
+                     <h2>{t("products")} {t("list")}</h2>
+                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ {t("add")} {t("product")}</button>
                   </div>
                   <div className="secondPart">
-                     <p>show <input type="text" className='inp1'/> entries</p>
-                     <p>search: <input type="text" /></p>
+                     <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                     <p>{t("search")}: <input type="text" /></p>
                   </div>
                </div>
                <table className='MFtable'>
                   <thead>
-                     <td>Image</td>
-                     <td>Name</td>
-                     <td>Description</td>
-                     <td>Price</td>
-                     <td>Discount</td>
-                     <td>Stock Status</td>
-                     <td>Action</td>
+                     <td>{t("image")}</td>
+                     <td>{t("name")}</td>
+                     <td>{t("description")}</td>
+                     <td>{t("price")}</td>
+                     <td>{t("discount")}</td>
+                     <td>{t("stock")}</td>
+                     <td>{t("action")}</td>
                   </thead>
                   <tbody>
                   {!loading && productsList.length >0? productsList.map(item => <ProductElement handleEdit={editItemHandler} props={item} key={item.id}/> ) : "" }

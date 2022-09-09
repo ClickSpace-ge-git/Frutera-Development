@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import "./OrderElementForm.scss";
+import {useTranslation} from "react-i18next";
 
 export default function OrderElementForm({props,close}){
     const [name,setName] = useState("")
@@ -9,6 +10,7 @@ export default function OrderElementForm({props,close}){
     const [address,setAddress] = useState("")
     const [orderStatus,setOrderStatus] = useState("ORD")
     const [totalPrice,setTotalPrice] = useState(0)
+    const {t} = useTranslation()
 
     useEffect(() => {
         if(props !== {}){
@@ -37,28 +39,28 @@ export default function OrderElementForm({props,close}){
                 <div className='textPart'>
 
                     <div className='inputBx'>
-                        <label className='titleLabel'>Name</label>
+                        <label className='titleLabel'>{t("fname")}</label>
                         <input type="text" placeholder='Enter Name'
                                value={name} onChange={(e) => {setName(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Surname</label>
+                        <label className='titleLabel'>{t("sname")}</label>
                         <input type="text" placeholder='Enter Surname'
                                value={sName} onChange={(e) => {setSName(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Email</label>
+                        <label className='titleLabel'>{t("email")}</label>
                         <input type="text" placeholder='Enter Email'
                                value={email} onChange={(e) => {setEmail(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Phone Number</label>
+                        <label className='titleLabel'>{t("phonenum")}</label>
                         <input type="text" placeholder='Enter Phone Number'
                                value={number} onChange={(e) => {setNumber(e.target.value)}}/>
                     </div>
 
                     <div className='inputBx'>
-                        <label className='titleLabel'>Address</label>
+                        <label className='titleLabel'>{t("address")}</label>
                         <input type="text" placeholder='Enter Address'
                                value={address} onChange={(e) => {setAddress(e.target.value)}}/>
                     </div>
@@ -67,21 +69,21 @@ export default function OrderElementForm({props,close}){
                 <div className='uploadPart'>
                     <div className='inputBx'>
                         <select value={orderStatus} onChange={(e) => {setOrderStatus(e.target.value)}}>
-                            <option value="DEL">Delivered</option>
-                            <option value="ORD">Ordered</option>
+                            <option value="DEL">{t("delivered")}</option>
+                            <option value="ORD">{t("ordered")}</option>
                         </select>
-                        <label className='titleLabel'>Order Status</label>
+                        <label className='titleLabel'>{t("order")} {t("status")}</label>
                     </div>
 
                     <div className='inputBx'>
                         <input type="text" placeholder='Enter Total Price'
                                value={totalPrice} onChange={(e) => {setTotalPrice(+e.target.value)}}/>
-                        <label className='titleLabel'>Total Price</label>
+                        <label className='titleLabel'>{t("total")} {t("price")}</label>
                     </div>
 
                     <div className='OBtns'>
-                        <button className='OBtn' onClick={() => {handleSubmit()}}>Save</button>
-                        <button className='OBtn' onClick={() => {close()}}>Cancel</button>
+                        <button className='OBtn' onClick={() => {handleSubmit()}}>{t("save")}</button>
+                        <button className='OBtn' onClick={() => {close()}}>{t("cancel")}</button>
                     </div>
                 </div>
             </form>

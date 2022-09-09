@@ -2,6 +2,7 @@ import './RegisterPage.scss'
 import { useState} from "react";
 import {useNavigate} from "react-router-dom";
 import axios from "../../Utils/axios";
+import {useTranslation} from "react-i18next";
 
 const REGISTER_URL = '/api/User/RegisterUser';
 
@@ -12,6 +13,7 @@ export default function RegisterPage() {
    const [firstName, setFirstName] = useState('');
    const [lastName, setLastName] = useState('');
    const [errMsg, setErrMsg] = useState('');
+   const {t} = useTranslation()
 
    let navigate = useNavigate()
 
@@ -68,10 +70,10 @@ export default function RegisterPage() {
             
                <div className='RP_RightPart'>
                   <form onSubmit={handleSubmit}>
-                     <h1>Register</h1>
+                     <h1>{t('register')}</h1>
 
                      <div class="RP_input_components">
-                        <label>First Name</label>
+                        <label>{t('fname')}</label>
                         <input type="text" placeholder="Enter First Name"
                                autoComplete="off"
                                value={firstName}
@@ -79,7 +81,7 @@ export default function RegisterPage() {
                                required/>
                      </div>
                      <div className="RP_input_components">
-                        <label>Last Name</label>
+                        <label>{t('lname')}</label>
                         <input type="text" placeholder="Enter Last Name"
                                autoComplete="off"
                                value={lastName}
@@ -88,7 +90,7 @@ export default function RegisterPage() {
                      </div>
 
                      <div class="RP_input_components">
-                        <label>Email</label>
+                        <label>{t('email')}</label>
                         <input type="text" placeholder="Enter Email"
                                autoComplete="off"
                                value={email}
@@ -97,7 +99,7 @@ export default function RegisterPage() {
                      </div>
 
                      <div class="RP_input_components">
-                        <label>Password</label>
+                        <label>{t('password')}</label>
                         <input type="password" placeholder="Enter Password"
                                autoComplete="off"
                                value={password}
@@ -106,7 +108,7 @@ export default function RegisterPage() {
                      </div>
 
                      <div class="RP_input_components">
-                        <label>Repeat Password</label>
+                        <label>{t('rep')} {t('password')}</label>
                         <input type="password" placeholder="Repeat Password"
                                autoComplete="off"
                                value={repPassword}
@@ -114,7 +116,8 @@ export default function RegisterPage() {
                                required/>
                      </div>
 
-                     <div className="RP_Lsubmit"><button type="submit">Sign Up</button></div>
+                     <div className="RP_Lsubmit"><button type="submit">{t('signup')}</button></div>
+                     <div className="RP_Lsubmit"><button onClick={(e) => {navigate("/login")}}>{t('haveacc')}</button></div>
                   </form>
                </div>
             </div>

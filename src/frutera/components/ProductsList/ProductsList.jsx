@@ -2,6 +2,7 @@ import './ProductsList.scss'
 import {useEffect, useState} from "react";
 import {refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 let productCardList = [
    {
@@ -121,7 +122,7 @@ function ShowCategoryList(props) {
    )
 }
 
-function ShowProductCardList(props,goToProduct) {
+function ShowProductCardList(props,goToProduct,t) {
 
    return (
        props.map( product => {
@@ -137,7 +138,7 @@ function ShowProductCardList(props,goToProduct) {
                         ) :
                         (
                            <div className='PCD_discount'>
-                              {product.discount}% Sale
+                              {product.discount}% {t('sale')}
                            </div>
                         )
                      }
@@ -172,7 +173,7 @@ function ShowProductCardList(props,goToProduct) {
 
                   <div className="PCD_action">
                      <button className='PCD_Btn'>
-                        Add To Cart
+                        {t('add2cart')}
                         <i className="fa-solid fa-cart-shopping"></i>
                      </button>
                   </div>
@@ -188,6 +189,7 @@ export default function ProductsList() {
    const categoryList = categoryListDemo
    const [loading, setLoading] = useState(true)
    let navigate = useNavigate()
+   const {t} = useTranslation()
 
    const goToProduct = (props) =>{
       navigate("/products/" + props)
@@ -214,16 +216,16 @@ export default function ProductsList() {
       <div className="ProductsListContainer">
          <div className="ProductsListContainer2">
             <div className='CategorieListCont'>
-               <h1 className='CLHeaderTitle'>CATEGORIES</h1>
+               <h1 className='CLHeaderTitle'>{t('categories')}</h1>
                <div className="CategorieListDiv">
                   {categoryList.length > 0 ? ShowCategoryList(categoryList):""}
                </div>
             </div>
 
             <div className='ProductListCont'>
-               <h1 className='PLHeaderTitle'>FEATURED PRODUCTS</h1>
+               <h1 className='PLHeaderTitle'>{t('featprods')}</h1>
                <div className="ProductsListDiv">
-                  {!loading && productList.length > 0 ? ShowProductCardList(productList,goToProduct):""}
+                  {!loading && productList.length > 0 ? ShowProductCardList(productList,goToProduct,t):""}
                </div>
             </div>
          </div>

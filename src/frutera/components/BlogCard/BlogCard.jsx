@@ -2,6 +2,7 @@ import "./BlogCard.scss"
 import {useEffect, useState} from "react";
 import axios, {refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 let blogCardsList = [
    {
@@ -57,6 +58,7 @@ let blogCardsList = [
 export default function BlogCard() {
    const [blogList, setBlogList] = useState([])
    const [loading, setLoading] = useState(true)
+   const {t} = useTranslation()
    let navigate = useNavigate()
 
    const goToBlog = (props) =>{
@@ -94,7 +96,7 @@ export default function BlogCard() {
                           <div className="blogCardText">
                              <p>{blogcard.description}</p>
                           </div>
-                          <button className="blogCardBtn" onClick={(e) => {goToBlog(blogcard.id)}}>See more</button>
+                          <button className="blogCardBtn" onClick={(e) => {goToBlog(blogcard.id)}}>{t('seemore')}</button>
                        </div>
                     </div>
                  </>
@@ -107,7 +109,7 @@ export default function BlogCard() {
       <>
          <div className="BCcontainer">
             <div className="BCcontainer2">
-               <h2 className="HeaderTitle">Blog News</h2>
+               <h2 className="HeaderTitle">{t('blog')} {t('news')}</h2>
                <div className="blogCards">
                   {!loading && blogList.length > 0? ShowBlogCardList(blogList) : ""}
                </div>

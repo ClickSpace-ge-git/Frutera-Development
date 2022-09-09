@@ -4,6 +4,7 @@ import React, {useEffect, useState} from "react";
 import BlogElementForm from "./BlogElementForm";
 import BlogList from "./BlogList";
 import BlogElement from "./BlogElement";
+import {useTranslation} from "react-i18next";
 
 let demoproductList = [
    {
@@ -138,6 +139,7 @@ export default function Blogs() {
    const [trigger,setTrigger]= useState(false)
    const [triggerList,setTriggerList]= useState(false)
    const [editElement,setEditElement] = useState({})
+   const {t} = useTranslation()
 
    const loadingPage = () => {
       setOrdersList(demoordersList)
@@ -187,25 +189,25 @@ export default function Blogs() {
                
                <div className="filterContainer">
                   <div className="firstPart">
-                     <h2>Blogs List</h2>
+                     <h2>{t("blogs")} {t("list")}</h2>
                      <button className='opBtn' onClick={() => {
                         openForm()
                      }}>+ Add Post
                      </button>
                   </div>
                   <div className="secondPart">
-                     <p>show <input type="text" className='inp1'/> entries</p>
-                     <p>search: <input type="text" /></p>
+                     <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                     <p>{t("search")}: <input type="text" /></p>
                   </div>
                </div>
 
                <table className='Otable'>
                   <thead>
-                     <td>Title</td>
-                     <td>Date</td>
-                     <td>Header</td>
-                     <td>Paragraphs List</td>
-                     <td>Footer</td>
+                     <td>{t("title")}</td>
+                     <td>{t("date")}</td>
+                     <td>{t("header")}</td>
+                     <td>{t("paragraphs")} {t("list")}</td>
+                     <td>{t("footer")}</td>
                   </thead>
                   <tbody>
                   {!loading && ordersList.length >0? ordersList.map(item => <BlogElement handleList={editItemHandlerList} handleEdit={editItemHandler} props={item} key={item.id}/> ) : "" }

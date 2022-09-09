@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import VoucherElement from "./VoucherElement";
 import PopUp from "../../../../Utils/PopUp";
 import VoucherElementForm from "./VoucherElementForm";
+import {useTranslation} from "react-i18next";
 
 let demovoucherList = [
    {
@@ -69,6 +70,7 @@ export default function Voucher() {
    const [loading, setLoading] = useState(true)
    const [trigger,setTrigger]= useState(false)
    const [editElement,setEditElement] = useState({})
+   const {t} = useTranslation()
 
    const loadingPage = () => {
       setVoucherList(demovoucherList)
@@ -99,22 +101,22 @@ export default function Voucher() {
             <div className="Vlist">
                <div className="filterContainer">
                   <div className="firstPart">
-                     <h2>Voucher List</h2>
-                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ Add Voucher</button>
+                     <h2>{t("voucher")} {t("list")}</h2>
+                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ {t("add")} {t("voucher")}</button>
                   </div>
                   <div className="secondPart">
-                     <p>show <input type="text" className='inp1'/> entries</p>
-                     <p>search: <input type="text" /></p>
+                     <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                     <p>{t("search")}: <input type="text" /></p>
                   </div>
                </div>
                <table>
                   <thead>
-                     <td>Name</td>
-                     <td>Description</td>
-                     <td>Discount</td>
-                     <td>Start Date</td>
-                     <td>End Date</td>
-                     <td>Action</td>
+                     <td>{t("name")}</td>
+                     <td>{t("description")}</td>
+                     <td>{t("discount")}</td>
+                     <td>{t("start")} {t("date")}</td>
+                     <td>{t("end")} {t("date")}</td>
+                     <td>{t("action")}</td>
                   </thead>
                   <tbody>
                   {!loading && voucherList.length >0? voucherList.map(item => <VoucherElement handleEdit={editItemHandler} props={item} key={item.id}/> ) : "" }

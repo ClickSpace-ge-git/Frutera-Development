@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import "./UserItemForm.scss"
+import {useTranslation} from "react-i18next";
 
 export default function UserItemForm({props,close}){
     const [name,setName] = useState("")
@@ -9,6 +10,7 @@ export default function UserItemForm({props,close}){
     const [img,setImg] = useState()
     const [upload,setUpload] = useState()
     const [uploaded,setUploaded] = useState(false)
+    const {t} = useTranslation()
 
     useEffect(() => {
         if(props !== {}){
@@ -28,31 +30,31 @@ export default function UserItemForm({props,close}){
     return(
         <div className="createFelement">
 
-            <h3>Edit User Element</h3>
+            <h3>{t("edit")} {t("user")} {t("element")}</h3>
 
             <div className='Felement'>
                 <div className='textPart'>
 
                     <div className='inputBx'>
-                        <label className='titleLabel'>Name</label>
+                        <label className='titleLabel'>{t("fname")}</label>
                         <input type="text" placeholder='Enter Name' value={name}
                             onChange={(e) => {setName(e.target.value)}}
                         />
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Surname</label>
+                        <label className='titleLabel'>{t("sname")}</label>
                         <input type="text" placeholder='Enter Surname' value={sname}
                                onChange={(e) => {setSName(e.target.value)}}
                         />
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Email</label>
+                        <label className='titleLabel'>{t("email")}</label>
                         <input type="text" placeholder='Enter Email' value={email}
                                onChange={(e) => {setEmail(e.target.value)}}
                         />
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Password</label>
+                        <label className='titleLabel'>{t("password")}</label>
                         <input type="password" placeholder='Enter Password' value={psw}
                                onChange={(e) => {setPsw(e.target.value)}}
                         />
@@ -67,19 +69,19 @@ export default function UserItemForm({props,close}){
                     </div>
                     <div className='inputBx'>
                         <label className='inputtype'>
-                            Upload Image
+                            {t("upload")} {t("image")}
                             <input type="file" id='image_input' onChange={(e) =>{if(
                                 e.target.files && e.target.files[0]) {
                                 (setUpload(e.target.files[0]))
                                 setUploaded(true)
                             }}}/>
                         </label>
-                        <label className='titleLabel'>image</label>
+                        <label className='titleLabel'>{t("image")}</label>
                     </div>
 
                     <div className='MFIBtns'>
-                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>Add Product</button>
-                        <button className='MFIBtn' onClick={() => {close()}}>Cancel</button>
+                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>{t("add")} {t("product")}</button>
+                        <button className='MFIBtn' onClick={() => {close()}}>{t("cancel")}</button>
                     </div>
                 </div>
             </div>

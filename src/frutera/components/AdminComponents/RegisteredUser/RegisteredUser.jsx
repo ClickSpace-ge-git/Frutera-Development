@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import PopUp from "../../../../Utils/PopUp";
 import UserItem from "./UserItem";
 import UserItemForm from "./UserItemForm";
+import {useTranslation} from "react-i18next";
 
 let demoUserList = [
    {
@@ -50,6 +51,7 @@ export default function ManageFoodItem() {
    const [loading, setLoading] = useState(true)
    const [trigger,setTrigger]= useState(false)
    const [editElement,setEditElement] = useState({})
+   const {t} = useTranslation()
 
    const loadingPage = () => {
       setUserList(demoUserList)
@@ -83,23 +85,23 @@ export default function ManageFoodItem() {
             <div className="Flist">
                <div className="filterContainer">
                   <div className="firstPart">
-                     <h2>User List</h2>
-                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ Add User Item</button>
+                     <h2>{t("user")} {t("list")}</h2>
+                     <button className='fPBtn' onClick={() => {editItemHandler({})}}>+ {t("add")} {t("user")} {t("item")}</button>
                   </div>
                   <div className="secondPart">
-                     <p>show <input type="text" className='inp1'/> entries</p>
-                     <p>search: <input type="text" /></p>
+                     <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                     <p>{t("search")}: <input type="text" /></p>
                   </div>
                </div>
                <div className='tableStyle'>
                   <table className='Utable'>
                      <thead>
-                        <td>Image</td>
-                        <td>Full Name</td>
-                        <td>Phone Number</td>
-                        <td>Emain</td>
-                        <td>Password</td>
-                        <td>Action</td>
+                        <td>{t("image")}</td>
+                        <td>{t("fullname")}</td>
+                        <td>{t("phonenum")}</td>
+                        <td>{t("email")}</td>
+                        <td>{t("password")}</td>
+                        <td>{t("action")}</td>
                      </thead>
                      <tbody>
                      {!loading && userList.length >0? userList.map(item => <UserItem handleEdit={editItemHandler} props={item} key={item.id}/> ) : "" }

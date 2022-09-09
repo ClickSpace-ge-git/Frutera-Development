@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {authenticateUser, useAxiosPrivate, refresher} from "../../../Utils/axios";
 import PopularProducts from "./PopularProducts";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const ADDTOCART_URL_First = '/api/Cart/AddInCart/'
 
@@ -71,6 +72,7 @@ export default function OneProduct() {
    const [productPage,setProductPage] = useState([])
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
+   const {t} = useTranslation()
 
    let navigate = useNavigate()
 
@@ -126,7 +128,7 @@ export default function OneProduct() {
                               ) :
                               (
                                   <div className='OPCD_discount'>
-                                     {product.discount}% Sale
+                                     {product.discount}% {t('sale')}
                                   </div>
                               )
                           }
@@ -162,7 +164,7 @@ export default function OneProduct() {
 
                        <div className="OPCD_action">
                           <button className='OPCD_Btn' onClick={(e) => {AddToCart()}}>
-                             Add To Cart
+                             {t('add2cart')}
                              <i class="fa-solid fa-cart-shopping"></i>
                           </button>
                        </div>
@@ -209,7 +211,7 @@ export default function OneProduct() {
 
                             <div className="OP_actions_RightPart">
                                <button className="OP_Btn" onClick={(e) => {AddToCart()}}>
-                                  Add To Cart
+                                  {t('add2cart')}
                                   <i className="fa-solid fa-cart-shopping"></i>
                                </button>
 
@@ -223,7 +225,7 @@ export default function OneProduct() {
                    :""}
                <div className="OP_moreProducts">
                   <div className="OP_moreProducts_Title">
-                     <h1>Similar Products</h1>
+                     <h1>{t('similar')} {t('products')}</h1>
                   </div>
                   <div className="OP_moreProducts_List">
                      {ShowProductCardList(productCardList)}

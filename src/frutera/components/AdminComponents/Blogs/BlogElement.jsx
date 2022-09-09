@@ -1,7 +1,9 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 
 export default function BlogElement({props,handleEdit,handleList}){
+    const {t} = useTranslation()
 
     function editHandler(){
         handleEdit(props)
@@ -26,7 +28,7 @@ export default function BlogElement({props,handleEdit,handleList}){
             <td className='BMoreText'>
                 <button className='Obtn' onClick={() => {
                     listHandler()
-                }}>More Text
+                }}>{t("more")} {t("text")}
                 </button>
             </td>
             <td className='BFooterParagraph'><p>{props.footerparagraph}</p></td>

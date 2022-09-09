@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import './FoodItemForm.scss';
+import {useTranslation} from "react-i18next";
 
 export default function FoodItemForm({props,close}){
     const [name,setName] = useState("")
@@ -10,6 +11,7 @@ export default function FoodItemForm({props,close}){
     const [img,setImg] = useState()
     const [upload,setUpload] = useState()
     const [uploaded,setUploaded] = useState(false)
+    const {t} = useTranslation()
 
     useEffect(() => {
         if(props !== {}){
@@ -36,32 +38,32 @@ export default function FoodItemForm({props,close}){
     return(
         <div className="createFelement">
 
-            <h3>Create Product Element</h3>
+            <h3>{t("create")} {t("product")} {t("element")}</h3>
 
             <div className='Felement'>
                 <div className='textPart'>
 
                     <div className='inputBx'>
-                        <label className='titleLabel'>Name</label>
+                        <label className='titleLabel'>{t("name")}</label>
                         <input type="text" placeholder='Enter Name' value={name} onChange={(e) =>{setName(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Price</label>
+                        <label className='titleLabel'>{t("price")}</label>
                         <input type="text" placeholder='Enter Price' value={price} onChange={(e) =>{setPrice(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>Discount</label>
+                        <label className='titleLabel'>{t("discount")}</label>
                         <input type="text" placeholder='Enter Discount' value={discount} onChange={(e) =>{setDiscount(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>stock</label>
+                        <label className='titleLabel'>{t("stock")}</label>
                         <select value={stock} onChange={(e) =>{setName(e.target.value)}}>
-                            <option value="IS">in stock</option>
-                            <option value="OS">out of stock</option>
+                            <option value="IS">{t("instock")}</option>
+                            <option value="OS">{t("outofstock")}</option>
                         </select>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel forTextArea'>Description</label>
+                        <label className='titleLabel forTextArea'>{t("description")}</label>
                         <textarea  placeholder='Enter Description' value={des} onChange={(e) =>{setDes(e.target.value)}}></textarea>
                     </div>
                 </div>
@@ -74,19 +76,19 @@ export default function FoodItemForm({props,close}){
                     </div>
                     <div className='inputBx'>
                         <label className='inputtype'>
-                            Upload Image
+                            {t("upload")} {t("image")}
                             <input type="file" id='image_input' onChange={(e) =>{if(
                                 e.target.files && e.target.files[0]) {
                                 (setUpload(e.target.files[0]))
                                 setUploaded(true)
                             }}}/>
                         </label>
-                        <label className='titleLabel'>image</label>
+                        <label className='titleLabel'>{t("image")}</label>
                     </div>
 
                     <div className='MFIBtns'>
-                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>Add Product</button>
-                        <button className='MFIBtn' onClick={() => {close()}}>Cancel</button>
+                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>{t("add")} {t("product")}</button>
+                        <button className='MFIBtn' onClick={() => {close()}}>{t("cancel")}</button>
                     </div>
                 </div>
             </div>

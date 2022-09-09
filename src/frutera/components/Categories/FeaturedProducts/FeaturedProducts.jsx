@@ -2,6 +2,7 @@ import './FeaturedProducts.scss'
 import {useEffect, useState} from "react";
 import {refresher} from "../../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 let FeaturedProductsList = [
    {
@@ -81,6 +82,7 @@ export default function FeaturedProducts() {
    const [productsList,setProductsList] = useState([])
    const [categories,setCategories] = useState([])
    const [loading,setLoading] = useState(true)
+   const {t} = useTranslation()
 
    let navigate = useNavigate()
 
@@ -150,7 +152,7 @@ export default function FeaturedProducts() {
 
                     <div className="FPCD_action">
                        <button className='FPCD_Btn'>
-                          Add To Cart
+                          {t('add2cart')}
                           <i className="fa-solid fa-cart-shopping"></i>
                        </button>
                     </div>
@@ -166,7 +168,7 @@ export default function FeaturedProducts() {
          <div className='FeaturedProducts_container'>
             <div className='FeaturedProducts_container2'>
                <div className='FP_UpperPart'>
-                  <h1 className='FP_Header'>Most Popular Product</h1>
+                  <h1 className='FP_Header'>{t('mostpoppro')}</h1>
                   <ul className='FP_categories'>
                      <li className='FPnavBtn marked'><button >All</button></li>
                      <li className='FPnavBtn'><button>Dried Fruit</button></li>
@@ -177,7 +179,7 @@ export default function FeaturedProducts() {
                <div className='FeatureProductListCont'>
                   <div className="FeatureProductsListDiv">
 
-                     {!loading && productsList.length > 0 ? ShowFeaturedProductsList(productsList,navigate):""}}
+                     {!loading && productsList.length > 0 ? ShowFeaturedProductsList(productsList,navigate):""}
                   </div>
                </div>
             </div>

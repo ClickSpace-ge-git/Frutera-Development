@@ -1,4 +1,5 @@
 import './Categories.scss'
+import {useTranslation} from "react-i18next";
 
 let HomePageCategoryList = [
    {
@@ -30,7 +31,10 @@ let HomePageCategoryList = [
    }
 ]
 
+
+
 function ShowHomePageCategoryList() {
+   const {t} = useTranslation()
    return (
       HomePageCategoryList.map( category => {
          return (
@@ -38,7 +42,7 @@ function ShowHomePageCategoryList() {
                <div className='HPCategoryCard' style={{backgroundColor: category.backgroundColor}}>
                   <div className='HPC_TextPart'>
                      <h1 className='HPC_Title'>{category.name}</h1>
-                     <p>200 items</p>
+                     <p>200 {t("items")}</p>
                   </div>
                   <div className="HPC_ImagePart">
                      <img src={category.image} alt={`Image_${category.id + 1}`} />
@@ -63,12 +67,13 @@ function Filter() {
 }
 
 export default function Categories() {
+   const {t} = useTranslation()
    return (
       <>
          <div className='Categories_container'>
             <div className='Categories_container2'>
                <div className='Categories_UpperPart'>
-                  <h1 className='Categories_Header'>Categories</h1>
+                  <h1 className='Categories_Header'>{t("categories")}</h1>
                   <select className='Categories_Select' id="select" onChange={Filter}>
                      <option value="all">All Categories</option>
                      <option value="apple">Apple</option>

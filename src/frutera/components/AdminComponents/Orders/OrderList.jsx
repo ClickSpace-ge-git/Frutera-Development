@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import FoodItemForm from "../ManageFoodItem/FoodItemForm";
 import OrderListElement from "./OrderListElement";
 import OrderListElementForm from "./OrderListElementForm";
+import {useTranslation} from "react-i18next";
 
 
 export default function OrderList({props, close}) {
@@ -9,6 +10,7 @@ export default function OrderList({props, close}) {
     const [productsList, setProductsList] = useState([])
     const [loading, setLoading] = useState(true)
     const [trigger, setTrigger] = useState(false)
+    const {t} = useTranslation()
 
     const loadingPage = () => {
         setProductsList(props.orderList)
@@ -38,30 +40,30 @@ export default function OrderList({props, close}) {
         <div className="orderlist">
             <div className="filterContainer">
                 <div className="firstPart">
-                    <h2>Order List</h2>
+                    <h2>{t("order")} {t("list")}</h2>
                     <button className='opBtn' onClick={() => {
                         openForm()
-                    }}>+ Add product Item
+                    }}>+ {t("add")} {t("product")} {t("item")}
                     </button>
                     <button className='opBtn' onClick={() => {
                         close()
-                    }}>Close
+                    }}>{t("close")}
                     </button>
                 </div>
                 <div className="secondPart">
-                    <p>show <input type="text" className='inp1'/> entries</p>
-                    <p>search: <input type="text"/></p>
+                    <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                    <p>{t("search")}: <input type="text"/></p>
                 </div>
             </div>
             <table className='OPtable'>
                 <thead>
                 <tr className='headerPart'>
-                    <td>Image</td>
-                    <td>Name</td>
-                    <td>Quantity</td>
-                    <td>Price</td>
-                    <td>Total</td>
-                    <td>Action</td>
+                    <td>{t("image")}</td>
+                    <td>{t("name")}</td>
+                    <td>{t("quantity")}</td>
+                    <td>{t("price")}</td>
+                    <td>{t("total")}</td>
+                    <td>{t("action")}</td>
                 </tr>
                 </thead>
                 <tbody>

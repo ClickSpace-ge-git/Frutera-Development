@@ -4,7 +4,7 @@ import {useState} from 'react';
 var drop = true;
 const drp = document.getElementsByClassName("dropDownList");
 const btn = document.getElementsByClassName("dropBtn");
-var index = 0;
+let index = 0;
 const languages = [
    {
       id: "en",
@@ -25,6 +25,11 @@ const languages = [
 ]
 
 export default function LanguageList() {
+   if(sessionStorage.getItem('lan') === null){
+      sessionStorage.setItem('lan',0)
+   }
+
+   let index = sessionStorage.getItem('lan')
 
    function ShowHideBox() {
       if (drop) {
@@ -39,9 +44,13 @@ export default function LanguageList() {
    }
 
    const ShowCurrentLanguage = () => {
+      if(sessionStorage.getItem('lan') === null){
+         sessionStorage.setItem('lan',0)
+      }
       const [buttonText, setButtonText] = useState(
-          <label><img src={require(`../../../images/Frutera/flags/${languages[0].id + ".jpg"}`)} alt={languages[0].id} />
-             <p>{languages[0].label}</p>
+          <label><img src={require(`../../../images/Frutera/flags/${languages[sessionStorage.getItem('lan')].id + ".jpg"}`)}
+                      alt={languages[sessionStorage.getItem('lan')].id} />
+             <p>{languages[sessionStorage.getItem('lan')].label}</p>
           </label>
       );
 
@@ -69,6 +78,7 @@ export default function LanguageList() {
          }else{
             window.location.replace(location + "?lng=" + languages[index].id)
          }
+         sessionStorage.setItem("lan",index)
       }
 
       return (

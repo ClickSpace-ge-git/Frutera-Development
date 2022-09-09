@@ -2,9 +2,11 @@ import "./ContactUsPage.scss"
 import Header2 from '../components/Header2/Header2'
 import Footer from '../components/Footer/Footer'
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 export default function ContactUsPage() {
    const [textLen,setTextLen] = useState(0)
+   const {t} = useTranslation()
 
    return (
       <>
@@ -12,33 +14,33 @@ export default function ContactUsPage() {
          <div class="ContactUsPage_container">
             <div class="CUP_box">
                <div class="CUP_left_part">
-                  <h2>Contact Us</h2>
+                  <h2>{t("contactus")}</h2>
                   <form>
                      <div class="CUP_input_row">
                         <div class="CUP_input_components">
-                           <label>Name</label>
+                           <label>{t("name")}</label>
                            <input type="text" placeholder="Name"/>
                         </div>
 
                         <div class="CUP_input_components">
-                           <label>Phone</label>
+                           <label>{t("phonenum")}</label>
                            <input type="text" placeholder="Phone"/>
                         </div>
                      </div>
 
                      <div class="CUP_input_row">
                         <div class="CUP_input_components">
-                           <label>Email</label>
+                           <label>{t("email")}</label>
                            <input type="text" placeholder="Email"/>
                         </div>
                      
                         <div class="CUP_input_components">
-                           <label>Problem Type</label>
+                           <label>{t("reason")}</label>
                            <input type="text" placeholder="Problem Type"/>
                         </div>
                      </div>
                      <div className="CUP_TextareaPart">
-                        <label>Message</label>
+                        <label>{t("message")}</label>
                         <textarea id="textarea_1" rows="5" placeholder="Message" maxLength="1000" onChange={(e) => {setTextLen(e.target.value.length)}}></textarea>
                         <p class="textarea_limit" id="textarea_limit_id">{textLen}/1000</p>
                      </div>
@@ -47,18 +49,18 @@ export default function ContactUsPage() {
                </div>
 
                <div class="CUP_right_part">
-                  <h2>Reached Us</h2>
+                  <h2>{t("reachus")}</h2>
                   <table className="CUP_table">
                      <tr>
-                           <td>Email:</td>
+                           <td>{t("email")}:</td>
                            <td><a href="#">Test.Tester@gmail.com</a></td>
                      </tr>
                      <tr>
-                           <td>Phone:</td>
+                           <td>{t("phonenum")}:</td>
                            <td>(+995) 555 123 456</td>
                      </tr>
                      <tr>
-                           <td>Address:</td>
+                           <td>{t("address")}:</td>
                            <td>221B, Baker Street</td>
                      </tr>
                   </table><br/><br/><br/>

@@ -1,8 +1,10 @@
 import './Header.scss';
 import LanguageBar from '../LanguageBar/LanguageBar'
 import {useTranslation} from "react-i18next";
+import {useNavigate} from "react-router-dom";
 
 export default function MainHeader() {
+   let navigate = useNavigate()
    const {t} = useTranslation()
    return (
       <>
@@ -17,7 +19,7 @@ export default function MainHeader() {
 
                <div className='navigationBar'>
                   <div>
-                     <div className='logo'>
+                     <div className='logo' onClick={(e) => {navigate("/")}}>
                         <img src={require('../../../images/Frutera/logo.png')} alt="logo" />
                      </div>
                   </div>
@@ -37,7 +39,7 @@ export default function MainHeader() {
                         <li className='navBtn'><a href="/aboutus">{t("aboutus")}</a></li>
                         <li className='navBtn'><a href="/products">{t("products")}</a></li>
                         <li className='navBtn'><a href="/blogs">{t("blogs")}</a></li>
-                        <li className='navBtn'><a href="/contactus">{t("contsctus")}</a></li>
+                        <li className='navBtn'><a href="/contactus">{t("contactus")}</a></li>
                      </ul>
 
                      <div className="btn">

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import BlogListElement from "./BlogListElement";
 import BlogListElementForm from "./BlogListElementForm";
+import {useTranslation} from "react-i18next";
 
 
 export default function BlogList({props, close}) {
@@ -9,6 +10,7 @@ export default function BlogList({props, close}) {
     const [loading, setLoading] = useState(true)
     const [trigger, setTrigger] = useState(false)
     const [editElement,setEditElement] = useState({})
+    const {t} = useTranslation()
 
     const loadingPage = () => {
         setProductsList(props.postsList)
@@ -44,28 +46,28 @@ export default function BlogList({props, close}) {
         <div className="orderlist">
             <div className="filterContainer">
                 <div className="firstPart">
-                    <h2>Paragraphs List</h2>
+                    <h2>{t("paragraphs")} {t("list")}</h2>
                     <button className='opBtn' onClick={() => {
                         editItemHandler([])
-                    }}>+ Add Paragraph
+                    }}>+ {t("add")} {t("paragraph")}
                     </button>
                     <button className='opBtn' onClick={() => {
                         close()
-                    }}>Close
+                    }}>{t("close")}
                     </button>
                 </div>
                 <div className="secondPart">
-                    <p>show <input type="text" className='inp1'/> entries</p>
-                    <p>search: <input type="text"/></p>
+                    <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                    <p>{t("search")}: <input type="text"/></p>
                 </div>
             </div>
             <div className="BOPtable">
                 <table className='OPtable'>
                     <thead>
                     <tr className='headerPart'>
-                        <td>Image</td>
-                        <td>Title</td>
-                        <td>Text</td>
+                        <td>{t("image")}</td>
+                        <td>{t("title")}</td>
+                        <td>{t("text")}</td>
                     </tr>
                     </thead>
                     <tbody>

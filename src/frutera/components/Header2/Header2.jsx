@@ -1,20 +1,22 @@
 import './Header2.scss'
-import LanguageList from '../LanguageBar/LanguageBar'
-import {useLocation} from "react-router-dom";
+import LanguageBar from '../LanguageBar/LanguageBar'
+import {useLocation, useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function PageName() {
    let location = useLocation()
+   const {t} = useTranslation()
    switch (location.pathname.split("/").filter(e => e)[0]){
       case "aboutus":
-         return ("About Us")
+         return (t("aboutus"))
       case "products":
-         return ("Products")
+         return (t("products"))
       case "blogs":
-         return ("Blog")
+         return (t("blogs"))
       case "cart":
-         return ("Cart")
+         return (t("cart"))
       case "user":
-         return ("Profile")
+         return (t("user"))
       default:
          return ("")
    }
@@ -22,19 +24,20 @@ function PageName() {
 
 function SwitchColor() {
    let location = useLocation()
+   const {t} = useTranslation()
 
    return (
        <>
           <ul className="nav_links">
-             <li className='navBtn'><a href="/home">Home</a></li>
-             {location.pathname === "/aboutus" ? (<li className='navBtn marked'><a href="/aboutus">About Us</a></li>) :
-                 (<li className='navBtn'><a href="/aboutus">About Us</a></li>)}
-             {location.pathname.substring(0, 9) === "/products" ? (<li className='navBtn marked'><a href="/products">Products</a></li>) :
-                 (<li className='navBtn'><a href="/products">Products</a></li>)}
-             {location.pathname.substring(0, 5) === "/blog" ? (<li className='navBtn marked'><a href="/blogs">Blog</a></li>) :
-                 (<li className='navBtn'><a href="/blogs">Blog</a></li>)}
-             {location.pathname === "/contactus" ? (<li className='navBtn marked'><a href="/contactus">Contact Us</a></li>) :
-                 (<li className='navBtn'><a href="/contactus">Contact Us</a></li>)}
+             <li className='navBtn'><a href="/home">{t('home')}</a></li>
+             {location.pathname.substring(0, 8) === "/aboutus" ? (<li className='navBtn marked'><a href="/aboutus">{t('aboutus')}</a></li>) :
+                 (<li className='navBtn'><a href="/aboutus">{t('aboutus')}</a></li>)}
+             {location.pathname.substring(0, 9) === "/products" ? (<li className='navBtn marked'><a href="/products">{t('products')}</a></li>) :
+                 (<li className='navBtn'><a href="/products">{t('products')}</a></li>)}
+             {location.pathname.substring(0, 5) === "/blog" ? (<li className='navBtn marked'><a href="/blogs">{t('blogs')}</a></li>) :
+                 (<li className='navBtn'><a href="/blogs">{t('blogs')}</a></li>)}
+             {location.pathname === "/contactus" ? (<li className='navBtn marked'><a href="/contactus">{t('contactus')}</a></li>) :
+                 (<li className='navBtn'><a href="/contactus">{t('contactus')}</a></li>)}
 
 
           </ul>
@@ -43,13 +46,14 @@ function SwitchColor() {
 }
 
 export default function Header2() {
+   let navigate = useNavigate()
    return (
        <>
           <div className="H2container">
              <div className="images">
                 <img className='backgroundImage' src={require("../../../images/HomePage/background2.png")} alt="dried_fruit_img" />
                 <img className='whiteFigure' src={require("../../../images/HomePage/white_figure_2.png")} alt="white_figure_2.png" />
-                <div className="logoWithName">
+                <div className="logoWithName" onClick={(e) => {navigate("/")}}>
                    <img className='logo' src={require('../../../images/Frutera/logo.png')} alt="logo" />
                    <h3 className='logoName'>Frutera</h3>
                 </div>
@@ -60,10 +64,10 @@ export default function Header2() {
                 </nav>
                 <div className="btn">
                    <a href="/cart"><i className="fa-solid fa-cart-shopping"></i></a>
-                   <a href="/#"><i className="fa-solid fa-user"></i></a>
+                   <a href="/user"><i className="fa-solid fa-user"></i></a>
                 </div>
                 <div className="LLContainer">
-                   <LanguageList />
+                   <LanguageBar />
                 </div>
              </div>
 

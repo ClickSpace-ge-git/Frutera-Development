@@ -1,5 +1,6 @@
 import './Slider.scss'
 import {useState} from 'react';
+import {useTranslation} from "react-i18next";
 
 // -------------------- Public Variables --------------------
 
@@ -106,6 +107,7 @@ function ShowSlide(index) {
 
 // -------------------- Main Function --------------------
 export default function Slider() {
+   const {t} = useTranslation()
    return (
       <>
          <div className='Scontainer'>
@@ -120,8 +122,8 @@ export default function Slider() {
                      dryers or dehydrators.
                   </p>
                   <div className="slideBtns">
-                     <a className="slideBtn1 moreStyle" href="/#">Learn more</a>
-                     <a className="slideBtn2 moreStyle" href="/#">Buy now</a>
+                     <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>
+                     <a className="slideBtn2 moreStyle" href="/#">{t("buyn")}</a>
                   </div>
                </div>
             </div>
@@ -136,8 +138,8 @@ export default function Slider() {
                      dryers or dehydrators.
                   </p>
                   <div className="slideBtns">
-                     <a className="slideBtn1 moreStyle" href="/#">Learn more</a>
-                     <a className="slideBtn2 moreStyle" href="/#">Buy now</a>
+                     <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>
+                     <a className="slideBtn2 moreStyle" href="/#">{t("buyn")}</a>
                   </div>
                </div>
             </div>
@@ -152,8 +154,8 @@ export default function Slider() {
                      dryers or dehydrators.
                   </p>
                   <div className="slideBtns">
-                     <a className="slideBtn1 moreStyle" href="/#">Learn more</a>
-                     <a className="slideBtn2 moreStyle" href="/#">Buy now</a>
+                     <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>
+                     <a className="slideBtn2 moreStyle" href="/#">{t("buyn")}</a>
                   </div>
                </div>
             </div>

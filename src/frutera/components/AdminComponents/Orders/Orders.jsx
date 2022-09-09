@@ -4,6 +4,7 @@ import React, {useEffect, useState} from "react";
 import OrderElementForm from "./OrderElementForm";
 import OrderList from "./OrderList";
 import OrderElement from "./OrderElement";
+import {useTranslation} from "react-i18next";
 
 let demoproductList = [
    {
@@ -90,6 +91,7 @@ export default function Orders() {
    const [trigger,setTrigger]= useState(false)
    const [triggerList,setTriggerList]= useState(false)
    const [editElement,setEditElement] = useState({})
+   const {t} = useTranslation()
 
    const loadingPage = () => {
       setOrdersList(demoordersList)
@@ -139,24 +141,24 @@ export default function Orders() {
                
                <div className="filterContainer">
                   <div className="firstPart">
-                     <h2>Orders List</h2>
+                     <h2>{t("orders")} {t("list")}</h2>
                   </div>
                   <div className="secondPart">
-                     <p>show <input type="text" className='inp1'/> entries</p>
-                     <p>search: <input type="text" /></p>
+                     <p>{t("show")} <input type="text" className='inp1'/> {t("entries")}</p>
+                     <p>{t("search")}: <input type="text" /></p>
                   </div>
                </div>
 
                <table className='Otable'>
                   <thead>
-                     <td>Full Name</td>
-                     <td>Email</td>
-                     <td>Phone Number</td>
-                     <td>Address</td>
-                     <td>Order List</td>
-                     <td>Total Price</td>
-                     <td>Order Status</td>
-                     <td>Action</td>
+                     <td>{t("fullname")}</td>
+                     <td>{t("email")}</td>
+                     <td>{t("phonenum")}</td>
+                     <td>{t("address")}</td>
+                     <td>{t("order")} {t("list")}</td>
+                     <td>{t("total")} {t("price")}</td>
+                     <td>{t("order")} {t("status")}</td>
+                     <td>{t("action")}</td>
                   </thead>
                   <tbody>
                   {!loading && ordersList.length >0? ordersList.map(item => <OrderElement handleList={editItemHandlerList} handleEdit={editItemHandler} props={item} key={item.id}/> ) : "" }

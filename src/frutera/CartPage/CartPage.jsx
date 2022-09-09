@@ -5,6 +5,7 @@ import Header2 from '../components/Header2/Header2'
 import Footer from '../components/Footer/Footer'
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 let productList = [
     {
@@ -53,6 +54,7 @@ export default function CartPage() {
     const [discountMod,setDiscountMod] = useState(1)
     const [temp,setTemp] = useState("")
     const [shippingCost,setShippingCost] = useState(0)
+    const {t} = useTranslation()
 
     const loadingPage = () => {
         setCartList(productList)
@@ -107,17 +109,17 @@ export default function CartPage() {
               <div className="productPart">
                   <div className="PPbackground">
                       <div className="Ptext">
-                          <h1>Shopping Cart</h1>
-                          <h2>{cartList.length} items</h2>
+                          <h1>{t('shoppcart')}</h1>
+                          <h2>{cartList.length} {t('items')}</h2>
                       </div>
                       <div className='productTable'>
                           <table>
                               <thead>
                               <tr className='headerPart'>
-                                  <td className='product_details' colSpan={2}>Product Details</td>
-                                  <td>Quantity</td>
-                                  <td>Price</td>
-                                  <td>Total</td>
+                                  <td className='product_details' colSpan={2}>{t('productdet')}</td>
+                                  <td>{t('quant')}</td>
+                                  <td>{t('price')}</td>
+                                  <td>{t('total')}</td>
                               </tr>
                               </thead>
                               <tbody>
@@ -129,13 +131,13 @@ export default function CartPage() {
               </div>
 
               <div className="OrderPart">
-                  <h1>Order Summery</h1>
+                  <h1>{t('ordersum')}</h1>
                   <div className='OPheader'>
-                      <h4>ITEMS {cartList.length}</h4>
+                      <h4>{t('items')} {cartList.length}</h4>
                       {totalCost}
                   </div>
                   <div className='shippingPart'>
-                      <label>SHIPPING</label><br />
+                      <label>{t('shipping')}</label><br />
                       <select name="shipping" id="shipping" onChange={shippingHandler}>
                           <option value="NO">No Delivery - 0.00 GEL</option>
                           <option value="SD">Standard Delivery - 5.00 GEL</option>
@@ -143,21 +145,21 @@ export default function CartPage() {
                           <option value="VIP">VIP Delivery - 30.00 GEL</option>
                       </select><br />
 
-                      <label>ADDRESS</label><br />
+                      <label>{t('address')}</label><br />
                       <input type="text" placeholder='Enter your address' /><br />
 
-                      <label>PROMO CODE</label><br />
+                      <label>{t('promo')}</label><br />
                       <input type="text" placeholder='Enter your code' onChange={voucherHandler} value={temp}/><br />
 
-                      <button className='applyBtn' onClick={() => (voucherSetter())}>APPLY</button>
+                      <button className='applyBtn' onClick={() => (voucherSetter())}>{t('apply')}</button>
                   </div>
 
                   <div className='OPtotalPrice'>
-                      <h4>Total Cost</h4>
+                      <h4>{t('totalcost')}</h4>
                       <h4>{Math.round((shippingCost + totalCost*discountMod)*100)/100} GEL</h4>
                   </div>
 
-                  <button className='checkoutBtn' onClick={(e) => {navigate("/checkout")}}>BUY</button>
+                  <button className='checkoutBtn' onClick={(e) => {navigate("/checkout")}}>{t('buy')}</button>
               </div>
           </div>
          <Footer />

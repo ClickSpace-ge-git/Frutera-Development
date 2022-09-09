@@ -2,6 +2,7 @@ import './LoginPage.scss'
 import {useState} from "react";
 import axios from "../../Utils/axios";
 import {useNavigate} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const LOGIN_URL = '/api/User/LoginUser';
 
@@ -9,6 +10,7 @@ export default function LoginPage() {
    const [email,setEmail] = useState("")
    const [password,setPassword] = useState("")
    const [error,setError] = useState("")
+   const {t} = useTranslation()
 
    let navigate = useNavigate()
 
@@ -60,10 +62,10 @@ export default function LoginPage() {
             
                <div className='LP_RightPart'>
                   <form onSubmit={handleLogin}>
-                     <div class="LP_MainTitle"><h1>Log in</h1></div>
+                     <div class="LP_MainTitle"><h1>{t('login')}</h1></div>
 
                      <div class="LP_input_components">
-                        <label>Email</label>
+                        <label>{t('email')}</label>
                         <input type="text" placeholder="Enter Email"
                         autoComplete="off"
                         value={email}
@@ -72,7 +74,7 @@ export default function LoginPage() {
                      </div>
 
                      <div class="LP_input_components">
-                        <label>Password</label>
+                        <label>{t('password')}</label>
                         <input type="password" placeholder="Enter Password"
                                autoComplete="off"
                                value={password}
@@ -80,8 +82,8 @@ export default function LoginPage() {
                                required/>
                      </div>
 
-                     <div className="LP_Lsubmit"><button type="submit">Log in</button></div>
-                     <div className="LP_Lsubmit"><button onClick={(e) => {navigate("/register")}}>Register</button></div>
+                     <div className="LP_Lsubmit"><button type="submit">{t('login')}</button></div>
+                     <div className="LP_Lsubmit"><button onClick={(e) => {navigate("/register")}}>{t('register')}</button></div>
                   </form>
                </div>
             </div>

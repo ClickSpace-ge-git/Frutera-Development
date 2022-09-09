@@ -3,6 +3,7 @@ import Comments from "../Comments/Comments";
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {refresher} from "../../../Utils/axios";
+import {useTranslation} from "react-i18next";
 
 let oneBlogCardsList = [
    {
@@ -139,6 +140,7 @@ let blogPageJson = {
 export default function OneBlogCard() {
    const [paragraphList, setparagraphList] = useState({date:"never"})
    const [loading, setLoading] = useState(true)
+   const {t} = useTranslation()
    let navigate = useNavigate()
 
    const goToBlog = (props) =>{
@@ -228,7 +230,7 @@ export default function OneBlogCard() {
                        </div>
                        <div className="oneBlogCardTextPart">
                           <div className="oneBlogCardtitle"><h3>{oneblogcard.title}</h3></div>
-                          <button className="oneBlogCardBtn" onClick={(e) => {goToBlog(oneblogcard.id)}}>See more</button>
+                          <button className="oneBlogCardBtn" onClick={(e) => {goToBlog(oneblogcard.id)}}>{t('seemore')}</button>
                        </div>
                     </div>
              )
