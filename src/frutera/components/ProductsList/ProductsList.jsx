@@ -1,6 +1,6 @@
 import './ProductsList.scss'
 import {useEffect, useState} from "react";
-import {refresher} from "../../../Utils/axios";
+import axios, {refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -168,7 +168,7 @@ function ShowProductCardList(props,goToProduct,t) {
                            }
                         </div>
                      </div>
-                     <div className='PCD_width'><h4>{product.weight} g</h4></div>
+                     {/*<div className='PCD_width'><h4>{product.weight} g</h4></div>*/}
                   </div>
 
                   <div className="PCD_action">
@@ -197,7 +197,8 @@ export default function ProductsList() {
 
    const loadingPage = async () => {
       try{
-         setProductPage(productCardList)
+         const response = await (await axios.get("/api/products/GetAllProducts"))
+         setProductPage(response?.data)
          if( productList != null){
             setLoading(false)
          }

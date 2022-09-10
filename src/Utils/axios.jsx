@@ -28,9 +28,15 @@ export const axiosPrivate = axios.create({
     withCredentials:true
 })
 
-export const useAxiosPrivate = async (props) => {
+export const useAxiosPrivate = async ({props,body}) => {
+    let navigate = useNavigate()
     const tkn = sessionStorage.getItem('token');
+    if(tkn === null){
+        navigate("/login",{replace:true})
+        return false
+    }
     const token = JSON.parse(tkn);
+
 
     try{
         const response = await axios.get(BASE_URL+props, {
@@ -57,9 +63,9 @@ export const useAxiosPrivate = async (props) => {
 
 const refreshToken = async () => {
 
-    var tkn = sessionStorage.getItem('token');
-    var token = JSON.parse(tkn);
-    var tokenModel = token.refreshToken;
+    const tkn = sessionStorage.getItem('token');
+    const token = JSON.parse(tkn);
+    const tokenModel = token.refreshToken;
     const response = await axios.post(BASE_URL + REFRESH_METHOD_URL, tokenModel, {
         headers: {
             'Content-Type': 'application/json'
@@ -70,4 +76,45 @@ const refreshToken = async () => {
         return true;
     }
     return false;
+}
+
+const UseAxiosP = () => {
+    let navigate = useNavigate()
+    const tkn = sessionStorage.getItem('token');
+    const token = JSON.parse(tkn);
+
+    useEffect(() => {
+        const requestInterceptor = axiosPrivate.interceptors.request.use(
+            config => {
+                if(!config.headers['Authorization']) {
+                    config.headers['Authorization'] = `Bearer ${token}`;
+                    config.headers['Content-Type'] = `application/json;charset=UTF-8`;
+                    config.headers['Access-Control-Allow-Origin'] = "*";
+                }
+                return config;
+            }, (err) => {
+                Promise.reject(err)
+            }
+        );
+
+        const responseInterceptor = axiosPrivate.interceptors.response.use(
+            response => response,
+            async(error) => {
+                const prevReq = error?.config;
+                if(error?.response?.status === 401){
+                    sessionStorage.removeItem("token")
+                    navigate("/login");
+                }
+                return Promise.reject(error);
+            }
+        );
+
+        return () => {
+            axiosPrivate.interceptors.request.eject(requestInterceptor);
+            axiosPrivate.interceptors.response.eject(responseInterceptor);
+        }
+
+    },)
+
+    return axiosPrivate;
 }

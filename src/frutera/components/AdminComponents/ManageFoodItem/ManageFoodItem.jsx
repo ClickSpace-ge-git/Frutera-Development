@@ -117,10 +117,8 @@ export default function ManageFoodItem() {
 
    const openForm = () => {
       if(trigger){
-         console.log("close")
          setTrigger(false)
       }else{
-         console.log("open")
          setTrigger(true)
       }
    }
@@ -147,10 +145,11 @@ export default function ManageFoodItem() {
                <table className='MFtable'>
                   <thead>
                      <td>{t("image")}</td>
+                     <td>{t("id")}</td>
                      <td>{t("name")}</td>
                      <td>{t("description")}</td>
                      <td>{t("price")}</td>
-                     <td>{t("discount")}</td>
+                     <td>{t("category")}</td>
                      <td>{t("stock")}</td>
                      <td>{t("action")}</td>
                   </thead>

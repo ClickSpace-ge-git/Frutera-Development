@@ -4,41 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/RegisterPage/RegisterPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/Voucher.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/Voucher.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/VoucherElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Voucher/VoucherElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneBlogCard/OneBlogCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithLeftImage/TextWithLeftImage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/TextWithRightImage/TextWithRightImage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +131,7 @@
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
       <workItem from="1662352253902" duration="13844000" />
+      <workItem from="1662812513556" duration="6185000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -298,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662391735921</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version">
+      <created>1662759542428</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1662759542428</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +315,7 @@
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
     <MESSAGE value="Initializing project demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initializing project demo" />
+    <MESSAGE value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
   </component>
 </project>

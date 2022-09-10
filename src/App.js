@@ -43,7 +43,6 @@ export default function App() {
                     }>
                     </Route>
                     <Route path='/products/:productId' element={<ProductPage/>}/>
-                    <Route path='/category' element={<ProductsPage/>}/>
                     <Route path='/dashboard' element={
                         <RouteProtector>
                             <AdminPage/>

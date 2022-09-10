@@ -1,11 +1,8 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
-import {authenticateUser, useAxiosPrivate, refresher} from "../../../Utils/axios";
-import PopularProducts from "./PopularProducts";
+import {useAxiosPrivate, refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-
-const ADDTOCART_URL_First = '/api/Cart/AddInCart/'
 
 let oneProductDemo = {
    id: "0",
@@ -73,6 +70,7 @@ export default function OneProduct() {
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
    const {t} = useTranslation()
+   let axsios = useAxiosPrivate
 
    let navigate = useNavigate()
 
@@ -107,7 +105,7 @@ export default function OneProduct() {
 
    const AddToCart = async () =>{
       const typingTimeOut = setTimeout(async function() {
-         //const response = await useAxiosPrivate('/api/Cart/AddInCart/' + productPage.id + '?quantity=' + quantity);
+         const response = await axsios('/api/Cart/AddInCart/' + productPage.id + '?quantity=' + quantity);
       }, 500);
       return () => {
          clearTimeout(typingTimeOut);
@@ -159,7 +157,7 @@ export default function OneProduct() {
                                 }
                              </div>
                           </div>
-                          <div className='OPCD_width'><h4>{product.weight} g</h4></div>
+                          {/*<div className='OPCD_width'><h4>{product.weight} g</h4></div>*/}
                        </div>
 
                        <div className="OPCD_action">

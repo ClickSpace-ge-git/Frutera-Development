@@ -1,17 +1,21 @@
 import {useEffect, useState} from "react";
 import './FoodItemForm.scss';
 import {useTranslation} from "react-i18next";
+import UseAxiosP from "../../../../Utils/axios"
+import {useNavigate} from "react-router-dom";
 
 export default function FoodItemForm({props,close}){
     const [name,setName] = useState("")
     const [price,setPrice] = useState(0)
-    const [discount,setDiscount] = useState("0")
     const [stock,setStock] = useState("IS")
     const [des,setDes] = useState("")
     const [img,setImg] = useState()
     const [upload,setUpload] = useState()
+    const [category,setCategory] = useState('')
     const [uploaded,setUploaded] = useState(false)
+    const [id,setId] = useState("")
     const {t} = useTranslation()
+    let navigate = useNavigate()
 
     useEffect(() => {
         if(props !== {}){
@@ -25,7 +29,24 @@ export default function FoodItemForm({props,close}){
         }
     },[])
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        const body = {
+            id: id,
+            Name: name,
+            description:des,
+            price: Number(price),
+            imageUrl: URL.createObjectURL(upload),
+            category: category,
+        }
+
+        try{
+            const response = await (await UseAxiosP.post('/api/Products/InsertProduct',JSON.stringify(body))).data;
+            console.log(response)
+        }
+        catch(er){
+            navigate('/dashboard');
+            console.log(er)
+        }
 
         close()
     }
@@ -52,8 +73,12 @@ export default function FoodItemForm({props,close}){
                         <input type="text" placeholder='Enter Price' value={price} onChange={(e) =>{setPrice(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
-                        <label className='titleLabel'>{t("discount")}</label>
-                        <input type="text" placeholder='Enter Discount' value={discount} onChange={(e) =>{setDiscount(e.target.value)}}/>
+                        <label className='titleLabel'>{t("category")}</label>
+                        <input type="text" placeholder='Enter Category' value={category} onChange={(e) =>{setCategory(e.target.value)}}/>
+                    </div>
+                    <div className='inputBx'>
+                        <label className='titleLabel'>{t("id")}</label>
+                        <input type="text" placeholder='Enter Category' value={id} onChange={(e) =>{setId(e.target.value)}}/>
                     </div>
                     <div className='inputBx'>
                         <label className='titleLabel'>{t("stock")}</label>
