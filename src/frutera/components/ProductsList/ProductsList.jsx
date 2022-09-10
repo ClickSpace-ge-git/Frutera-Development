@@ -11,7 +11,8 @@ let productCardList = [
       weight: 100,
       price: 10.96,
       discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/001.png")
+      image: require("../../../images/ProductPage/OneProduct/001.png"),
+      category: "prunes"
    },
 
    {
@@ -20,7 +21,9 @@ let productCardList = [
       weight: 200,
       price: 11.96,
       discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png")
+      image: require("../../../images/ProductPage/OneProduct/001.png"),
+      category: "apple"
+
    },
 
    {
@@ -29,7 +32,8 @@ let productCardList = [
       weight: 300,
       price: 13.96,
       discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/002.png")
+      image: require("../../../images/ProductPage/OneProduct/002.png"),
+      category: "apple"
    },
 
    {
@@ -38,7 +42,8 @@ let productCardList = [
       weight: 400,
       price: 14.96,
       discount: null,
-      image: require("../../../images/ProductPage/OneProduct/002.png")
+      image: require("../../../images/ProductPage/OneProduct/002.png"),
+      category: "apple"
    },
 
    {
@@ -47,7 +52,8 @@ let productCardList = [
       weight: 100,
       price: 10.96,
       discount: 10,
-      image: require("../../../images/ProductPage/OneProduct/003.png")
+      image: require("../../../images/ProductPage/OneProduct/003.png"),
+      category: "prunes"
    },
 
    {
@@ -56,7 +62,8 @@ let productCardList = [
       weight: 200,
       price: 11.96,
       discount: null,
-      image: require("../../../images/ProductPage/OneProduct/004.png")
+      image: require("../../../images/ProductPage/OneProduct/004.png"),
+      category: "apple"
    },
 
    {
@@ -65,7 +72,8 @@ let productCardList = [
       weight: 300,
       price: 13.96,
       discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/004.png")
+      image: require("../../../images/ProductPage/OneProduct/004.png"),
+      category: "apple"
    },
 
    {
@@ -74,7 +82,8 @@ let productCardList = [
       weight: 400,
       price: 14.96,
       discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png")
+      image: require("../../../images/ProductPage/OneProduct/001.png"),
+      category: "apple"
    }
 ]
 
