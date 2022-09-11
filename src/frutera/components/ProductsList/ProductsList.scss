@@ -237,6 +237,7 @@ $gridColumnSize: 20rem;
       .CategorieListDiv {
          display: grid;
          grid-template-columns: $gridColumnSize $gridColumnSize;
+         justify-content: center;
 
          .CategoryCardDiv {
             margin: 0.5rem;

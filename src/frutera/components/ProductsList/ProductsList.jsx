@@ -84,7 +84,25 @@ let productCardList = [
       discount: null,
       image: require("../../../images/ProductPage/OneProduct/001.png"),
       category: "apple"
-   }
+   },
+   {
+      id: "8",
+      name: "Dried Red Apple (Jona Gold)",
+      weight: 400,
+      price: 14.96,
+      discount: null,
+      image: require("../../../images/ProductPage/OneProduct/001.png"),
+      category: "apple"
+   },
+   {
+      id: "9",
+      name: "Dried Red Apple (Jona Gold)",
+      weight: 400,
+      price: 14.96,
+      discount: null,
+      image: require("../../../images/ProductPage/OneProduct/001.png"),
+      category: "apple"
+   },
 ]
 
 let categoryListDemo = [
@@ -110,15 +128,20 @@ let categoryListDemo = [
       id: "3",
       name: "Dried Peaches",
       image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
+   },
+   {
+      id: "4",
+      name: "Dried Peaches",
+      image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
    }
 ]
 
-function ShowCategoryList(props) {
+function ShowCategoryList(props,setCat) {
    return (
       props.map( category => {
          return (
             <>
-               <div className="CategoryCardDiv" key={category.id}>
+               <div className="CategoryCardDiv" key={category.id} onClick={(e) => {setCat(category.id); console.log(category)}}>
                   <div className='CCD_image'>
                      <img src={category.image} alt={`00${category.id + 1}`} />
                   </div>
@@ -199,6 +222,7 @@ export default function ProductsList() {
    const [loading, setLoading] = useState(true)
    let navigate = useNavigate()
    const {t} = useTranslation()
+   const [loadCategory,setLoadCategory] = useState('')
 
    const goToProduct = (props) =>{
       navigate("/products/" + props)
@@ -206,8 +230,9 @@ export default function ProductsList() {
 
    const loadingPage = async () => {
       try{
-         const response = await (await axios.get("/api/products/GetAllProducts"))
-         setProductPage(response?.data)
+         //const response = await (await axios.get("/api/products/GetAllProducts"))
+         //setProductPage(response?.data)
+         setProductPage(productCardList)
          if( productList != null){
             setLoading(false)
          }
@@ -228,7 +253,7 @@ export default function ProductsList() {
             <div className='CategorieListCont'>
                <h1 className='CLHeaderTitle'>{t('categories')}</h1>
                <div className="CategorieListDiv">
-                  {categoryList.length > 0 ? ShowCategoryList(categoryList):""}
+                  {categoryList.length > 0 ? ShowCategoryList(categoryList,setLoadCategory):""}
                </div>
             </div>
 

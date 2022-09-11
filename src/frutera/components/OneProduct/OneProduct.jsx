@@ -221,14 +221,14 @@ export default function OneProduct() {
                       </div>
                    </div>
                    :""}
-               <div className="OP_moreProducts">
+               {/*<div className="OP_moreProducts">
                   <div className="OP_moreProducts_Title">
                      <h1>{t('similar')} {t('products')}</h1>
                   </div>
                   <div className="OP_moreProducts_List">
                      {ShowProductCardList(productCardList)}
                   </div>
-               </div>
+               </div>*/}
             </div>
          </div>
       </>

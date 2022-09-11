@@ -1,5 +1,6 @@
 import './Categories.scss'
 import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 let HomePageCategoryList = [
    {
@@ -31,43 +32,44 @@ let HomePageCategoryList = [
    }
 ]
 
-
-
-function ShowHomePageCategoryList() {
-   const {t} = useTranslation()
-   return (
-      HomePageCategoryList.map( category => {
-         return (
-            <>
-               <div className='HPCategoryCard' style={{backgroundColor: category.backgroundColor}}>
-                  <div className='HPC_TextPart'>
-                     <h1 className='HPC_Title'>{category.name}</h1>
-                     <p>200 {t("items")}</p>
-                  </div>
-                  <div className="HPC_ImagePart">
-                     <img src={category.image} alt={`Image_${category.id + 1}`} />
-                  </div>
-               </div>
-            </>
-         )
-      })
-   )
-}
-
-function Filter() {
-   var category = document.getElementsByClassName("Category")
-   var select = document.getElementById("select")
-   for (var key = 0; key < category.length; key++){
-      if((category[key].id === select.options[select.selectedIndex].value) || (select.options[select.selectedIndex].value === "all")) {
-         category[key].className = category[key].className.replace(" hide", " none")
-      } else {
-         category[key].className = category[key].className.replace(" none", " hide")
-      }
-   }
-}
-
 export default function Categories() {
    const {t} = useTranslation()
+   const [loadCategory,setLoadCategory] = useState('')
+   const [categoriesList, setCategoriesList] = useState([])
+
+
+   function ShowHomePageCategoryList(props,setCat) {
+      return (
+          props.map( category => {
+             return (
+                 <>
+                    <div className='HPCategoryCard' style={{backgroundColor: category.backgroundColor}}>
+                       <div className='HPC_TextPart'>
+                          <h1 className='HPC_Title'>{category.name}</h1>
+                          <p>200 {t("items")}</p>
+                       </div>
+                       <div className="HPC_ImagePart">
+                          <img src={category.image} alt={`Image_${category.id + 1}`} />
+                       </div>
+                    </div>
+                 </>
+             )
+          })
+      )
+   }
+
+   function Filter() {
+      var category = document.getElementsByClassName("Category")
+      var select = document.getElementById("select")
+      for (var key = 0; key < category.length; key++){
+         if((category[key].id === select.options[select.selectedIndex].value) || (select.options[select.selectedIndex].value === "all")) {
+            category[key].className = category[key].className.replace(" hide", " none")
+         } else {
+            category[key].className = category[key].className.replace(" none", " hide")
+         }
+      }
+   }
+
    return (
       <>
          <div className='Categories_container'>

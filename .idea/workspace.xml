@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="demolist update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
     </list>
@@ -131,7 +129,8 @@
       <workItem from="1662097683007" duration="2423000" />
       <workItem from="1662104548602" duration="2793000" />
       <workItem from="1662352253902" duration="13844000" />
-      <workItem from="1662812513556" duration="6185000" />
+      <workItem from="1662812513556" duration="7137000" />
+      <workItem from="1662909714158" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -280,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662759542428</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Working on database implementation">
+      <created>1662832954937</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662832954937</updated>
+    </task>
+    <task id="LOCAL-00023" summary="demolist update">
+      <created>1662833237237</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662833237237</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +329,8 @@
     <MESSAGE value="Added Ioanes Contact page with functionality" />
     <MESSAGE value="Initializing project demo" />
     <MESSAGE value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
+    <MESSAGE value="Working on database implementation" />
+    <MESSAGE value="demolist update" />
+    <option name="LAST_COMMIT_MESSAGE" value="demolist update" />
   </component>
 </project>

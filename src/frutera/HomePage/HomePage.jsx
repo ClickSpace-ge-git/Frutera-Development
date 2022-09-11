@@ -14,7 +14,7 @@ export default function HomePage() {
             <Header />
             <Slider />
             <FeaturedProducts />
-            <Categories />
+            {/*<Categories/>*/}
             <Video />
             <Footer />
          </div>
