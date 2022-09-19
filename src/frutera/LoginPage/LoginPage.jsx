@@ -1,6 +1,6 @@
 import './LoginPage.scss'
 import {useState} from "react";
-import axios from "../../Utils/axios";
+import axios from "../../Utils/axios"
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 

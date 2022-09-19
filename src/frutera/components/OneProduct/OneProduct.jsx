@@ -1,6 +1,6 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
-import {useAxiosPrivate, refresher} from "../../../Utils/axios";
+import {refresher, UseAxiosP} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -70,7 +70,7 @@ export default function OneProduct() {
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
    const {t} = useTranslation()
-   let axsios = useAxiosPrivate
+   let axsios = UseAxiosP
 
    let navigate = useNavigate()
 
@@ -100,7 +100,7 @@ export default function OneProduct() {
 
    useEffect(() => {
       loadingPage()
-      refresher(loadingPage)
+      //refresher(loadingPage)
    },[])
 
    const AddToCart = async () =>{

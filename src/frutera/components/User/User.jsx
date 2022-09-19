@@ -95,7 +95,7 @@ function User() {
                                     </div>
                                     <div class="input-box">
                                         <span class="details">{t('change')} {t('password')}</span>
-                                        <input type="password" id="password" value={password}
+                                        <input type="password" id="changepassword" value={password}
                                                onChange={(e) => handleInputChange(e)}
                                                placeholder={t('change') + " " + t('password')}/>
                                     </div>

@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer'
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import CardPayment from "../CheckOutPage/CardPayment";
 
 let productList = [
     {
@@ -55,6 +56,7 @@ export default function CartPage() {
     const [temp,setTemp] = useState("")
     const [shippingCost,setShippingCost] = useState(0)
     const {t} = useTranslation()
+    const [transaction,setTransaction] = useState(false)
 
     const loadingPage = () => {
         setCartList(productList)
@@ -102,7 +104,11 @@ export default function CartPage() {
         loadingPage()
     },[])
 
-   return (
+    const goToTransaction = () => {
+        setTransaction(true)
+    }
+
+   return (transaction === true ? <CardPayment setTransaction={setTransaction}/> :
       <>
          <Header2/>
           <div className="Ccontainer">
@@ -159,7 +165,7 @@ export default function CartPage() {
                       <h4>{Math.round((shippingCost + totalCost*discountMod)*100)/100} GEL</h4>
                   </div>
 
-                  <button className='checkoutBtn' onClick={(e) => {navigate("/checkout")}}>{t('buy')}</button>
+                  <button className='checkoutBtn' onClick={(e) => {goToTransaction()}}>{t('buy')}</button>
               </div>
           </div>
          <Footer />

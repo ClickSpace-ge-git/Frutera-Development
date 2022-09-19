@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="demolist update">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed px back to rem">
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryElement.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/ManageCategoryItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/ManageCategoryItem.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/AdminPage/AdminPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/AdminPage/AdminPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CheckOutPage/CardPayment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/BodyStyle/BodyStyle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +69,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/frutera/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/frutera/components/AdminComponents&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -68,11 +83,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\LoginPage" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\CheckOutPage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\Categories" />
@@ -130,7 +145,17 @@
       <workItem from="1662104548602" duration="2793000" />
       <workItem from="1662352253902" duration="13844000" />
       <workItem from="1662812513556" duration="7137000" />
-      <workItem from="1662909714158" duration="2274000" />
+      <workItem from="1662909714158" duration="2920000" />
+      <workItem from="1662915910635" duration="524000" />
+      <workItem from="1662931353470" duration="86000" />
+      <workItem from="1662980207676" duration="2718000" />
+      <workItem from="1663103229893" duration="909000" />
+      <workItem from="1663166801631" duration="4535000" />
+      <workItem from="1663446055957" duration="5716000" />
+      <workItem from="1663490833050" duration="230000" />
+      <workItem from="1663493484608" duration="1004000" />
+      <workItem from="1663510687291" duration="2137000" />
+      <workItem from="1663582900928" duration="3220000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -293,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662833237237</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Pre-Host fixes">
+      <created>1662915054706</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662915054722</updated>
+    </task>
+    <task id="LOCAL-00025" summary="changed px back to rem">
+      <created>1662931429586</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1662931429586</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +370,8 @@
     <MESSAGE value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
     <MESSAGE value="Working on database implementation" />
     <MESSAGE value="demolist update" />
-    <option name="LAST_COMMIT_MESSAGE" value="demolist update" />
+    <MESSAGE value="Pre-Host fixes" />
+    <MESSAGE value="changed px back to rem" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed px back to rem" />
   </component>
 </project>

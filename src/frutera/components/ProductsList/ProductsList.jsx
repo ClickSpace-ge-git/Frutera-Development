@@ -128,11 +128,6 @@ let categoryListDemo = [
       id: "3",
       name: "Dried Peaches",
       image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
-   },
-   {
-      id: "4",
-      name: "Dried Peaches",
-      image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
    }
 ]
 
@@ -218,7 +213,7 @@ function ShowProductCardList(props,goToProduct,t) {
 
 export default function ProductsList() {
    const [productList,setProductPage] = useState([])
-   const categoryList = categoryListDemo
+   const [categoryList,setCategoryList] = useState([])
    const [loading, setLoading] = useState(true)
    let navigate = useNavigate()
    const {t} = useTranslation()
@@ -231,7 +226,9 @@ export default function ProductsList() {
    const loadingPage = async () => {
       try{
          //const response = await (await axios.get("/api/products/GetAllProducts"))
+         //const response2 = await (await axios.get("/api/products/GetCategories"))
          //setProductPage(response?.data)
+         setCategoryList(categoryListDemo)
          setProductPage(productCardList)
          if( productList != null){
             setLoading(false)
@@ -243,7 +240,7 @@ export default function ProductsList() {
 
    useEffect(() => {
       loadingPage()
-      refresher(loadingPage)
+      //refresher(loadingPage)
    },[])
 
    return (

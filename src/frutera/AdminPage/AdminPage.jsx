@@ -7,6 +7,7 @@ import Orders from '../components/AdminComponents/Orders/Orders'
 import Voucher from '../components/AdminComponents/Voucher/Voucher'
 import {useState} from "react";
 import Blogs from "../components/AdminComponents/Blogs/Blogs";
+import ManageCategoryItem from "../components/AdminComponents/ManageCategoryItem/ManageCategoryItem";
 
 export default function AdminPage() {
     const [page, setPage] = useState("Dashboard")
@@ -17,6 +18,7 @@ export default function AdminPage() {
                 return (
                     <>
                         <ManageFoodItem/>
+                        <ManageCategoryItem/>
                         <RegisteredUser/>
                         <Orders/>
                         <Voucher/>
@@ -43,10 +45,15 @@ export default function AdminPage() {
                 return (
                     <Blogs/>
                 )
+            case("Categories"):
+                return (
+                    <ManageCategoryItem/>
+                )
             default:
                 return (
                     <>
                         <ManageFoodItem/>
+                        <ManageCategoryItem/>
                         <RegisteredUser/>
                         <Orders/>
                         <Voucher/>

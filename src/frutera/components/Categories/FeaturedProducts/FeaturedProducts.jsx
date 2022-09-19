@@ -1,6 +1,6 @@
 import './FeaturedProducts.scss'
 import {useEffect, useState} from "react";
-import {refresher} from "../../../../Utils/axios";
+import axios, {refresher} from "../../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -104,6 +104,9 @@ export default function FeaturedProducts() {
 
     const loadingPage = async () => {
         try {
+            const response = await (await axios.get("/api/products/GetAllProducts"))
+            //const response2 = await (await axios.get("/api/products/GetCategories"))
+            //setProductsList(response?.data)
             setProductsList(FeaturedProductsList)
             setCategories(demoCats)
             if (productsList != null ) {
@@ -116,7 +119,7 @@ export default function FeaturedProducts() {
 
     useEffect(() => {
         loadingPage()
-        refresher(loadingPage)
+        //refresher(loadingPage)
     }, [])
 
     function ShowFeaturedProductsList(props, navigate) {

@@ -8,9 +8,8 @@ import UserPage from './frutera/UserPage/UserPage'
 import BlogsPage from './frutera/BlogsPage/BlogsPage.jsx';
 import Blog from "./frutera/BlogPage/Blog";
 import ProductPage from "./frutera/ProductPage/ProductPage";
-import RouteProtector from "./frutera/components/RouteProtector/RouteProtector";
+import RouteProtector, {AdminRouteProtector} from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
-import CardPayment from "./frutera/CheckOutPage/CardPayment";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -44,12 +43,11 @@ export default function App() {
                     </Route>
                     <Route path='/products/:productId' element={<ProductPage/>}/>
                     <Route path='/dashboard' element={
-                        <RouteProtector>
+                        <AdminRouteProtector>
                             <AdminPage/>
-                        </RouteProtector>
+                        </AdminRouteProtector>
                     }/>
                     <Route path='/contactus' element={<ContactUsPage/>}/>
-                    <Route path='/checkout' element={<CardPayment/>}/>
                 </Routes>
             </BrowserRouter>
         </Suspense>

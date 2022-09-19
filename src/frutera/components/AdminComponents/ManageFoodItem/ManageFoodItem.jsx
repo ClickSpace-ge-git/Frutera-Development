@@ -112,7 +112,7 @@ export default function ManageFoodItem() {
 
    useEffect(() => {
       loadingPage()
-      refresher(loadingPage)
+      //refresher(loadingPage)
    },[])
 
    const openForm = () => {

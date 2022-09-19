@@ -11,20 +11,20 @@ export default function DashBoard({path,setPage}) {
                   <h5><i class="fa-solid fa-house"></i> / {path}</h5>
                </div>
                {/* -------------------------------------------------- */}
-               <div className="categoryBxes">
-                  <div className='categoryBx'>
+               <div className="categoryBxes" >
+                  <div className='categoryBx' onClick={(e) => {setPage("Categories")}}>
                      <div className='upperPart'>
                         <div className="text">
                            <h1>3</h1>
-                           <h4>{t('user')} {t('enquiry')}</h4>
+                           <h4>{t('categories')} {t('list')}</h4>
                         </div>
                         <div className='iconBx'>
-                           <i class="fa-solid fa-envelope"></i>
+                           <i className="fa-solid fa-chart-simple"></i>
                         </div>
                      </div>
 
                      <div className='visitBx'>
-                        <p>{t('visit')} {t('user')} {t('enquiry')}</p>
+                        <p>{t('visit')} {t('categories')} {t('list')}</p>
                         <i class="fa-solid fa-arrow-right-long"></i>
                      </div>
                   </div>
@@ -61,7 +61,7 @@ export default function DashBoard({path,setPage}) {
                      </div>
                   </div>
                   {/* -------------------------------------------------- */}
-                  <div className='categoryBx' onClick={(e) => {setPage("Blogs")}}>
+                  <div className='categoryBx' onClick={(e) => {setPage("Orders")}}>
                      <div className='upperPart'>
                         <div className="text">
                            <h1>95</h1>

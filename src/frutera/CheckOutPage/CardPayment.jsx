@@ -1,6 +1,14 @@
 import './CardPayment.scss'
+import {useNavigate} from "react-router-dom";
 
-export default function CardPayment() {
+export default function CardPayment({props,setTransaction}) {
+   let navigate = useNavigate()
+
+   const handlePayment = () => {
+      setTransaction(false)
+      navigate("/products",{replace:true})
+   }
+
    return (
       <>
          <div className="CardPayment_container">
@@ -53,7 +61,7 @@ export default function CardPayment() {
                   </div>
                </form>
                <div className='CardPayment_LowerPart'>
-                  <button className='CardPayment_Confirm'>Confirm Payment</button>               
+                  <button className='CardPayment_Confirm' onClick={(e) => {handlePayment()}}>Confirm Payment</button>
                </div>
             </div>
          </div>
