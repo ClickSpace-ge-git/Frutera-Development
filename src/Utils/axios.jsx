@@ -52,6 +52,8 @@ export default axios.create({
 
 const tkn = sessionStorage.getItem('token');
 const token = JSON.parse(tkn);
+const startingToken = {accessToken:"none"}
+sessionStorage.setItem("token",JSON.stringify(startingToken))
 
 export const axiosPrivate = axios.create({
     baseURL: BASE_URL,
