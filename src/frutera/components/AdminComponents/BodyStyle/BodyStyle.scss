@@ -1,0 +1,74 @@
+@import '../../ScssVariables.scss';
+
+.BScontainer {
+   p {
+      font-family: $textFontFamily;
+   }
+
+   .logoWithName {
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 14px 15px;
+
+      .logo {
+         width: 40px;
+      }
+      .logoName {
+         font-family: $TitleFontFamily2;
+         color: white;
+         font-size: 30px;
+         margin: 15px 0px 0px 10px;
+      }
+   }
+
+   .background1 {
+      background-image: linear-gradient(to bottom right, #fe5e14, #ffdb70);
+      height: 30vh;
+   }
+
+   .leftPart {
+      position: fixed;
+      top: 12vh;
+      background-color: white;
+      padding: 10px;
+      width: 220px;
+      height: 100vh;
+      box-shadow: 5px 3px 5px rgba($color: #000000, $alpha: 0.1);
+      border-radius: 0 10px 0 0 ;
+
+      ul {
+         list-style: none;
+         transition: 2s;
+         li {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: 0.2s;
+            border-radius: 5px;
+            margin-bottom: 10px;
+   
+            &:hover {
+               background-color: $orangeColor;
+               color: white;
+            }
+   
+            p {
+               width: 300px;
+            }
+            i {
+               padding-right: 10px;
+            }
+         }
+
+         .marked {
+            background-color: $orangeColor;
+            color: white;
+         }
+      }
+   }
+}

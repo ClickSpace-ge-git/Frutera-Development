@@ -1,107 +1,168 @@
 @import '../ScssVariables.scss';
-@import '../LanguageList/LanguageList.scss';
-
-
-$imageSize1: 607px;
-$imageSize2: 50px;
-$imageSize3: 130px;
+@import '../LanguageBar/LanguageBar.scss';
 
 .Hcontainer {
    display: flex;
    justify-content: center;
-   overflow-y: hidden;
    overflow-x: hidden;
 
-   .images {
-      display: flex;
+   a, p, button {
+      font-family: $textFontFamily;
+   }
 
+   .backgroundImage {
       img {
-         height: $imageSize1;
+         width: 100%;
+         max-width: 1440px;
+      }
+   }
+
+   .backgroundImage2 {
+      display: none;
+      img {
+         width: 100%;
+         max-width: 1440px;
+      }
+   }
+   .rightPart {
+      display: flex;
+      align-items: center;
+   }
+
+   @media (max-width: 1280px) {
+      .backgroundImage {
+         display: none;
+      }
+      .backgroundImage2 {
+         display: block;
       }
 
-      .whiteFigureImg {
-         position: absolute;
-         transform: translateX(-1px);
-      }
-
-      .orangeFigureImg {
-         position: absolute;
-         
-         img {
-            height: $imageSize3;
-         }
-      }
    }
 
    .navigationBar {
       position: absolute;
-      display: flex;
       top: 0;
-      transform: translate(55px, 50px);
+      display: flex;
+      align-items: center;
+      padding: 40px 60px;
 
       .logo {
+         margin-right: 20px;
          img{
             cursor: pointer;
-            width: $imageSize2;
+            width: 50px;
          }
       }
 
+      .closeBtn {
+         display: none;
+         color: white;
+         font-size: 30px;
+         margin: 10px 300px 0 5px;
+         width: 45px;
+         height: 45px;
+         cursor: pointer;
+
+         &:hover {
+            color: $orangeColor;
+            background-color: white;
+            border-radius: 100px;
+         }
+
+         @media (max-width: 1280px) {
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            margin-left: 7px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 0.3s;
+         }
+      }
+
+
+
       .nav_links {
          list-style: none;
-         padding-left: 15px;
 
          .navBtn {
-            display: inline-block;
-            padding: 0px 11px;
-            margin-top: 25px;
+            margin: 10px;
             transition: 0.3s;
             cursor: pointer;
 
-            &::after {
-               content: '';
-               width: 0;
-               height: 3px;
-               background: $orangeColor;
-               display: block;
-               margin: auto;
-               transition: 0.5s;
-               border-radius: 100px;
-            }
-
-            &:hover::after {
-               width: 100%;
+            &:not(:last-child) {
+               margin-right: 13px;
             }
 
             a {
-               font-family: 'Poppins', sans-serif;
-               color: $orangeColor;
                text-decoration: none;
+               font-family: $NavBarFontFamily;
                font-size: 20px;
-               transition: all 0.3s ease 0s;
                font-weight: 600;
+               color: $orangeColor;
+            }
+
+            @media (max-width: 1280px) {
+               background-color: #ff976d;
+               padding: 10px 0;
+               border-radius: 5px;
+               a {
+                  color: white;
+               }
+               &:hover {
+                  a {
+                     color: $orangeColor;
+                  }
+                  background-color: #ffffff;
+                  transition: all 0.5s;
+               }
+            }
+
+            @media (min-width: 1280px) {
+               display: inline-block;
+
+               &::after {
+                  content: '';
+                  width: 0;
+                  height: 2px;
+                  background: $orangeColor;
+                  display: block;
+                  margin: auto;
+                  transition: 0.5s;
+                  border-radius: 100px;
+               }
+
+               &:hover::after {
+                  width: 100%;
+                  transition: all 0.3s ease 0s;
+               }
+
+
             }
          }
 
          .marked {
-            &::after {
-               width: 100%;
-               background: $greenColor;
-            }
-            a {
-               color: $greenColor;
+            @media (min-width: 1280px) {
+               &::after {
+                  width: 100%;
+                  background: $greenColor;
+               }
+               a {
+                  color: $greenColor;
+               }
             }
          }
       }
 
       .btn{
-         padding-top: 16px;
-
          a {
             text-decoration: none;
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             margin-left: 7px;
-            background-color: $backgroundColor;
             color: $orangeColor;
             display: inline-flex;
             align-items: center;
@@ -109,38 +170,45 @@ $imageSize3: 130px;
             cursor: pointer;
             border-radius: 50%;
             transition: 0.3s;
-   
+
+            &:last-child {
+               margin-right: 5px;
+            }
+
             &:hover {
                background-color: $orangeColor;
                color: $backgroundColor;
             }
-   
+
             i {
-               font-size: 22px;
+               font-size: 20px;
                cursor: pointer;
             }
          }
       }
-   }
 
-   .LLcontainer {
-      position: absolute;
-      transform: translate(750px, 15px);
-      .dropBtn {
-         width: 153px;
-      }
-      .dropDownList {
-         width: 153px;
+      @media (max-width: 1280px) {
+         display: flex;
+         width: 100%;
+         padding: 20px;
+         justify-content: space-between;
+         background-color: $backgroundColor;
+
+         .rightPart {
+            display: flex;
+            align-items: center;
+         }
       }
    }
 
    .text {
+      z-index: 0;
       position: absolute;
       top: 0;
       transform: translate(40px, 250px);
 
       h1 {
-         font-family: 'Samsung Sharp Sans', sans-serif;
+         font-family: $TitleFontFamily;
          font-size: 53px;
          color: $orangeColor;
       }
@@ -151,7 +219,7 @@ $imageSize3: 130px;
          font-weight: 600;
          width: 500px;
       }
-   
+
       button {
          margin-top: 50px;
          border: none;
@@ -169,3 +237,58 @@ $imageSize3: 130px;
       }
    }
 }
+
+.checkbtn {
+   font-size: 30px;
+   color: $orangeColor;
+   float: right;
+   line-height: 80px;
+   margin-right: 10px;
+   cursor: pointer;
+   display: none;
+}
+
+#check {
+   display: none;
+}
+
+@media (max-width: 1280px) {
+
+   .checkbtn {
+      display: block;
+      margin-left: 20px;
+   }
+
+   .nav_links {
+      position: fixed;
+      z-index: 1;
+      width: 350px;
+      height: 100vh;
+      background: #ff7a45;
+      top: 0;
+      left: -400px;
+      transition: all 0.5s;
+      text-align: center;
+
+      .navBtn {
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+
+         a {
+            font-size: 20px;
+
+            &:hover, &.active {
+               background: none;
+               color: #0082e6;
+            }
+         }
+      }
+   }
+
+   #check:checked ~ ul {
+      left: 0;
+   }
+}
+
+

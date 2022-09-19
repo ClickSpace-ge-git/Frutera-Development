@@ -1,0 +1,159 @@
+@import '../components/ScssVariables.scss';
+
+.ContactUsPage_container {
+   padding-top: 20px;
+   width: 80%;
+   margin: 50px auto;
+
+   h2 {
+      font-family: $TitleFontFamily;
+   }
+
+   label, textarea, p, h3, a, td, input {
+      font-family: $textFontFamily;
+   }
+
+   .CUP_box {
+      border: $orangeColor 1px solid;
+      border-radius: 10px;
+      background: white;
+      display: flex;
+
+      input {
+         width: 100%;
+         border: none;
+         border-bottom: 1px solid #ffc8af;
+         outline: none;
+         padding-bottom: 5px;
+         font-size: 15px;
+      }
+
+      label {
+         margin-bottom: 6px;
+         display: block;
+         color: $orangeColor;
+         font-size: 17px;
+      }
+
+      
+
+      .CUP_left_part {
+         flex-basis: 70%;
+         padding: 40px 60px;
+         border-right: none;
+
+         h2 {
+               color: $orangeColor;
+               font-weight: 600;
+               margin-bottom: 30px;
+         }
+
+         .CUP_input_row {
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 20px;
+
+               .CUP_input_components {
+                  flex-basis: 45%;
+               }
+         }
+
+         .CUP_TextareaPart {
+               textarea {
+                  width: 100%;
+                  border: 1px solid #ffc8af;
+                  outline: none;
+                  padding: 10px;
+                  box-sizing: border-box;
+                  font-size: 15px;
+                  resize: none;
+               }
+
+               .textarea_limit {
+                  color: $orangeColor;
+               }
+         }
+
+         .CUP_Lsubmit {
+               background: $orangeColor;
+               width: 170px;
+               border: none;
+               outline: none;
+               color: white;
+               height: 35px;
+               border-radius: 7px;
+               margin-top: 20px;
+               font-size: 17px;
+               cursor: pointer;
+
+               &:hover {
+                  background: $orangeColor2;
+               }
+         }
+      }
+
+      .CUP_right_part {
+         flex-basis: 30%;
+         border-radius: 0 10px 10px 0;
+         padding: 40px;
+         background: $orangeColor;
+         color: #fff;
+
+         h2 {
+               font-weight: 600;
+               margin-bottom: 30px;
+         }
+
+         .CUP_table {
+            tr td {
+               padding-top: 20px;
+               font-size: 14px;
+
+               &:first-child {
+                  padding-right: 20px;
+                  font-weight: 600;
+                  font-size: 15px;
+               }
+
+               a {
+                  outline: none;
+                  color: white;
+                  text-decoration: none;
+
+                  &:hover {
+                     transition: 0.2s;
+                     color: $greenColor;
+                  }
+               }
+            }
+         }
+
+         .news_mode {
+
+            button {
+               background: white;
+               width: 170px;
+               border: none;
+               outline: none;
+               color: $orangeColor;
+               height: 35px;
+               border-radius: 7px;
+               margin-top: 20px;
+               font-size: 17px;
+               cursor: pointer;
+               &:hover {
+                  transition: 0.2s;
+                  background: $greenColor;
+                  color:white;
+               }
+            }
+
+            input {
+               padding: 5px;
+               padding-left: 10px;
+               border: none
+            }
+         } 
+      }
+   }
+}

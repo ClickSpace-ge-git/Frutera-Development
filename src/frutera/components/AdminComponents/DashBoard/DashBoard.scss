@@ -1,0 +1,56 @@
+@import '../../ScssVariables.scss';
+
+.DBcontainer {
+   h1, h4 {
+      font-family: $TitleFontFamily;
+   }
+
+   p, h2, h5 {
+      font-family: $textFontFamily;
+   }
+
+   .pathBx {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      color: white;
+   }
+
+   .categoryBxes {
+      display: flex;
+      
+      .categoryBx {
+         box-shadow: 0px 0px 50px 10px rgba($color: #000000, $alpha: 0.1);
+         border-radius: 5px;
+         margin: 20px;
+         cursor: pointer;
+   
+         .upperPart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white; 
+            border-radius: 5px 5px 0 0;
+            width: 280px;
+            padding: 20px;
+   
+            .iconBx i{
+                  font-size: 30px;
+            }
+         }
+   
+         .visitBx {
+            background-color: $orangeColor;
+            color: white;
+            border-radius: 0 0 5px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            
+            i {
+               font-size: 20px;
+            }
+         }
+      }
+   }
+}

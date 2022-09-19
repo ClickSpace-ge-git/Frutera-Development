@@ -1,0 +1,151 @@
+@import '../../ScssVariables.scss';
+
+.Vcontainer {
+   margin: 20px;
+
+   h1, h4, h3 {
+      font-family: $TitleFontFamily2;
+   }
+
+   td, p, h2, h5, button, label, input, textarea, select, option {
+      font-family: $textFontFamily;
+   }
+
+   .Vlist {
+      box-shadow: 0px 0px 10px 2px rgba($color: #000000, $alpha: 0.15);
+      border-radius: 5px;
+      background-color: white;
+      margin-bottom: 30px;
+
+      .filterContainer {
+         padding: 20px 20px;
+
+         .firstPart, .secondPart {
+            display: flex;
+            justify-content: space-between;
+            
+            input {
+               outline: none;
+               border: none;
+               border-bottom: 1px solid $orangeColor;
+               text-align: center;
+               font-size: 18px;
+            }
+         }
+
+         .firstPart {
+
+            h3 {
+               font-size: 25px;
+            }
+
+            .fPBtn {
+               outline: none;
+               padding: 5px 15px;
+               border: none;
+               border-radius: 5px;
+               font-size: 15px;
+               color: white;
+               cursor: pointer;
+               background-color: $orangeColor;
+
+               &:hover {
+                  background-color: $orangeColor2;
+               }
+            }
+         }
+
+         .secondPart {
+            margin-top: 10px;
+            .inp1 {
+               width: 30px;
+            }
+         }
+      }
+
+      table {
+         border-top: #b5b5b5 1px solid;
+         margin: 0 20px;
+         padding: 15px 0;
+
+         td {
+            width: 160px;
+            text-align: center;
+            vertical-align: middle;
+         }
+
+         tbody {
+
+            .Vname {
+               font-weight: bold;
+            }
+
+            
+            .Vdescription {
+               width: 800px;
+
+               p{
+                  overflow: hidden;
+                  height: 100px;
+                  overflow: hidden;
+                  overflow-y: scroll;
+               }
+               text-align: left;
+            }
+
+            .Vaction {
+               width: 200px;
+               .penBtn, .trashBtn {
+                  border: none;
+                  padding: 15px;
+                  border-radius: 100px;
+                  margin: 5px;
+                  background-color: white;
+                  cursor: pointer;
+                  transition: 0.2s;
+                  width: 53px;
+                  height: 53px;
+
+                  i {
+                     font-size: 17px;
+                  }
+
+                  &:hover {
+                     i {
+                        color: white;
+                     }
+                  }
+               }
+
+               .penBtn {
+                  border: 2px $greenColor solid;
+                  background-color: white;
+
+                  i {
+                     color: $greenColor;
+                  }
+                  
+                  &:hover {
+                     background-color: $greenColor;
+                  }
+               }
+
+               .trashBtn {
+                  border: 2px $redColor solid;
+
+                  i {
+                     color: $redColor;
+                  }
+                  &:hover {
+                     background-color: $redColor;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .hide {
+      display: none;
+   }
+}

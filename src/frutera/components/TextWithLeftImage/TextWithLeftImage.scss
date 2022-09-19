@@ -1,8 +1,16 @@
 @import '../ScssVariables.scss';
 
 .TWLIcontainer {
+
+   h1, h3 {
+      font-family: $TitleFontFamily;
+   }
+   a, span, p {
+      font-family: $textFontFamily;
+   }
+
    .components {
-      padding: 640px 0 100px;
+      padding: 50px 0;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -19,7 +27,6 @@
          padding: 0 10px;
       
          h4 {
-            font-family: 'SamsungOne', sans-serif;
             font-size: 20px;
             color: $orangeColor2;
             letter-spacing: 1px;
@@ -28,7 +35,6 @@
          }
       
          h1 {
-            font-family: 'Samsung Sharp Sans', sans-serif;
             font-size: 55px;
             color: $orangeColor;
             font-weight: 700;
@@ -36,7 +42,6 @@
          }
       
          p {
-            font-family: 'Fredoka', sans-serif;
             font-size: 16px;
             color: #777;
             line-height: 30px;

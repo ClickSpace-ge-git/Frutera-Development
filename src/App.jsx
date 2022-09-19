@@ -1,0 +1,55 @@
+import AboutUsPage from './frutera/AboutUsPage/AboutUsPage'
+import HomePage from './frutera/HomePage/HomePage'
+import ProductsPage from "./frutera/ProductsPage/ProductsPage"
+import CartPage from "./frutera/CartPage/CartPage";
+import LoginPage from "./frutera/LoginPage/LoginPage";
+import RegisterPage from "./frutera/RegisterPage/RegisterPage.jsx";
+import UserPage from './frutera/UserPage/UserPage'
+import BlogsPage from './frutera/BlogsPage/BlogsPage.jsx';
+import Blog from "./frutera/BlogPage/Blog";
+import ProductPage from "./frutera/ProductPage/ProductPage";
+import RouteProtector, {AdminRouteProtector} from "./frutera/components/RouteProtector/RouteProtector";
+import AdminPage from "./frutera/AdminPage/AdminPage";
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import './App.scss';
+import ContactUsPage from "./frutera/ContactUs/ContactUsPage";
+import {Suspense} from "react";
+import "../src/Utils/i18n.jsx"
+
+export default function App() {
+    return (
+        <Suspense fallback="loading...">
+            <BrowserRouter>
+                <Routes>
+                    <Route path='' element={<HomePage/>}/>
+                    <Route path='/home' element={<HomePage/>}/>
+                    <Route path='/aboutus' element={<AboutUsPage/>}/>
+                    <Route path='/products' element={<ProductsPage/>}/>
+                    <Route path='/cart' element={
+                        <RouteProtector>
+                            <CartPage/>
+                        </RouteProtector>}/>
+                    <Route path='/register' element={<RegisterPage/>}/>
+                    <Route path='/login' element={<LoginPage/>}/>
+                    <Route path='/blogs' element={<BlogsPage/>}/>
+                    <Route path='/blogs/:blogId' element={<Blog/>}/>
+                    <Route path='/user' element={
+                        <RouteProtector>
+                            <UserPage/>
+                        </RouteProtector>
+                    }>
+                    </Route>
+                    <Route path='/products/:productId' element={<ProductPage/>}/>
+                    <Route path='/dashboard' element={
+                        <AdminRouteProtector>
+                            <AdminPage/>
+                        </AdminRouteProtector>
+                    }/>
+                    <Route path='/contactus' element={<ContactUsPage/>}/>
+                </Routes>
+            </BrowserRouter>
+        </Suspense>
+    );
+}

@@ -1,0 +1,92 @@
+import {useEffect, useState} from "react";
+import './CategoryItemForm.scss';
+import {useTranslation} from "react-i18next";
+import UseAxiosP from "../../../../Utils/axios"
+import {useNavigate} from "react-router-dom";
+
+export default function CategoryItemForm({props,close}){
+    const [name,setName] = useState("")
+    const [img,setImg] = useState()
+    const [upload,setUpload] = useState()
+    const [uploaded,setUploaded] = useState(false)
+    const [id,setId] = useState("")
+    const {t} = useTranslation()
+    let navigate = useNavigate()
+
+    useEffect(() => {
+        if(props !== {}){
+            setName(props.name)
+            setImg(props.img)
+            setId(props.id)
+        }
+    },[])
+
+    const handleSubmit = async () => {
+        const body = {
+            id: id,
+            Name: name,
+            imageUrl: URL.createObjectURL(upload),
+        }
+
+        try{
+            const response = await (await UseAxiosP.post('/api/Products/InsertProduct',JSON.stringify(body))).data;
+            console.log(response)
+        }
+        catch(er){
+            navigate('/dashboard');
+            console.log(er)
+        }
+
+        close()
+    }
+
+    const handleImage = (e) => {
+        const imageDate = new FormData()
+        imageDate.append("image",e.target.value())
+    }
+
+    return(
+        <div className="createFelement">
+
+            <h3>{t("create")} {t("category")} {t("element")}</h3>
+
+            <div className='Felement'>
+                <div className='textPart'>
+
+                    <div className='inputBx'>
+                        <label className='titleLabel'>{t("name")}</label>
+                        <input type="text" placeholder='Enter Name' value={name} onChange={(e) =>{setName(e.target.value)}}/>
+                    </div>
+                    <div className='inputBx'>
+                        <label className='titleLabel'>{t("id")}</label>
+                        <input type="text" placeholder='Enter Category' value={id} onChange={(e) =>{setId(e.target.value)}}/>
+                    </div>
+                </div>
+
+                <div className='imgPart'>
+                    <div id='dI' className='displayImg'>
+                        {uploaded === true ?
+                            <img src={URL.createObjectURL(upload)} className="product-image"/>:
+                            <img src={img} className="product-image"/>}
+                    </div>
+                    <div className='inputBx'>
+                        <label className='inputtype'>
+                            {t("upload")} {t("image")}
+                            <input type="file" id='image_input' onChange={(e) =>{if(
+                                e.target.files && e.target.files[0]) {
+                                (setUpload(e.target.files[0]))
+                                setUploaded(true)
+                            }}}/>
+                        </label>
+                        <label className='titleLabel'>{t("image")}</label>
+                    </div>
+
+                    <div className='MFIBtns'>
+                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>{t("add")} {t("category")}</button>
+                        <button className='MFIBtn' onClick={() => {close()}}>{t("cancel")}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

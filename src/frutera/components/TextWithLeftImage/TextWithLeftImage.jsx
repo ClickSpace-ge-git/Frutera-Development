@@ -1,13 +1,15 @@
 import './TextWithLeftImage.scss'
+import {useTranslation} from "react-i18next";
 
 export default function TextWithLeftImage() {
+   const {t} = useTranslation()
     return (
       <div className="TWLIcontainer">
          <div className="components">
             <img src={require("../../../images/Frutera/img1.jpg")} alt="products"/>
             <div className="text">
-               <h4>About Us</h4>
-               <h1>Our mission & values</h1>
+               <h4>{t('aboutus')}</h4>
+               <h1>{t('ourmis&val')}</h1>
                <p>
                The company <span style={{color: "#f76b2a"}}>Frutera</span> was founded in 2021 and represents a modern look of family business. 
                The enterprise and orchards are located in the village of Dirbi, Kareli Municipality.
@@ -21,8 +23,8 @@ export default function TextWithLeftImage() {
                tirelessly to create a distinguished product!
                </p>
                <div className="componentBtns">
-                  <a href='/#' className="btn">Our Team</a>
-                  <a href='/#' className="btn moreStyle">Learn More</a>
+                  <a href='/#' className="btn">{t('ourteam')}</a>
+                  <a href='/aboutus' className="btn moreStyle">{t('learnm')}</a>
                </div>
             </div>
          </div>

@@ -1,14 +1,17 @@
 import './Footer.scss'
+import logo from "../../../images/Frutera/logo.png"
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
+   const {t} = useTranslation()
    return (
-      <div className="footer">
+      <div className="FooterContainer">
          <footer>
             <div className="Fcontainer">
                <div className='otherComponents'>
                   <div className='logoWithName'>
                      <div className='image'>
-                        <img src={require("../../../images/Frutera/logo.png")} alt="logo" />
+                        <img src={logo} alt="logo" />
                      </div>
                      <h1>Frutera</h1>
                   </div>
@@ -27,35 +30,26 @@ export default function Footer() {
                </div>
                <div className="components">
                   <div className="column">
-                     <h4>About Company</h4>
+                     <h4>{t("aboutcomp")}</h4>
                      <ul>
-                        <li><a href="/#">about us</a></li>
-                        <li><a href="/#">our service</a></li>
-                        <li><a href="/#">privecy policy</a></li>
-                        <li><a href="/#">Products</a></li>
+                        <li><a href="/aboutus">{t("aboutus")}</a></li>
+                        <li><a href="/#">{t("ourser")}</a></li>
+                        <li><a href="/#">{t("privacyp")}</a></li>
+                        <li><a href="/products">{t("products")}</a></li>
+                        <li><a href="/contactus">{t("contactus")}</a></li>
                      </ul>
                   </div>
                   <div className="column">
-                     <h4>Get Help</h4>
+                     <h4>{t("geth")}</h4>
                      <ul>
-                        <li><a href="/#">FAQ</a></li>
-                        <li><a href="/#">shipping</a></li>
-                        <li><a href="/#">Returns</a></li>
-                        <li><a href="/#">Rrder status</a></li>
-                        <li><a href="/#">payment options</a></li>
+                        <li><a href="/#">{t("faq")}</a></li>
+                        <li><a href="/#">{t("shipping")}</a></li>
+                        <li><a href="/#">{t("returns")}</a></li>
+                        <li><a href="/#">{t("paymentopt")}</a></li>
                      </ul>
                   </div>
                   <div className="column">
-                     <h4>Online Shop</h4>
-                     <ul>
-                        <li><a href="/#">Watch</a></li>
-                        <li><a href="/#">Phone</a></li>
-                        <li><a href="/#">TV</a></li>
-                        <li><a href="/#">Leptop</a></li>
-                     </ul>
-                  </div>
-                  <div className="column">
-                     <h4>Follow Us</h4>
+                     <h4>{t("followus")}</h4>
                      <ul>
                         <a href="/#"><i className="fa-brands fa-facebook-f"></i></a>
                         <a href="/#"><i className="fa-brands fa-linkedin-in"></i></a>

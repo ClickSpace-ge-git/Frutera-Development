@@ -1,0 +1,81 @@
+@import '../components/ScssVariables.scss';
+
+.RegisterPage_container {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   height: 582px;
+   h1 {
+      font-family: $TitleFontFamily;
+   }
+
+   label, textarea, p, h3, a, td, input {
+      font-family: $textFontFamily;
+   }
+
+   .RP_box {
+      background: white;
+      display: flex;
+      border: $orangeColor 1px solid;
+
+
+      label {
+         margin-bottom: 6px;
+         display: block;
+         color: $orangeColor;
+         font-size: 17px;
+      }
+
+      
+      .RegisterPage_imagePart {
+         img {
+            width: 33vw;
+         }
+      }
+
+      .RP_RightPart {
+         margin: 50px 100px 0px 50px;
+
+         h1 {
+            color: $orangeColor;
+            font-weight: 600;
+            margin-bottom: 30px;
+         }
+
+         .RP_input_components {
+            padding: 20px 0;
+
+            input {
+               width: 30vw;
+               border: none;
+               border-bottom: 1px solid #ffc8af;
+               outline: none;
+               padding-bottom: 5px;
+               font-size: 15px;
+            }
+         }
+
+         .RP_Lsubmit {
+            display: flex;
+            justify-content: center;
+
+            button {
+               background: $orangeColor;
+               width: 25vw;
+               border: none;
+               outline: none;
+               color: white;
+               height: 35px;
+               border-radius: 7px;
+               margin-top: 20px;
+               font-size: 17px;
+               cursor: pointer;
+
+               &:hover {
+                  background: $orangeColor2;
+               }
+            }
+         }
+      }
+   }
+}
