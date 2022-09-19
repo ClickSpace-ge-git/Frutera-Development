@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="made dashboard inccessible for hosting purpouses">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="hosted app to github pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ScssVariables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ScssVariables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +142,7 @@
       <workItem from="1663493484608" duration="1004000" />
       <workItem from="1663510687291" duration="2137000" />
       <workItem from="1663582900928" duration="3425000" />
-      <workItem from="1663593164065" duration="4925000" />
+      <workItem from="1663593164065" duration="5244000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -344,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663597006968</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="hosted app to github pages">
+      <created>1663598947356</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1663598947356</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +396,7 @@
     <MESSAGE value="changed px back to rem" />
     <MESSAGE value="axios &quot;implementation&quot;" />
     <MESSAGE value="made dashboard inccessible for hosting purpouses" />
-    <option name="LAST_COMMIT_MESSAGE" value="made dashboard inccessible for hosting purpouses" />
+    <MESSAGE value="hosted app to github pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="hosted app to github pages" />
   </component>
 </project>
