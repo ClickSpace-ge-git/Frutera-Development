@@ -20,7 +20,7 @@ export function authenticateUser() {
 }
 
 export function authenticateAdmin() {
-    return (true)
+    return (false)
 }
 
 export function convertToBase64(props) {
