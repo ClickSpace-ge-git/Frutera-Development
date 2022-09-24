@@ -7,6 +7,9 @@ import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import CardPayment from "../CheckOutPage/CardPayment";
+import {axiosPrivate} from "../../Utils/axios";
+
+const CART_URL = "/api/cart/GetCartItems"
 
 let productList = [
     {
@@ -58,8 +61,10 @@ export default function CartPage() {
     const {t} = useTranslation()
     const [transaction,setTransaction] = useState(false)
 
-    const loadingPage = () => {
-        setCartList(productList)
+    const loadingPage = async () => {
+        const response = await axiosPrivate.get(CART_URL)
+        setCartList(response?.data)
+        console.log(response)
         if(cartList != null){
             setLoading(false)
         }
@@ -129,7 +134,7 @@ export default function CartPage() {
                               </tr>
                               </thead>
                               <tbody>
-                              {!loading && cartList.length >0? <CartProducts props={cartList} add={addToPrice}/> : "" }
+                              {!loading && cartList.length >0? <CartProducts reload={loadingPage} props={cartList} add={addToPrice}/> : "" }
                               </tbody>
                           </table>
                       </div>

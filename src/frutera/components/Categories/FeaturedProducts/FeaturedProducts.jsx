@@ -1,6 +1,6 @@
 import './FeaturedProducts.scss'
 import {useEffect, useState} from "react";
-import axios, {refresher} from "../../../../Utils/axios";
+import axios, {axiosPrivate, refresher} from "../../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -102,13 +102,28 @@ export default function FeaturedProducts() {
 
     let navigate = useNavigate()
 
+    const loadCats = async (props) => {
+        if(props === "0"){
+            const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
+            setProductsList(response?.data)
+        }else{
+            const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
+            setProductsList(response?.data)
+        }
+    }
+
     const loadingPage = async () => {
         try {
-            const response = await (await axios.get("/api/products/GetAllProducts"))
-            //const response2 = await (await axios.get("/api/products/GetCategories"))
-            //setProductsList(response?.data)
-            setProductsList(FeaturedProductsList)
-            setCategories(demoCats)
+            if(loadCat === 0){
+                const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
+                setProductsList(response?.data)
+            }else{
+                const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + loadCat))
+                setProductsList(response?.data)
+            }
+            const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+            //setProductsList(FeaturedProductsList)
+            setCategories(response2?.data)
             if (productsList != null ) {
                 setLoading(false)
             }
@@ -119,10 +134,27 @@ export default function FeaturedProducts() {
 
     useEffect(() => {
         loadingPage()
-        //refresher(loadingPage)
+        //refresherJSON.parse(sessionStorage.getItem("token").accessToken === "none")(loadingPage)
     }, [])
 
     function ShowFeaturedProductsList(props, navigate) {
+
+        const AddToCart = async (props) =>{
+            if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
+                navigate("/login",{replace:true})
+            }
+            const typingTimeOut = setTimeout(async function() {
+                const response = await axiosPrivate('/api/Cart/AddInCart/' + props + '?quantity=' + 1);
+                console.log(response.status)
+                if(response?.status === 401){
+                    navigate("/login",{replace:true})
+                }
+            }, 500);
+            return () => {
+                clearTimeout(typingTimeOut);
+            }
+        }
+
         return (
             props.map(product => {
                 return (
@@ -131,7 +163,7 @@ export default function FeaturedProducts() {
                             <div className="FPCD_reaction">
                                 <i className="fa-solid fa-heart"></i>
                             </div>
-                            {product.discount === null ? (
+                            {true ? (
                                     <></>
                                 ) :
                                 (
@@ -145,14 +177,14 @@ export default function FeaturedProducts() {
                         <div className='FPCD_image' onClick={(e) => {
                             navigate("/products/" + product.id)
                         }}>
-                            <img src={product.image} alt={`Image_${product.id + 1}`}/>
+                            <img src={product.pictures[0]} alt={`Image_${product.id + 1}`}/>
                         </div>
 
                         <div className='FPCD_text'>
                             <div className='FPCD_title'><h3>{product.name}</h3></div>
                             <div className='FPCD_priceDiv'>
                                 <div className='FPCD_price'>
-                                    {product.discount === null ? (
+                                    {true ? (
                                             <h4 className='FPCD_onlyPrice'>{product.price} GEL</h4>
                                         ) :
                                         (
@@ -168,11 +200,11 @@ export default function FeaturedProducts() {
                                     }
                                 </div>
                             </div>
-                            <div className='FPCD_width'><h4>{product.weight} g</h4></div>
+                            {/*<div className='FPCD_width'><h4>{product.weight} g</h4></div>*/}
                         </div>
 
                         <div className="FPCD_action">
-                            <button className='FPCD_Btn'>
+                            <button className='FPCD_Btn' onClick={(e) => {AddToCart(product.id)}}>
                                 {t('add2cart')}
                                 <i className="fa-solid fa-cart-shopping"></i>
                             </button>
@@ -183,16 +215,16 @@ export default function FeaturedProducts() {
         )
     }
 
-    function mapCategories(props ) {
+    function mapCategories(props,load ) {
         return (
             props.map(category => {
                 {
                     return(
                         category.id === loadCat ?
                             <li className='FPnavBtn marked' key={category.id}>
-                                <button onClick={(e) => {setLoadCat(category.id)}}>{category.name}</button></li> :
-                            <li className='FPnavBtn' key={category.id}  onClick={(e) => {setLoadCat(category.id)}}>
-                                <button onClick={(e) => {setLoadCat(category.id)}}>{category.name}</button></li>
+                                <button onClick={(e) => {setLoadCat(category.id);}}>{category.name}</button></li> :
+                            <li className='FPnavBtn' key={category.id}  onClick={(e) => {setLoadCat(category.id);load(category.id)}}>
+                                <button onClick={(e) => {setLoadCat(category.id);}}>{category.name}</button></li>
                     )
                 }
             })
@@ -209,13 +241,13 @@ export default function FeaturedProducts() {
                         <ul className='FP_categories'>
                             {loadCat === 0?
                             <li className='FPnavBtn marked'>
-                                <button onClick={(e) => {setLoadCat("0")}}>All</button>
+                                <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>All</button>
                             </li>:
                                 <li className='FPnavBtn'>
-                                    <button onClick={(e) => {setLoadCat("0")}}>All</button>
+                                    <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>All</button>
                                 </li>
                             }
-                            {!loading && categories.length > 0 ? mapCategories(categories):""}
+                            {!loading && categories.length > 0 ? mapCategories(categories,loadCats):""}
                         </ul>
                     </div>
 

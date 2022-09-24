@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import './FoodItemForm.scss';
 import {useTranslation} from "react-i18next";
-import UseAxiosP, {axiosPrivate, convertToBase64} from "../../../../Utils/axios"
+import UseAxiosP, {axiosPrivate, convertToBase64, UseAxiosAuthed, UseAxiosPost} from "../../../../Utils/axios"
 import {useNavigate} from "react-router-dom";
 
 export default function FoodItemForm({props,close}){
@@ -14,6 +14,7 @@ export default function FoodItemForm({props,close}){
     const [category,setCategory] = useState('')
     const [uploaded,setUploaded] = useState(false)
     const [id,setId] = useState("")
+    const [updating,setUpdating] = useState(false)
     const {t} = useTranslation()
     let navigate = useNavigate()
 
@@ -26,6 +27,7 @@ export default function FoodItemForm({props,close}){
             if(!props.stock){
                 setStock("OS")
             }
+            setUpdating(true)
         }
     },[])
 
@@ -41,15 +43,20 @@ export default function FoodItemForm({props,close}){
             pictures:[baseIMG],
         }
         //URL.createObjectURL(upload)
-
-        try{
-            console.log(JSON.stringify(body))
-            const response = axiosPrivate.post('/api/Products/InsertProduct',JSON.stringify(body)).data;
-            console.log(response)
-        }
-        catch(er){
-            navigate('/dashboard');
-            console.log(er)
+        if(updating){
+            try{
+                const response = await axiosPrivate.post('/api/Products/UpdateProduct',JSON.stringify(body)).data;
+            }
+            catch(er){
+                navigate('/dashboard');
+            }
+        }else{
+            try{
+                const response = await axiosPrivate.post('/api/Products/InsertProduct',JSON.stringify(body)).data;
+            }
+            catch(er){
+                navigate('/dashboard');
+            }
         }
 
         close()

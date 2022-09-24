@@ -1,6 +1,6 @@
 import './ProductsList.scss'
 import {useEffect, useState} from "react";
-import axios, {refresher} from "../../../Utils/axios";
+import axios, {axiosPrivate, refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -135,27 +135,39 @@ function ShowCategoryList(props,setCat) {
    return (
       props.map( category => {
          return (
-            <>
-               <div className="CategoryCardDiv" key={category.id} onClick={(e) => {setCat(category.id); console.log(category)}}>
+               <div className="CategoryCardDiv" key={category.id} onClick={(e) => {setCat(category.id);}}>
                   <div className='CCD_image'>
                      <img src={category.image} alt={`00${category.id + 1}`} />
                   </div>
 
                   <div className='CCD_title'><h3>{category.name}</h3></div>
                </div>
-            </>
          )
       })
    )
 }
 
-function ShowProductCardList(props,goToProduct,t) {
+function ShowProductCardList(props,goToProduct,t,nav) {
+
+   const AddToCart = async (props) =>{
+      if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
+         nav("/login",{replace:true})
+      }
+      const typingTimeOut = setTimeout(async function() {
+         const response = await axiosPrivate('/api/Cart/AddInCart/' + props + '?quantity=' + 1);
+         if(response?.status === 401){
+            nav("/login",{replace:true})
+         }
+      }, 500);
+      return () => {
+         clearTimeout(typingTimeOut);
+      }
+   }
 
    return (
        props.map( product => {
          return (
-            <>
-               <div className="ProductCardDiv" key={product.id} onClick={(e) => {goToProduct(product.id)}}>
+               <div className="ProductCardDiv" key={product.id} >
                   <div className='PCD_UpperPart'>
                      <div className="PCD_reaction">
                         <i className="fa-solid fa-heart"></i>
@@ -171,11 +183,11 @@ function ShowProductCardList(props,goToProduct,t) {
                      }
                   </div>
 
-                  <div className='PCD_image'>
-                     <img src={product.image} alt={`00${product.id + 1}`} />
+                  <div className='PCD_image' onClick={(e) => {goToProduct(product.id)}}>
+                     <img src={product.pictures[0]} alt={`00${product.id + 1}`} />
                   </div>
 
-                  <div className='PCD_text'>
+                  <div className='PCD_text' onClick={(e) => {goToProduct(product.id)}}>
                      <div className='PCD_title'><h3>{product.name}</h3></div>
                      <div className='PCD_priceDiv'>
                         <div className='PCD_price'>
@@ -199,13 +211,12 @@ function ShowProductCardList(props,goToProduct,t) {
                   </div>
 
                   <div className="PCD_action">
-                     <button className='PCD_Btn'>
+                     <button className='PCD_Btn' onClick={(e) => {AddToCart(product.id)}}>
                         {t('add2cart')}
                         <i className="fa-solid fa-cart-shopping"></i>
                      </button>
                   </div>
                </div>
-            </>
          )
       })
    )
@@ -217,19 +228,27 @@ export default function ProductsList() {
    const [loading, setLoading] = useState(true)
    let navigate = useNavigate()
    const {t} = useTranslation()
-   const [loadCategory,setLoadCategory] = useState('')
 
    const goToProduct = (props) =>{
       navigate("/products/" + props)
    }
 
+   const loadCats = async (props) => {
+      if(props === "0"){
+         const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
+         setProductPage(response?.data)
+      }else{
+         const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
+         setProductPage(response?.data)
+      }
+   }
+
    const loadingPage = async () => {
       try{
-         //const response = await (await axios.get("/api/products/GetAllProducts"))
-         //const response2 = await (await axios.get("/api/products/GetCategories"))
-         //setProductPage(response?.data)
-         setCategoryList(categoryListDemo)
-         setProductPage(productCardList)
+         const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
+         const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+         setProductPage(response?.data)
+         setCategoryList(response2?.data)
          if( productList != null){
             setLoading(false)
          }
@@ -250,14 +269,21 @@ export default function ProductsList() {
             <div className='CategorieListCont'>
                <h1 className='CLHeaderTitle'>{t('categories')}</h1>
                <div className="CategorieListDiv">
-                  {categoryList.length > 0 ? ShowCategoryList(categoryList,setLoadCategory):""}
+                  <div className="CategoryCardDiv" onClick={(e) => {loadCats("0")}}>
+                     <div className='CCD_image'>
+                        {/*<img src={category.image} alt={`00${category.id + 1}`} />*/}
+                     </div>
+
+                     <div className='CCD_title'><h3>All</h3></div>
+                  </div>
+                  {categoryList.length > 0 ? ShowCategoryList(categoryList,loadCats):""}
                </div>
             </div>
 
             <div className='ProductListCont'>
                <h1 className='PLHeaderTitle'>{t('featprods')}</h1>
                <div className="ProductsListDiv">
-                  {!loading && productList.length > 0 ? ShowProductCardList(productList,goToProduct,t):""}
+                  {!loading && productList.length > 0 ? ShowProductCardList(productList,goToProduct,t,navigate):""}
                </div>
             </div>
          </div>

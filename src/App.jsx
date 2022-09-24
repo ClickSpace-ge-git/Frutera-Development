@@ -19,8 +19,6 @@ import {Suspense} from "react";
 import "../src/Utils/i18n.jsx"
 
 export default function App() {
-    const startingToken = {accessToken:"none"}
-    sessionStorage.setItem("token",JSON.stringify(startingToken))
     return (
         <Suspense fallback="loading...">
             <BrowserRouter>

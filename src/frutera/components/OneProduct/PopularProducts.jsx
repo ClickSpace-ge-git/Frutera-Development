@@ -63,7 +63,7 @@ export default function PopularProducts() {
 
     useEffect(() => {
         loadingPage()
-        refresher(loadingPage)
+        //refresher(loadingPage)
     },[])
 
     return (!loading && productsList.length > 0)? (

@@ -4,6 +4,9 @@ import PopUp from "../../../../Utils/PopUp";
 import UserItem from "./UserItem";
 import UserItemForm from "./UserItemForm";
 import {useTranslation} from "react-i18next";
+import axios, {axiosPrivate, UseAxiosP} from "../../../../Utils/axios";
+
+const USERSURL = '/api/User/GetAllUsers'
 
 let demoUserList = [
    {
@@ -53,8 +56,9 @@ export default function ManageFoodItem() {
    const [editElement,setEditElement] = useState({})
    const {t} = useTranslation()
 
-   const loadingPage = () => {
-      setUserList(demoUserList)
+   const loadingPage = async () => {
+      const response = await axiosPrivate.get(USERSURL)
+      setUserList(response?.data)
       if( userList!= null){
          setLoading(false)
       }

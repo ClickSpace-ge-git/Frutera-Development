@@ -1,8 +1,10 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
-import {refresher, UseAxiosP} from "../../../Utils/axios";
+import axios, {axiosPrivate, refresher, UseAxiosP} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+
+const PRODUCTURL = "api/Products/GetProductWithPictures/"
 
 let oneProductDemo = {
    id: "0",
@@ -76,7 +78,12 @@ export default function OneProduct() {
 
    const loadingPage = async () => {
       try{
-         setProductPage(oneProductDemo)
+         //setProductPage(oneProductDemo)
+         const url = window.location.href.split("/")
+         const response = await axios.get(PRODUCTURL + url[4])
+         console.log(response)
+         console.log(response?.data)
+         setProductPage(response?.data)
          if( productPage!= null){
             setLoading(false)
          }
@@ -100,12 +107,18 @@ export default function OneProduct() {
 
    useEffect(() => {
       loadingPage()
-      //refresher(loadingPage)
    },[])
 
-   const AddToCart = async () =>{
+   const AddToCart = async (props) =>{
+      if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
+         navigate("/login",{replace:true})
+      }
       const typingTimeOut = setTimeout(async function() {
-         const response = await axsios('/api/Cart/AddInCart/' + productPage.id + '?quantity=' + quantity);
+         const response = await axiosPrivate('/api/Cart/AddInCart/' + productPage.id + '?quantity=' + quantity);
+         console.log(response)
+         if(response.status === 401){
+            navigate("/login",{replace:true})
+         }
       }, 500);
       return () => {
          clearTimeout(typingTimeOut);
@@ -133,7 +146,7 @@ export default function OneProduct() {
                        </div>
 
                        <div className='OPCD_image'>
-                          <img src={product.image} alt={`00${product.id + 1}`}
+                          <img src={product.imageUrl} alt={`00${product.id + 1}`}
                                onClick={(e) => {navigate("/products/"+product.id)}} />
                        </div>
 
@@ -141,7 +154,7 @@ export default function OneProduct() {
                           <div className='OPCD_title'><h3>{product.name}</h3></div>
                           <div className='OPCD_priceDiv'>
                              <div className='OPCD_price'>
-                                {product.discount === null ? (
+                                {true ? (
                                         <h4 className='OPCD_onlyPrice'>{product.price} GEL</h4>
                                     ) :
                                     (
@@ -180,13 +193,13 @@ export default function OneProduct() {
                    <div className="OneProductCard">
                       <div className="OP_imagePart">
                          <div className='OP_imagePart_UpperPart'>
-                            <img src={productPage.image[0]} alt="001.png"/>
+                            <img src={productPage.pictures[0]} alt="001.png"/>
                          </div>
                          <div className='OP_imagePart_LowerParts'>
-                            <img src={productPage.image[0]} alt="001.png"/>
-                            <img src={productPage.image[1]} alt="002.png"/>
-                            <img src={productPage.image[2]} alt="003.png"/>
-                            <img src={productPage.image[3]} alt="004.png"/>
+                            <img src={productPage.pictures[0]} alt="001.png"/>
+                            <img src={productPage.pictures[1]} alt="002.png"/>
+                            <img src={productPage.pictures[2]} alt="003.png"/>
+                            <img src={productPage.pictures[3]} alt="004.png"/>
                          </div>
                       </div>
                       <div className="OP_textPart">

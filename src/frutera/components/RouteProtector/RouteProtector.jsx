@@ -1,12 +1,13 @@
-import {authenticateUser, authenticateAdmin} from "../../../Utils/axios";
+import {authenticateUser, authenticateAdmin, axiosPrivate} from "../../../Utils/axios";
 import {Navigate, useLocation} from "react-router-dom";
+import {useEffect, useState} from "react";
 
+const USER_URL = "/api/User/IsLogged"
 
 export default function RouteProtector({children}){
-    let auth = authenticateUser()
     let location = useLocation()
 
-    return auth === true ? (
+    return (JSON.parse(sessionStorage.getItem("token")) !== null && JSON.parse(sessionStorage.getItem("token")).accessToken !== "none") ? (
         children
     ) : (
         <Navigate to="/login" replace state={{ path: location.pathname }} />
