@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="hotfix for axios access when loading on github">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="many fixes and backend implementation">
+      <change afterPath="$PROJECT_DIR$/src/frutera/Legal Pages/MainText/MainText.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/Legal Pages/MainText/MainText.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/Legal Pages/PaymentsPage/PaymentsPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/Legal Pages/PaymentsPage/PaymentsPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/LoadingPage/LoadingPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frutera/LoadingPage/LoadingPage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/axios.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ManageFoodItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/ProductElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/CartProduct/CartProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/PopularProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/PopularProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,31 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/frutera/components/AdminComponents&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/frutera/Legal Pages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\Legal Pages" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents" />
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components" />
       <recent name="D:\reactProjects\Frutera-Development\src\images" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\LoginPage" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\Categories" />
@@ -162,7 +156,9 @@
       <workItem from="1663877128924" duration="1968000" />
       <workItem from="1663879779332" duration="3364000" />
       <workItem from="1663935104968" duration="2845000" />
-      <workItem from="1664002620447" duration="1725000" />
+      <workItem from="1664002620447" duration="3113000" />
+      <workItem from="1664021586683" duration="2186000" />
+      <workItem from="1664042805992" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -381,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663599018585</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="many fixes and backend implementation">
+      <created>1664004607017</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664004607017</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +402,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder" />
     <MESSAGE value="optimized Cart system&#10;implemented mock voucher system" />
     <MESSAGE value="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages" />
     <MESSAGE value="Deleted old Login to allow merging" />
@@ -424,6 +426,7 @@
     <MESSAGE value="made dashboard inccessible for hosting purpouses" />
     <MESSAGE value="hosted app to github pages" />
     <MESSAGE value="hotfix for axios access when loading on github" />
-    <option name="LAST_COMMIT_MESSAGE" value="hotfix for axios access when loading on github" />
+    <MESSAGE value="many fixes and backend implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="many fixes and backend implementation" />
   </component>
 </project>

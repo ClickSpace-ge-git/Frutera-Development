@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import axios, {axiosPrivate, refresher} from "../../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import LoadingPage from "../../../LoadingPage/LoadingPage";
 
 let FeaturedProductsList = [
     {
@@ -247,14 +248,14 @@ export default function FeaturedProducts() {
                                     <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>All</button>
                                 </li>
                             }
-                            {!loading && categories.length > 0 ? mapCategories(categories,loadCats):""}
+                            {!loading && categories.length > 0 ? mapCategories(categories,loadCats):<LoadingPage/>}
                         </ul>
                     </div>
 
                     <div className='FeatureProductListCont'>
                         <div className="FeatureProductsListDiv">
 
-                            {!loading && productsList.length > 0 ? ShowFeaturedProductsList(productsList, navigate) : ""}
+                            {!loading && productsList.length > 0 ? ShowFeaturedProductsList(productsList, navigate) : <LoadingPage/>}
                         </div>
                     </div>
                 </div>

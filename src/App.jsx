@@ -10,6 +10,7 @@ import Blog from "./frutera/BlogPage/Blog";
 import ProductPage from "./frutera/ProductPage/ProductPage";
 import RouteProtector, {AdminRouteProtector} from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
+import LoadingPage from "./frutera/LoadingPage/LoadingPage";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -17,10 +18,12 @@ import './App.scss';
 import ContactUsPage from "./frutera/ContactUs/ContactUsPage";
 import {Suspense} from "react";
 import "../src/Utils/i18n.jsx"
+import RulesAndConditionsPage from "./frutera/Legal Pages/RulesAndConditionsPage/RulesAndConditionsPage";
+import PaymentsPage from "./frutera/Legal Pages/PaymentsPage/PaymentsPage";
 
 export default function App() {
     return (
-        <Suspense fallback="loading...">
+        <Suspense fallback={<LoadingPage/>}>
             <BrowserRouter>
                 <Routes>
                     <Route path='' element={<HomePage/>}/>
@@ -48,6 +51,9 @@ export default function App() {
                         </AdminRouteProtector>
                     }/>
                     <Route path='/contactus' element={<ContactUsPage/>}/>
+                    <Route path='/terms&conditions' element={<RulesAndConditionsPage/>}/>
+                    <Route path='/payments' element={<PaymentsPage/>}/>
+                    <Route path="*" element={<HomePage/>}/>
                 </Routes>
             </BrowserRouter>
         </Suspense>

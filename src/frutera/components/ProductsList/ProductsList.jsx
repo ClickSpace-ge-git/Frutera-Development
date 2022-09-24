@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import axios, {axiosPrivate, refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import LoadingPage from "../../LoadingPage/LoadingPage";
 
 let productCardList = [
    {
@@ -276,7 +277,7 @@ export default function ProductsList() {
 
                      <div className='CCD_title'><h3>All</h3></div>
                   </div>
-                  {categoryList.length > 0 ? ShowCategoryList(categoryList,loadCats):""}
+                  {categoryList.length > 0 ? ShowCategoryList(categoryList,loadCats):<LoadingPage/>}
                </div>
             </div>
 

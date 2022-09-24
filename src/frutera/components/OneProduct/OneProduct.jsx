@@ -72,7 +72,6 @@ export default function OneProduct() {
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
    const {t} = useTranslation()
-   let axsios = UseAxiosP
 
    let navigate = useNavigate()
 
@@ -81,14 +80,14 @@ export default function OneProduct() {
          //setProductPage(oneProductDemo)
          const url = window.location.href.split("/")
          const response = await axios.get(PRODUCTURL + url[4])
-         console.log(response)
-         console.log(response?.data)
          setProductPage(response?.data)
          if( productPage!= null){
             setLoading(false)
          }
       }catch (err){
-
+         if(err.message === 'Request failed with status code 400'){
+            navigate("/products")
+         }
       }
    }
 
