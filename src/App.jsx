@@ -23,7 +23,7 @@ import PaymentsPage from "./frutera/Legal Pages/PaymentsPage/PaymentsPage";
 
 export default function App() {
     useEffect(() => {
-        sessionStorage.setItem("token",{accessToken:"none"})
+        sessionStorage.setItem("token",JSON.stringify({accessToken:"none"}))
     },[])
     return (
         <Suspense fallback={<LoadingPage/>}>
