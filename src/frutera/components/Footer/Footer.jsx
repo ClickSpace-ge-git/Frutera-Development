@@ -40,8 +40,8 @@ export default function Footer() {
                   <div className="column">
                      <h4>{t("geth")}</h4>
                      <ul>
-                        <li><a href="/#">{t("privacyp")}</a></li>
-                        <li><a href="/#">{t("shipping")}</a></li>
+                        <li><a href="/confidential">{t("privacyp")}</a></li>
+                        <li><a href="/delivery">{t("shipping")}</a></li>
                         <li><a href="/terms&conditions">{t("terms")}</a></li>
                         <li><a href="/payments">{t("payment")}</a></li>
                      </ul>

@@ -20,6 +20,8 @@ import {Suspense, useEffect} from "react";
 import "../src/Utils/i18n.jsx"
 import RulesAndConditionsPage from "./frutera/Legal Pages/RulesAndConditionsPage/RulesAndConditionsPage";
 import PaymentsPage from "./frutera/Legal Pages/PaymentsPage/PaymentsPage";
+import ConfidentialPage from "./frutera/Legal Pages/ConfidentialPage/ConfidentialPage";
+import DeliveryPage from "./frutera/Legal Pages/DeliveryPage/DeliveryPage";
 
 export default function App() {
     useEffect(() => {
@@ -56,6 +58,8 @@ export default function App() {
                     <Route path='/contactus' element={<ContactUsPage/>}/>
                     <Route path='/terms&conditions' element={<RulesAndConditionsPage/>}/>
                     <Route path='/payments' element={<PaymentsPage/>}/>
+                    <Route path="/confidential" element={<ConfidentialPage/>}/>
+                    <Route path="/delivery" element={<DeliveryPage/>}/>
                     <Route path="*" element={<HomePage/>}/>
                 </Routes>
             </BrowserRouter>
