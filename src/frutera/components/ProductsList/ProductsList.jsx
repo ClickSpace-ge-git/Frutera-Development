@@ -138,7 +138,7 @@ function ShowCategoryList(props,setCat) {
          return (
                <div className="CategoryCardDiv" key={category.id} onClick={(e) => {setCat(category.id);}}>
                   <div className='CCD_image'>
-                     <img src={category.image} alt={`00${category.id + 1}`} />
+                     {/*<img src={category.image} alt={`00${category.id + 1}`} />*/}
                   </div>
 
                   <div className='CCD_title'><h3>{category.name}</h3></div>
