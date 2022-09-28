@@ -100,7 +100,7 @@ export default function ManageFoodItem() {
 
    const loadingPage = async () => {
       try{
-         const response = await (await axios.get("/api/products/GetAllProducts"))
+         const response = await axios.get("/api/Products/GetAllProductsWithPictures")
          setProductList(response?.data)
          if( productsList!= null){
             setLoading(false)

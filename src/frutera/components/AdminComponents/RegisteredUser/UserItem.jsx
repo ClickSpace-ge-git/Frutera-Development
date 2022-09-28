@@ -11,7 +11,7 @@ export default function UserItem({props,handleEdit}){
         <>
             <tr>
                 <td className='Uimage'><img src={props.img} alt={`00${props.id + 1}`} /></td>
-                <td className='UfullName'>{props.name + " " + props.surname}</td>
+                <td className='UfullName'>{props.firstName + " " + props.lastName}</td>
                 <td className='UphoneNumber'><p>{props.phoneNumber}</p></td>
                 <td className='Uemail'>{props.email}</td>
                 <td className='Upassword'>{props.password}</td>

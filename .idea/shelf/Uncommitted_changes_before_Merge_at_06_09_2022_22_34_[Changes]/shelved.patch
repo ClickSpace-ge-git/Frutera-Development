@@ -1,0 +1,27 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,17 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implemented login and register with database">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Utils/PopUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/PopUp.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Utils/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/axios.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Utils/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/i18n.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/frutera/UserPage/UserPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/UserPage/UserPage.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.jsx" afterDir="false" />
+-    </list>
++    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Initializing project demo" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

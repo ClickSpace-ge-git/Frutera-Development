@@ -1,8 +1,9 @@
 import axios from "axios";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 const BASE_URL = "https://marketplacefrt.azurewebsites.net/"
+const USER_URL = "/api/User/IsLogged"
 const REFRESH_METHOD_URL = '/api/User/refresh-token'
 
 export const refresher = (props) => {
@@ -15,12 +16,14 @@ export const sendRequest = async (url, props) => {
     return (response?.data)
 }
 
-export function authenticateUser() {
+export async function authenticateUser() {
+    //const response = await axiosPrivate(USER_URL)
+    //console.log(response.status)
     return (true)
 }
 
 export function authenticateAdmin() {
-    return (false)
+    return (true)
 }
 
 export function convertToBase64(props) {
@@ -50,12 +53,16 @@ export default axios.create({
     baseURL: BASE_URL
 })
 
-const tkn = sessionStorage.getItem('token');
-const token = JSON.parse(tkn);
-
+if(sessionStorage.getItem("token") === null){
+    sessionStorage.setItem("token",JSON.stringify({accessToken:"none"}))
+}
 export const axiosPrivate = axios.create({
     baseURL: BASE_URL,
-    headers: {'Content-Type': 'application/json','Authorization': 'Bearer '+token.accessToken,'Access-Control-Allow-Origin': "*"},
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + JSON.parse(sessionStorage.getItem("token")).accessToken,
+        'Access-Control-Allow-Origin': '*'
+    },
     withCredentials: true
 })
 
@@ -113,7 +120,20 @@ const refreshToken = async () => {
 export const UseAxiosP = () => {
     let navigate = useNavigate()
     const tkn = sessionStorage.getItem('token');
-    const token = JSON.parse(tkn);
+    let token = null
+
+    if (tkn === null) {
+        token = JSON.parse(tkn);
+        const axiosP = axios.create({
+            baseURL: BASE_URL,
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token,
+                'Access-Control-Allow-Origin': '*'
+            },
+            withCredentials: true
+        })
+    }
 
     useEffect(() => {
         const requestInterceptor = axiosPrivate.interceptors.request.use(
@@ -147,4 +167,51 @@ export const UseAxiosP = () => {
     },)
 
     return axiosPrivate;
+}
+
+export const UseAxiosPost = async (props) => {
+    let navigate = useNavigate()
+    const tkn = sessionStorage.getItem('token');
+    let axiosP = null
+    let result = null
+
+    if (tkn === null) {
+        const token = JSON.parse(tkn);
+        axiosP = axios.create({
+            baseURL: BASE_URL,
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token,
+                'Access-Control-Allow-Origin': '*'
+            },
+            withCredentials: true
+        })
+    }
+
+    useEffect(async () => {
+        result = await axiosP.post(props.ulr, props.model).data
+    })
+
+    return result;
+}
+
+export const UseAxiosAuthed = async () => {
+    const tkn = sessionStorage.getItem('token');
+    const [axiosP, setAxios] = useState(axios)
+
+    if (tkn === null) {
+        const token = JSON.parse(tkn);
+        setAxios(axios.create({
+            baseURL: BASE_URL,
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token,
+                'Access-Control-Allow-Origin': '*'
+            },
+            withCredentials: true
+        }))
+        console.log(axiosP)
+    }
+    console.log(axiosP)
+    return axiosP;
 }

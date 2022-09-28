@@ -10,17 +10,25 @@ import Blog from "./frutera/BlogPage/Blog";
 import ProductPage from "./frutera/ProductPage/ProductPage";
 import RouteProtector, {AdminRouteProtector} from "./frutera/components/RouteProtector/RouteProtector";
 import AdminPage from "./frutera/AdminPage/AdminPage";
+import LoadingPage from "./frutera/LoadingPage/LoadingPage";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import './App.scss';
 import ContactUsPage from "./frutera/ContactUs/ContactUsPage";
-import {Suspense} from "react";
+import {Suspense, useEffect} from "react";
 import "../src/Utils/i18n.jsx"
+import RulesAndConditionsPage from "./frutera/Legal Pages/RulesAndConditionsPage/RulesAndConditionsPage";
+import PaymentsPage from "./frutera/Legal Pages/PaymentsPage/PaymentsPage";
+import ConfidentialPage from "./frutera/Legal Pages/ConfidentialPage/ConfidentialPage";
+import DeliveryPage from "./frutera/Legal Pages/DeliveryPage/DeliveryPage";
 
 export default function App() {
+    useEffect(() => {
+        sessionStorage.setItem("token",JSON.stringify({accessToken:"none"}))
+    },[])
     return (
-        <Suspense fallback="loading...">
+        <Suspense fallback={<LoadingPage/>}>
             <BrowserRouter>
                 <Routes>
                     <Route path='' element={<HomePage/>}/>
@@ -48,6 +56,11 @@ export default function App() {
                         </AdminRouteProtector>
                     }/>
                     <Route path='/contactus' element={<ContactUsPage/>}/>
+                    <Route path='/terms&conditions' element={<RulesAndConditionsPage/>}/>
+                    <Route path='/payments' element={<PaymentsPage/>}/>
+                    <Route path="/confidential" element={<ConfidentialPage/>}/>
+                    <Route path="/delivery" element={<DeliveryPage/>}/>
+                    <Route path="*" element={<HomePage/>}/>
                 </Routes>
             </BrowserRouter>
         </Suspense>

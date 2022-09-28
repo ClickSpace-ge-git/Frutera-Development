@@ -1,0 +1,79 @@
+@import "../../components/ScssVariables";
+
+.MainTextContainer {
+   display: flex;
+   justify-content: center;
+   //text-align: justify;
+   //text-justify: inter-word;
+
+   h1 {
+      font-family: $TitleFontFamily2;
+   }
+
+   .MainTextContainer2 {
+      width: 80vw;
+
+      .MainTextTitle{
+         display: flex;
+         justify-content: center;
+      }
+
+      .MainTextTitle2 {
+         text-align: center;
+         h2 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: normal;
+         }
+         h4 {
+            font-style: italic;
+            margin: 30px 0;
+         }
+      }
+
+      .MainTextText1, .MainTextText2 {
+         text-align: justify;
+         text-justify: inter-word;
+
+         .boldStyle {
+            font-weight: bold;
+         }
+
+         .linkStyle {
+            color: blue;
+            cursor: pointer;
+         }
+      }
+
+      .MainTextText1 {
+         p {
+            margin-bottom: 30px;
+         }
+
+         ul li {
+            margin-left: 40px;
+         }
+      }
+
+      .MainTextText2 {
+         ul li{
+            list-style: none;
+            margin: 30px 0;
+         }
+         p {
+            margin: 30px 0;
+         }
+
+         a {
+            text-decoration: none;
+            color: blue;
+         }
+
+         .dotStyle li{
+            list-style: outside;
+            margin-left: 15px;
+         }
+      }
+   }
+
+}

@@ -10,7 +10,7 @@ export default function CategoryElement({props,handleEdit}){
     return (
         <>
             <tr>
-                <td className='Pimage'><img src={props.img} alt={`00${props.id + 1}`} /></td>
+                {/*<td className='Pimage'><img src={props.img} alt={`00${props.id + 1}`} /></td>*/}
                 <td className='Pname'>{props.id}</td>
                 <td className='Pname'>{props.name}</td>
                 <td className='Paction'>

@@ -23,7 +23,10 @@ $gridColumnSize: 20rem;
       padding: 20px 0;
    }
    .CategorieListDiv {
-      display: flex;
+      display: grid;
+      grid-template-columns: 300px 300px 300px 300px;
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
 
       .CategoryCardDiv {
          display: flex;

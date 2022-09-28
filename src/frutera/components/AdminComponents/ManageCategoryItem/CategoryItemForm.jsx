@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import './CategoryItemForm.scss';
 import {useTranslation} from "react-i18next";
-import UseAxiosP from "../../../../Utils/axios"
+import UseAxiosP, {axiosPrivate, convertToBase64} from "../../../../Utils/axios"
 import {useNavigate} from "react-router-dom";
 
 export default function CategoryItemForm({props,close}){
@@ -22,15 +22,17 @@ export default function CategoryItemForm({props,close}){
     },[])
 
     const handleSubmit = async () => {
+        const baseIMG = await convertToBase64(upload)
         const body = {
             id: id,
             Name: name,
-            imageUrl: URL.createObjectURL(upload),
+            imageUrl: baseIMG,
+            CategoryId: id,
         }
-
+        console.log((id))
         try{
-            const response = await (await UseAxiosP.post('/api/Products/InsertProduct',JSON.stringify(body))).data;
-            console.log(response)
+            const response = await axiosPrivate.post('/api/subcategory/CreateSubCategory',JSON.stringify(body)).data;
+
         }
         catch(er){
             navigate('/dashboard');
