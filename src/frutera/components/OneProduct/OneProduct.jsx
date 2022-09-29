@@ -8,7 +8,7 @@ const PRODUCTURL = "api/Products/GetProductWithPictures/"
 
 let oneProductDemo = {
    id: "0",
-   name: "Pitted Black Prunes",
+   name: "Test Product",
    weight: 100,
    price: 10.96,
    discount: 10,

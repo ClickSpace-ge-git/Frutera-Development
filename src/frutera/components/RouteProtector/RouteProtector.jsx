@@ -1,8 +1,10 @@
 import {authenticateUser, authenticateAdmin, axiosPrivate} from "../../../Utils/axios";
-import {Navigate, useLocation} from "react-router-dom";
+import {Navigate, useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
+import LoadingPage from "../../LoadingPage/LoadingPage";
 
 const USER_URL = "/api/User/IsLogged"
+const ADMIN_URL = "/api/Admin/IsAdmin"
 
 export default function RouteProtector({children}){
     let location = useLocation()
@@ -15,12 +17,49 @@ export default function RouteProtector({children}){
 }
 
 export function AdminRouteProtector({children}){
-    let auth = authenticateAdmin()
     let location = useLocation()
+    let navigate = useNavigate()
+    const [goAhead,setGoAhead] = useState(false)
+    let load = <LoadingPage/>
 
-    return auth === true ? (
+
+    const route = async () => {
+        try{
+            const response = await axiosPrivate.get(ADMIN_URL)
+            if(response.status === 200){
+                setGoAhead(true)
+                load = children
+            }else{
+                setGoAhead(false)
+                load = <LoadingPage/>
+            }
+        }catch (err){
+            setGoAhead(false)
+            load = <LoadingPage/>
+            navigate("/login",{replace:true, path:location.pathname})
+        }
+    }
+
+    useEffect(() => {
+        route()
+
+    },)
+
+    return (load === <LoadingPage/> ) ? (
+        <LoadingPage/>
+    ) : (
+        goAhead === true ? (
+            children
+        ) : (
+            <LoadingPage/>
+        )
+    )
+}
+
+/*
+    return (JSON.parse(sessionStorage.getItem("token")) !== null && JSON.parse(sessionStorage.getItem("token")).accessToken !== "none") ? (
         children
     ) : (
         <Navigate to="/login" replace state={{ path: location.pathname }} />
     );
-}
+ */

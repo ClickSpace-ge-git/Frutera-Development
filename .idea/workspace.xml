@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="added confidentiality and delivery pages">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="small updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryElement.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +159,9 @@
       <workItem from="1664291009116" duration="1494000" />
       <workItem from="1664355527092" duration="931000" />
       <workItem from="1664357988338" duration="876000" />
+      <workItem from="1664361964283" duration="649000" />
+      <workItem from="1664441804015" duration="421000" />
+      <workItem from="1664450008924" duration="4263000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -419,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664116279816</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="small updates">
+      <created>1664362024271</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1664362024271</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed productCard link" />
     <MESSAGE value="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements" />
     <MESSAGE value="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings" />
     <MESSAGE value="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform" />
@@ -462,6 +471,7 @@
     <MESSAGE value="removed second index html" />
     <MESSAGE value="added .htaccess" />
     <MESSAGE value="added confidentiality and delivery pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added confidentiality and delivery pages" />
+    <MESSAGE value="small updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="small updates" />
   </component>
 </project>
