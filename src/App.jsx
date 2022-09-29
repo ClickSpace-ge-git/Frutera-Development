@@ -25,7 +25,9 @@ import DeliveryPage from "./frutera/Legal Pages/DeliveryPage/DeliveryPage";
 
 export default function App() {
     useEffect(() => {
-        sessionStorage.setItem("token",JSON.stringify({accessToken:"none"}))
+        if(sessionStorage.getItem("token") === null){
+            sessionStorage.setItem("token",JSON.stringify({accessToken:"none"}))
+        }
     },[])
     return (
         <Suspense fallback={<LoadingPage/>}>

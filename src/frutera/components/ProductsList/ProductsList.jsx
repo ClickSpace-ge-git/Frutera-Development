@@ -5,105 +5,88 @@ import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import LoadingPage from "../../LoadingPage/LoadingPage";
 
-let productCardList = [
+let demoProductsList = [
    {
       id: "0",
       name: "Pitted Black Prunes",
-      weight: 100,
-      price: 10.96,
-      discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/001.png"),
-      category: "prunes"
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+         It generally contains seeds. Fruits are usually eaten raw, although 
+         some varieties can be cooked. They come in a wide variety of colours, 
+         shapes and flavours.`,
+      img: require('../../../images/CartPage/001.png'),
+      price: 11.99,
+      discount: 10,
+      stock: true
    },
-
    {
       id: "1",
       name: "Dried Red Apple (Idared)",
-      weight: 200,
-      price: 11.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png"),
-      category: "apple"
-
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+         It generally contains seeds. Fruits are usually eaten raw, although 
+         some varieties can be cooked. They come in a wide variety of colours, 
+         shapes and flavours.`,
+      img: require('../../../images/CartPage/002.png'),
+      price: 12.99,
+      discount: 20,
+      stock: false
    },
 
    {
       id: "2",
       name: "Dried Yellow Apple (Golden)",
-      weight: 300,
-      price: 13.96,
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+         It generally contains seeds. Fruits are usually eaten raw, although 
+         some varieties can be cooked. They come in a wide variety of colours, 
+         shapes and flavours.`,
+      img: require('../../../images/CartPage/003.png'),
+      price: 13.99,
       discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/002.png"),
-      category: "apple"
+      stock: true
    },
 
    {
       id: "3",
       name: "Dried Red Apple (Jona Gold)",
-      weight: 400,
-      price: 14.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/002.png"),
-      category: "apple"
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+      It generally contains seeds. Fruits are usually eaten raw, although 
+      some varieties can be cooked. They come in a wide variety of colours, 
+      shapes and flavours.`,
+      img: require('../../../images/CartPage/004.png'),
+      price: 14.99,
+      discount: 40,
+      stock: false
    },
-
    {
       id: "4",
-      name: "Pitted Black Prunes",
-      weight: 100,
-      price: 10.96,
-      discount: 10,
-      image: require("../../../images/ProductPage/OneProduct/003.png"),
-      category: "prunes"
+      name: "Dried Red Apple (Jona Gold)",
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+      It generally contains seeds. Fruits are usually eaten raw, although 
+      some varieties can be cooked. They come in a wide variety of colours, 
+      shapes and flavours.`,
+      img: require('../../../images/CartPage/004.png'),
+      price: 14.99,
+      discount: 40,
+      stock: false
    },
-
    {
       id: "5",
-      name: "Dried Red Apple (Idared)",
-      weight: 200,
-      price: 11.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/004.png"),
-      category: "apple"
-   },
+      name: "Dried Red Apple (Jona Gold)",
+      description:
+          `Fruit is the sweet, fleshy, edible part of a plant. 
+      It generally contains seeds. Fruits are usually eaten raw, although 
+      some varieties can be cooked. They come in a wide variety of colours, 
+      shapes and flavours.`,
+      img: require('../../../images/CartPage/004.png'),
+      price: 14.99,
+      discount: 40,
+      stock: false
+   }
 
-   {
-      id: "6",
-      name: "Dried Yellow Apple (Golden)",
-      weight: 300,
-      price: 13.96,
-      discount: 30,
-      image: require("../../../images/ProductPage/OneProduct/004.png"),
-      category: "apple"
-   },
-
-   {
-      id: "7",
-      name: "Dried Red Apple (Jona Gold)",
-      weight: 400,
-      price: 14.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png"),
-      category: "apple"
-   },
-   {
-      id: "8",
-      name: "Dried Red Apple (Jona Gold)",
-      weight: 400,
-      price: 14.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png"),
-      category: "apple"
-   },
-   {
-      id: "9",
-      name: "Dried Red Apple (Jona Gold)",
-      weight: 400,
-      price: 14.96,
-      discount: null,
-      image: require("../../../images/ProductPage/OneProduct/001.png"),
-      category: "apple"
-   },
 ]
 
 let categoryListDemo = [
