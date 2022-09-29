@@ -34,11 +34,21 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path='' element={<HomePage/>}/>
-                    <Route path='/home' element={<HomePage/>}/>
-                    <Route path='/home/*' element={<HomePage/>}/>
-                    {/*<Route path='/aboutus' element={<AboutUsPage/>}/>*/}
-                    <Route path='/aboutus/*' element={<AboutUsPage/>}/>
-                    <Route path='/products' element={<ProductsPage/>}/>
+                    <Route path='/home' element={<HomePage/>}>
+                        <Route path='/?lng=ka' element={<HomePage/>}/>
+                        <Route path='/?lng=en' element={<HomePage/>}/>
+                        <Route path='/?lng=ru' element={<HomePage/>}/>
+                    </Route>
+                    <Route path='/aboutus' element={<AboutUsPage/>}>
+                        <Route path='/?lng=ka' element={<AboutUsPage/>}/>
+                        <Route path='/?lng=en' element={<AboutUsPage/>}/>
+                        <Route path='/?lng=ru' element={<AboutUsPage/>}/>
+                    </Route>
+                    <Route path='/products' element={<ProductsPage/>}>
+                        <Route path='/?lng=ka' element={<ProductsPage/>}/>
+                        <Route path='/?lng=en' element={<ProductsPage/>}/>
+                        <Route path='/?lng=ru' element={<ProductsPage/>}/>
+                    </Route>
                     <Route path='/cart' element={
                         <RouteProtector>
                             <CartPage/>

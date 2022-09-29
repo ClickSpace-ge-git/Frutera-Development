@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="increased security of route protectors">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="testing routes for deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
     </list>
@@ -158,7 +158,7 @@
       <workItem from="1664357988338" duration="876000" />
       <workItem from="1664361964283" duration="649000" />
       <workItem from="1664441804015" duration="421000" />
-      <workItem from="1664450008924" duration="6037000" />
+      <workItem from="1664450008924" duration="7495000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -433,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664454586563</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="testing routes for deployment">
+      <created>1664461087194</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664461087194</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings" />
     <MESSAGE value="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform" />
     <MESSAGE value="Update to Admin&#10;Implemented Ioanes fixes&#10;Added Blogs Section" />
     <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
@@ -476,6 +482,7 @@
     <MESSAGE value="added confidentiality and delivery pages" />
     <MESSAGE value="small updates" />
     <MESSAGE value="increased security of route protectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="increased security of route protectors" />
+    <MESSAGE value="testing routes for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing routes for deployment" />
   </component>
 </project>
