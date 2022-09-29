@@ -52,29 +52,110 @@ export default function App() {
                     <Route path='/cart' element={
                         <RouteProtector>
                             <CartPage/>
+                        </RouteProtector>}>
+                        <Route path='?lng=ka' element={
+                            <RouteProtector>
+                            <CartPage/>
                         </RouteProtector>}/>
-                    <Route path='/register' element={<RegisterPage/>}/>
-                    <Route path='/login' element={<LoginPage/>}/>
-                    <Route path='/blogs' element={<BlogsPage/>}/>
-                    <Route path='/blogs/:blogId' element={<Blog/>}/>
+                        <Route path='?lng=en' element={
+                            <RouteProtector>
+                                <CartPage/>
+                            </RouteProtector>}/>/>
+                        <Route path='?lng=ru' element={
+                            <RouteProtector>
+                                <CartPage/>
+                            </RouteProtector>}/>/>
+                    </Route>
+                    <Route path='/register' element={<RegisterPage/>}>
+                        <Route path='?lng=ka' element={<RegisterPage/>}/>
+                        <Route path='?lng=en' element={<RegisterPage/>}/>
+                        <Route path='?lng=ru' element={<RegisterPage/>}/>
+                    </Route>
+                    <Route path='/login' element={<LoginPage/>}>
+                        <Route path='?lng=ka' element={<LoginPage/>}/>
+                        <Route path='?lng=en' element={<LoginPage/>}/>
+                        <Route path='?lng=ru' element={<LoginPage/>}/>
+                    </Route>
+                    <Route path='/blogs' element={<BlogsPage/>}>
+                        <Route path='?lng=ka' element={<BlogsPage/>}/>
+                        <Route path='?lng=en' element={<BlogsPage/>}/>
+                        <Route path='?lng=ru' element={<BlogsPage/>}/>
+                    </Route>
+                    <Route path='/blogs/:blogId' element={<Blog/>}>
+                        <Route path='?lng=ka' element={<Blog/>}/>
+                        <Route path='?lng=en' element={<Blog/>}/>
+                        <Route path='?lng=ru' element={<Blog/>}/>
+                    </Route>
                     <Route path='/user' element={
                         <RouteProtector>
                             <UserPage/>
-                        </RouteProtector>
-                    }>
+                        </RouteProtector>}>
+                        <Route path='?lng=ka' element={
+                            <RouteProtector>
+                                <UserPage/>
+                            </RouteProtector>}/>
+                        <Route path='?lng=en' element={
+                            <RouteProtector>
+                                <UserPage/>
+                            </RouteProtector>}/>/>
+                        <Route path='?lng=ru' element={
+                            <RouteProtector>
+                                <UserPage/>
+                            </RouteProtector>}/>/>
                     </Route>
-                    <Route path='/products/:productId' element={<ProductPage/>}/>
+                    <Route path='/products/:productId' element={<ProductPage/>}>
+                        <Route path='?lng=ka' element={<Blog/>}/>
+                        <Route path='?lng=en' element={<Blog/>}/>
+                        <Route path='?lng=ru' element={<Blog/>}/>
+                    </Route>
                     <Route path='/dashboard' element={
                         <AdminRouteProtector>
                             <AdminPage/>
                         </AdminRouteProtector>
-                    }/>
-                    <Route path='/contactus' element={<ContactUsPage/>}/>
-                    <Route path='/terms&conditions' element={<RulesAndConditionsPage/>}/>
-                    <Route path='/payments' element={<PaymentsPage/>}/>
-                    <Route path="/confidential" element={<ConfidentialPage/>}/>
-                    <Route path="/delivery" element={<DeliveryPage/>}/>
-                    <Route path="*" element={<HomePage/>}/>
+                    }>
+                        <Route path='?lng=ka' element={
+                            <AdminRouteProtector>
+                                <AdminPage/>
+                            </AdminRouteProtector>}/>
+                        <Route path='?lng=en' element={
+                            <AdminRouteProtector>
+                                <AdminPage/>
+                            </AdminRouteProtector>}/>/>
+                        <Route path='?lng=ru' element={
+                            <AdminRouteProtector>
+                                <AdminPage/>
+                            </AdminRouteProtector>}/>/>
+                    </Route>
+                    <Route path='/contactus' element={<ContactUsPage/>}>
+                        <Route path='?lng=ka' element={<ContactUsPage/>}/>
+                        <Route path='?lng=en' element={<ContactUsPage/>}/>
+                        <Route path='?lng=ru' element={<ContactUsPage/>}/>
+                    </Route>
+                    <Route path='/terms&conditions' element={<RulesAndConditionsPage/>}>
+                        <Route path='?lng=ka' element={<RulesAndConditionsPage/>}/>
+                        <Route path='?lng=en' element={<RulesAndConditionsPage/>}/>
+                        <Route path='?lng=ru' element={<RulesAndConditionsPage/>}/>
+                    </Route>
+                    <Route path='/payments' element={<PaymentsPage/>}>
+                        <Route path='?lng=ka' element={<PaymentsPage/>}/>
+                        <Route path='?lng=en' element={<PaymentsPage/>}/>
+                        <Route path='?lng=ru' element={<PaymentsPage/>}/>
+                    </Route>
+                    <Route path="/confidential" element={<ConfidentialPage/>}>
+                        <Route path='?lng=ka' element={<ConfidentialPage/>}/>
+                        <Route path='?lng=en' element={<ConfidentialPage/>}/>
+                        <Route path='?lng=ru' element={<ConfidentialPage/>}/>
+                    </Route>
+                    <Route path="/delivery" element={<DeliveryPage/>}>
+                        <Route path='?lng=ka' element={<DeliveryPage/>}/>
+                        <Route path='?lng=en' element={<DeliveryPage/>}/>
+                        <Route path='?lng=ru' element={<DeliveryPage/>}/>
+                    </Route>
+                    <Route path="*" element={<HomePage/>}>
+                        <Route path='?lng=ka' element={<HomePage/>}/>
+                        <Route path='?lng=en' element={<HomePage/>}/>
+                        <Route path='?lng=ru' element={<HomePage/>}/>
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </Suspense>
