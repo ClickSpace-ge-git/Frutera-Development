@@ -35,7 +35,9 @@ export default function App() {
                 <Routes>
                     <Route path='' element={<HomePage/>}/>
                     <Route path='/home' element={<HomePage/>}/>
-                    <Route path='/aboutus' element={<AboutUsPage/>}/>
+                    <Route path='/home/*' element={<HomePage/>}/>
+                    {/*<Route path='/aboutus' element={<AboutUsPage/>}/>*/}
+                    <Route path='/aboutus/*' element={<AboutUsPage/>}/>
                     <Route path='/products' element={<ProductsPage/>}/>
                     <Route path='/cart' element={
                         <RouteProtector>
