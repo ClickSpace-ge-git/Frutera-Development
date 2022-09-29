@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed some routes for language changing">
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="added app.yaml for easier uploading" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +155,7 @@
       <workItem from="1664357988338" duration="876000" />
       <workItem from="1664361964283" duration="649000" />
       <workItem from="1664441804015" duration="421000" />
-      <workItem from="1664450008924" duration="8917000" />
+      <workItem from="1664450008924" duration="9628000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -460,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664464996512</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="added app.yaml for easier uploading">
+      <created>1664465239421</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1664465239421</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update to Admin&#10;Implemented Ioanes fixes&#10;Added Blogs Section" />
     <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
     <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
     <MESSAGE value="Implemented Iraklis Blogs" />
@@ -503,6 +507,7 @@
     <MESSAGE value="increased security of route protectors" />
     <MESSAGE value="testing routes for deployment" />
     <MESSAGE value="fixed some routes for language changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some routes for language changing" />
+    <MESSAGE value="added app.yaml for easier uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="added app.yaml for easier uploading" />
   </component>
 </project>
