@@ -1,5 +1,6 @@
 import './LanguageBar.scss';
 import {useState} from 'react';
+import i18next from "i18next";
 
 var drop = true;
 const drp = document.getElementsByClassName("dropDownList");
@@ -65,19 +66,7 @@ export default function LanguageList() {
       }
 
       function changeLanguage(i){
-         let location = window.location.href
-         let locationR = window.location.href.substring(location.length-8,location.length-2)
-         if(
-             locationR === "/?lng="
-         ){
-            window.location.replace(location.substring(0,location.length-2) + languages[index].id)
-         }
-         else if(location[location.length-1] !== "/"){
-            location = location + '/'
-            window.location.replace(location + "?lng=" + languages[index].id)
-         }else{
-            window.location.replace(location + "?lng=" + languages[index].id)
-         }
+         i18next.changeLanguage(languages[index].id)
          sessionStorage.setItem("lan",index)
       }
 
