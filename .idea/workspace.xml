@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed product png to jpg" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed product png to jpg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,14 +165,7 @@
       <workItem from="1664905587263" duration="123000" />
       <workItem from="1664954138496" duration="3856000" />
       <workItem from="1664961156601" duration="964000" />
-      <workItem from="1664962660801" duration="1456000" />
-    </task>
-    <task id="LOCAL-00002" summary="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder">
-      <created>1661535156697</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1661535156697</updated>
+      <workItem from="1664962660801" duration="2516000" />
     </task>
     <task id="LOCAL-00003" summary="optimized Cart system&#10;implemented mock voucher system">
       <created>1661601454483</created>
@@ -508,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664964694681</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="changed product png to jpg">
+      <created>1664965129149</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1664965129149</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
