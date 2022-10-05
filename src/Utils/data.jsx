@@ -9,11 +9,11 @@ export const testDriedApples = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    },
    {
@@ -26,11 +26,11 @@ export const testDriedApples = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    },
 
@@ -44,11 +44,11 @@ export const testDriedApples = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    }
 ]
@@ -64,11 +64,11 @@ export const testDriedPlums = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum1.png"),
-         require("../images/ProductList/plum2.png"),
-         require("../images/ProductList/plum2.png"),
-         require("../images/ProductList/plum1.png"),
-         require("../images/ProductList/plum1.png"),
+         require("../images/ProductList/plum1.jpg"),
+         require("../images/ProductList/plum2.jpg"),
+         require("../images/ProductList/plum2.jpg"),
+         require("../images/ProductList/plum1.jpg"),
+         require("../images/ProductList/plum1.jpg"),
       ]
    },
 
@@ -82,11 +82,11 @@ export const testDriedPlums = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
       ]
    },
 
@@ -100,11 +100,11 @@ export const testDriedPlums = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
       ]
    }
 ]
@@ -120,11 +120,11 @@ export const testDriedPears = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
       ]
    },
 ]
@@ -140,11 +140,11 @@ export const testDriedPeaches = [
           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
           "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
       ]
    },
 ]
@@ -160,11 +160,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    },
    {
@@ -177,11 +177,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    },
 
@@ -195,11 +195,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple3.png"),
-         require("../images/ProductList/apple2.png"),
-         require("../images/ProductList/apple1.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple5.png"),
+         require("../images/ProductList/apple3.jpg"),
+         require("../images/ProductList/apple2.jpg"),
+         require("../images/ProductList/apple1.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple5.jpg"),
       ]
    },
 
@@ -213,11 +213,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
-         require("../images/ProductList/pear1.png"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
+         require("../images/ProductList/pear1.jpg"),
       ]
    },
 
@@ -231,11 +231,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
-         require("../images/ProductList/peach1.png"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
+         require("../images/ProductList/peach1.jpg"),
       ]
    },
 
@@ -249,11 +249,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum1.png"),
-         require("../images/ProductList/plum2.png"),
-         require("../images/ProductList/plum2.png"),
-         require("../images/ProductList/plum1.png"),
-         require("../images/ProductList/plum1.png"),
+         require("../images/ProductList/plum1.jpg"),
+         require("../images/ProductList/plum2.jpg"),
+         require("../images/ProductList/plum2.jpg"),
+         require("../images/ProductList/plum1.jpg"),
+         require("../images/ProductList/plum1.jpg"),
       ]
    },
 
@@ -267,11 +267,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
-         require("../images/ProductList/plum3.png"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
+         require("../images/ProductList/plum3.jpg"),
       ]
    },
 
@@ -285,11 +285,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
-         require("../images/ProductList/plum4.png"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
+         require("../images/ProductList/plum4.jpg"),
       ]
    },
 
@@ -303,11 +303,11 @@ export const testProductsList = [
          "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
          "pectins. 100 gr. of the product contains 235 kcal",
       images: [
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple4.png"),
-         require("../images/ProductList/apple4.png"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple4.jpg"),
+         require("../images/ProductList/apple4.jpg"),
       ]
    },
 ]
