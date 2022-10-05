@@ -90,25 +90,25 @@ let categoryListDemo = [
     {
         id: "1",
         name: "Dried Apples",
-        image: require("../../../images/ProductPage/ProductCategories/dried_apple_img.png"),
+        image: require("../../../../images/ProductPage/ProductCategories/dried_apple_img.png"),
     },
 
     {
         id: "2",
         name: "Dried Plums",
-        image: require("../../../images/ProductPage/ProductCategories/dried_plum_img.png"),
+        image: require("../../../../images/ProductPage/ProductCategories/dried_plum_img.png"),
     },
 
     {
         id: "3",
         name: "Dried Pears",
-        image: require("../../../images/ProductPage/ProductCategories/dried_pear_img.png"),
+        image: require("../../../../images/ProductPage/ProductCategories/dried_pear_img.png"),
     },
 
     {
         id: "4",
         name: "Dried Peaches",
-        image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
+        image: require("../../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
     }
 ]
 
