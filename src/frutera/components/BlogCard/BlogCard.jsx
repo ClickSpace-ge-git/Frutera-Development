@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import axios, {refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {testBlogCardsList} from "../../../Utils/data";
 
 let blogCardsList = [
    {
@@ -60,6 +61,7 @@ export default function BlogCard() {
    const [loading, setLoading] = useState(true)
    const {t} = useTranslation()
    let navigate = useNavigate()
+   const [testBlogs,setTestBlogs] = useState(testBlogCardsList)
 
    const goToBlog = (props) =>{
       navigate("/blogs/" + props)
@@ -67,7 +69,7 @@ export default function BlogCard() {
 
    const loadingPage = async () => {
       try{
-         setBlogList(blogCardsList)
+         setBlogList(testBlogs)
          if( blogList!= null){
             setLoading(false)
          }

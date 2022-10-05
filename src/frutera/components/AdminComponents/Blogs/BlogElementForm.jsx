@@ -19,9 +19,7 @@ export default function BlogElementForm({props,close}){
     },[])
 
     const handleSubmit = () => {
-
         close()
-
     }
 
     function displayDate(time) {
@@ -33,31 +31,33 @@ export default function BlogElementForm({props,close}){
     }
 
     return(
-        <div className="createOelement">
-
+        <div className="BlogElementFormContainer">
             <h3>{t("edit")} {t("blogs")} {t("list")} {t("element")}</h3>
 
-            <form className='Oelement'>
-                <div className='textPart'>
+            <form className='BEF_form'>
+                <div className='BEF_textPart'>
 
                     <div className='inputBx'>
                         <label className='titleLabel'>{t("title")}</label>
                         <input type="text" placeholder='Enter Name'
                                value={title} onChange={(e) => {setTitle(e.target.value)}}/>
                     </div>
+
                     <div className='inputBx'>
                         <label className='titleLabel'>{t("date")}</label>
                         <input type="date" placeholder='Enter Date'
                                value={displayDate(date)} onChange={(e) => {setDate(e.target.value)}}/>
                     </div>
+
                     <div className='inputBx'>
-                        <label className='titleLabel'>{t("header")}</label>
-                        <input type="text" placeholder='Enter Header'
+                        <label className='titleLabel forTextArea'>{t("header")}</label>
+                        <textarea type="text" placeholder='Enter Header'
                                value={header} onChange={(e) => {setHeader(e.target.value)}}/>
                     </div>
+
                     <div className='inputBx'>
-                        <label className='titleLabel'>{t("footer")}</label>
-                        <input type="text" placeholder='Enter Footer'
+                        <label className='titleLabel forTextArea'>{t("footer")}</label>
+                        <textarea type="text" placeholder='Enter Footer'
                                value={footer} onChange={(e) => {setFooter(e.target.value)}}/>
                     </div>
                 </div>

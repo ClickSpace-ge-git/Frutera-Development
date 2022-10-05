@@ -23,7 +23,7 @@
          .firstPart, .secondPart {
             display: flex;
             justify-content: space-between;
-            
+
             input {
                outline: none;
                border: none;
@@ -70,15 +70,15 @@
 
          table {
             padding-top: 15px;
-   
-   
-   
+
+
+
             td {
                width: 200px;
                text-align: center;
                vertical-align: middle;
             }
-   
+
             tbody {
                .Uimage{
                   img{
@@ -87,7 +87,7 @@
                      margin: 5px;
                   }
                }
-   
+
                .Uaction {
                   width: 200px;
                   .penBtn, .trashBtn {
@@ -100,35 +100,35 @@
                      transition: 0.2s;
                      width: 53px;
                      height: 53px;
-   
+
                      i {
                         font-size: 17px;
                      }
-   
+
                      &:hover {
                         i {
                            color: white;
                         }
                      }
-                     
+
                   }
-   
+
                   .penBtn {
                      border: 2px $greenColor solid;
                      background-color: white;
-   
+
                      i {
                         color: $greenColor;
                      }
-                     
+
                      &:hover {
                         background-color: $greenColor;
                      }
                   }
-   
+
                   .trashBtn {
                      border: 2px $redColor solid;
-   
+
                      i {
                         color: $redColor;
                      }

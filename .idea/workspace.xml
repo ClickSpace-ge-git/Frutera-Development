@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="added app.yaml for easier uploading" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed how language changing works, removed extra url's">
+      <change afterPath="$PROJECT_DIR$/src/Utils/data.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/peach1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/peach2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/pear1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElementForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,31 +76,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/reactProjects/Frutera-Development/src/frutera/Legal Pages/ConfidentialPage&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/reactProjects/Frutera-Development/src/Utils",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "D:\\WebStorm\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\Legal Pages\ConfidentialPage" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\Legal Pages\DeliveryPage" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\Legal Pages" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera" />
-      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents" />
+      <recent name="D:\reactProjects\Frutera-Development\src\Utils" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\RegisteredUser" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\ProductsList" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\Orders" />
+      <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\AdminComponents\ManageFoodItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\reactProjects\Frutera-Development\src\frutera\components\Categories" />
@@ -155,7 +189,13 @@
       <workItem from="1664357988338" duration="876000" />
       <workItem from="1664361964283" duration="649000" />
       <workItem from="1664441804015" duration="421000" />
-      <workItem from="1664450008924" duration="9628000" />
+      <workItem from="1664450008924" duration="10663000" />
+      <workItem from="1664467647690" duration="22000" />
+      <workItem from="1664467780375" duration="190000" />
+      <workItem from="1664468163680" duration="413000" />
+      <workItem from="1664546791942" duration="914000" />
+      <workItem from="1664905587263" duration="123000" />
+      <workItem from="1664954138496" duration="3313000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -465,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664465239421</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="changed how language changing works, removed extra url's">
+      <created>1664466026297</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1664466026297</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Ioanes Blogs&#10;Changed Header" />
     <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
@@ -508,6 +554,7 @@
     <MESSAGE value="testing routes for deployment" />
     <MESSAGE value="fixed some routes for language changing" />
     <MESSAGE value="added app.yaml for easier uploading" />
-    <option name="LAST_COMMIT_MESSAGE" value="added app.yaml for easier uploading" />
+    <MESSAGE value="changed how language changing works, removed extra url's" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed how language changing works, removed extra url's" />
   </component>
 </project>

@@ -4,6 +4,7 @@ import axios, {axiosPrivate, refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import LoadingPage from "../../LoadingPage/LoadingPage";
+import {testDriedApples, testDriedPeaches, testDriedPears, testDriedPlums, testProductsList} from "../../../Utils/data";
 
 let demoProductsList = [
    {
@@ -91,25 +92,25 @@ let demoProductsList = [
 
 let categoryListDemo = [
    {
-      id: "0",
+      id: "1",
       name: "Dried Apples",
       image: require("../../../images/ProductPage/ProductCategories/dried_apple_img.png"),
    },
 
    {
-      id: "1",
+      id: "2",
       name: "Dried Plums",
       image: require("../../../images/ProductPage/ProductCategories/dried_plum_img.png"),
    },
 
    {
-      id: "2",
+      id: "3",
       name: "Dried Pears",
       image: require("../../../images/ProductPage/ProductCategories/dried_pear_img.png"),
    },
 
    {
-      id: "3",
+      id: "4",
       name: "Dried Peaches",
       image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
    }
@@ -168,7 +169,7 @@ function ShowProductCardList(props,goToProduct,t,nav) {
                   </div>
 
                   <div className='PCD_image' onClick={(e) => {goToProduct(product.id)}}>
-                     <img src={product.pictures[0]} alt={`00${product.id + 1}`} />
+                     <img src={product.images[0]} alt={`00${product.id + 1}`} />
                   </div>
 
                   <div className='PCD_text' onClick={(e) => {goToProduct(product.id)}}>
@@ -212,27 +213,52 @@ export default function ProductsList() {
    const [loading, setLoading] = useState(true)
    let navigate = useNavigate()
    const {t} = useTranslation()
+   const [testProduct,setTestProducts] = useState(testProductsList)
 
    const goToProduct = (props) =>{
       navigate("/products/" + props)
    }
 
    const loadCats = async (props) => {
+      console.log(props)
+      switch (props){
+         case "0":
+            setProductPage(testProductsList)
+            break
+         case "1":
+            setProductPage(testDriedApples)
+            break
+         case "2":
+            setProductPage(testDriedPlums)
+            break
+         case "3":
+            setProductPage(testDriedPears)
+            break
+         case "4":
+            setProductPage(testDriedPeaches)
+            break
+         default:
+            setProductPage(testProductsList)
+            break
+      }
+      console.log(productList)
+
+      /*
       if(props === "0"){
          const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
          setProductPage(response?.data)
       }else{
          const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
          setProductPage(response?.data)
-      }
+      }*/
    }
 
    const loadingPage = async () => {
       try{
-         const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
-         const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-         setProductPage(response?.data)
-         setCategoryList(response2?.data)
+         //const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
+         //const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+         setProductPage(testProduct)
+         setCategoryList(categoryListDemo)
          if( productList != null){
             setLoading(false)
          }

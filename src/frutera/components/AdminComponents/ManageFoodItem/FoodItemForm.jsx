@@ -68,63 +68,64 @@ export default function FoodItemForm({props,close}){
     }
 
     return(
-        <div className="createFelement">
+        <div className="FoodItemFormContainer">
+            <div className="createFelement">
+                <h3>{t("create")} {t("product")} {t("element")}</h3>
 
-            <h3>{t("create")} {t("product")} {t("element")}</h3>
+                <div className='Felement'>
+                    <div className='textPart'>
 
-            <div className='Felement'>
-                <div className='textPart'>
-
-                    <div className='inputBx'>
-                        <label className='titleLabel'>{t("name")}</label>
-                        <input type="text" placeholder='Enter Name' value={name} onChange={(e) =>{setName(e.target.value)}}/>
-                    </div>
-                    <div className='inputBx'>
-                        <label className='titleLabel'>{t("price")}</label>
-                        <input type="text" placeholder='Enter Price' value={price} onChange={(e) =>{setPrice(e.target.value)}}/>
-                    </div>
-                    <div className='inputBx'>
-                        <label className='titleLabel'>{t("category")}</label>
-                        <input type="text" placeholder='Enter Category' value={category} onChange={(e) =>{setCategory(e.target.value)}}/>
-                    </div>
-                    <div className='inputBx'>
-                        <label className='titleLabel'>{t("id")}</label>
-                        <input type="text" placeholder='Enter Id' value={id} onChange={(e) =>{setId(e.target.value)}}/>
-                    </div>
-                    <div className='inputBx'>
-                        <label className='titleLabel'>{t("stock")}</label>
-                        <select value={stock} onChange={(e) =>{setName(e.target.value)}}>
-                            <option value="IS">{t("instock")}</option>
-                            <option value="OS">{t("outofstock")}</option>
-                        </select>
-                    </div>
-                    <div className='inputBx'>
-                        <label className='titleLabel forTextArea'>{t("description")}</label>
-                        <textarea  placeholder='Enter Description' value={des} onChange={(e) =>{setDes(e.target.value)}}></textarea>
-                    </div>
-                </div>
-
-                <div className='imgPart'>
-                    <div id='dI' className='displayImg'>
-                        {uploaded === true ?
-                            <img src={URL.createObjectURL(upload)} className="product-image"/>:
-                            <img src={img} className="product-image"/>}
-                    </div>
-                    <div className='inputBx'>
-                        <label className='inputtype'>
-                            {t("upload")} {t("image")}
-                            <input type="file" id='image_input' onChange={(e) =>{if(
-                                e.target.files && e.target.files[0]) {
-                                (setUpload(e.target.files[0]))
-                                setUploaded(true)
-                            }}}/>
-                        </label>
-                        <label className='titleLabel'>{t("image")}</label>
+                        <div className='inputBx'>
+                            <label className='titleLabel'>{t("name")}</label>
+                            <input type="text" placeholder='Enter Name' value={name} onChange={(e) =>{setName(e.target.value)}}/>
+                        </div>
+                        <div className='inputBx'>
+                            <label className='titleLabel'>{t("price")}</label>
+                            <input type="text" placeholder='Enter Price' value={price} onChange={(e) =>{setPrice(e.target.value)}}/>
+                        </div>
+                        <div className='inputBx'>
+                            <label className='titleLabel'>{t("category")}</label>
+                            <input type="text" placeholder='Enter Category' value={category} onChange={(e) =>{setCategory(e.target.value)}}/>
+                        </div>
+                        <div className='inputBx'>
+                            <label className='titleLabel'>{t("id")}</label>
+                            <input type="text" placeholder='Enter Id' value={id} onChange={(e) =>{setId(e.target.value)}}/>
+                        </div>
+                        <div className='inputBx'>
+                            <label className='titleLabel'>{t("stock")}</label>
+                            <select value={stock} onChange={(e) =>{setName(e.target.value)}}>
+                                <option value="IS">{t("instock")}</option>
+                                <option value="OS">{t("outofstock")}</option>
+                            </select>
+                        </div>
+                        <div className='inputBx'>
+                            <label className='titleLabel forTextArea'>{t("description")}</label>
+                            <textarea  placeholder='Enter Description' value={des} onChange={(e) =>{setDes(e.target.value)}}></textarea>
+                        </div>
                     </div>
 
-                    <div className='MFIBtns'>
-                        <button className='MFIBtn' onClick={() => {handleSubmit()}}>{t("add")} {t("product")}</button>
-                        <button className='MFIBtn' onClick={() => {close()}}>{t("cancel")}</button>
+                    <div className='imgPart'>
+                        <div id='dI' className='displayImg'>
+                            {uploaded === true ?
+                               <img src={URL.createObjectURL(upload)} className="product-image"/>:
+                               <img src={img} className="product-image"/>}
+                        </div>
+                        <div className='inputBx'>
+                            <label className='inputtype'>
+                                {t("upload")} {t("image")}
+                                <input type="file" id='image_input' onChange={(e) =>{if(
+                                   e.target.files && e.target.files[0]) {
+                                    (setUpload(e.target.files[0]))
+                                    setUploaded(true)
+                                }}}/>
+                            </label>
+                            <label className='titleLabel'>{t("image")}</label>
+                        </div>
+
+                        <div className='MFIBtns'>
+                            <button className='MFIBtn' onClick={() => {handleSubmit()}}>{t("add")} {t("product")}</button>
+                            <button className='MFIBtn' onClick={() => {close()}}>{t("cancel")}</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @import '../../ScssVariables.scss';
 
-.MFIcontainer {
+.FoodItemFormContainer {
    margin: 20px;
 
    h1, h4, h3 {
@@ -23,7 +23,7 @@
       .Felement {
          display: flex;
          justify-content: space-between;
-         
+
          .inputBx {
             display: flex;
             padding-bottom: 10px;
@@ -53,7 +53,7 @@
             }
 
             select {
-               width:100%; 
+               width:100%;
                border: $orangeColor 1px solid;
                background-color: white;
                cursor: pointer;
@@ -75,7 +75,7 @@
                height: 100px;
             }
          }
-         
+
          .textPart {
             width: 500px;
          }
@@ -133,7 +133,7 @@
                   padding: 10px 20px;
                   cursor: pointer;
                   font-size: 16px;
-   
+
                   &:hover {
                      background-color: $orangeColor2;
                   }
