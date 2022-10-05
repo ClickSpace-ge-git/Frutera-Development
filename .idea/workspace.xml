@@ -4,40 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed how language changing works, removed extra url's">
-      <change afterPath="$PROJECT_DIR$/src/Utils/data.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/apple5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/peach1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/peach2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/pear1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ProductList/plum4.png" afterDir="false" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="showcase version for prezentatation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/LoginPage/LoginPage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogElementForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/BlogListElementForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Blogs/Blogs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/DashBoard/DashBoard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageFoodItem/FoodItemForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElementForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElementForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/RegisteredUser.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/BlogCard/BlogCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/User/User.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/User/User.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +163,7 @@
       <workItem from="1664468163680" duration="413000" />
       <workItem from="1664546791942" duration="914000" />
       <workItem from="1664905587263" duration="123000" />
-      <workItem from="1664954138496" duration="3313000" />
+      <workItem from="1664954138496" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing project demo">
       <created>1660552453345</created>
@@ -512,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664466026297</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="showcase version for prezentatation">
+      <created>1664957759881</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664957759881</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Ioanes Products&#10;TODO: make a better implementation with backend, current one kinda sucks" />
     <MESSAGE value="Implemented Iraklis Blogs" />
     <MESSAGE value="Added Ioanes Contact page with functionality" />
     <MESSAGE value="Initializing project demo" />
@@ -555,6 +529,7 @@
     <MESSAGE value="fixed some routes for language changing" />
     <MESSAGE value="added app.yaml for easier uploading" />
     <MESSAGE value="changed how language changing works, removed extra url's" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed how language changing works, removed extra url's" />
+    <MESSAGE value="showcase version for prezentatation" />
+    <option name="LAST_COMMIT_MESSAGE" value="showcase version for prezentatation" />
   </component>
 </project>
