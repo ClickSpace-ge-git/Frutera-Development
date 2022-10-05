@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed image paths">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed product png to jpg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,14 +163,7 @@
       <workItem from="1664905587263" duration="123000" />
       <workItem from="1664954138496" duration="3856000" />
       <workItem from="1664961156601" duration="964000" />
-      <workItem from="1664962660801" duration="542000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initializing project demo">
-      <created>1660552453345</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1660552453345</updated>
+      <workItem from="1664962660801" duration="1456000" />
     </task>
     <task id="LOCAL-00002" summary="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder">
       <created>1661535156697</created>
@@ -510,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664961511401</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="changed product png to jpg">
+      <created>1664964694681</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1664964694681</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initializing project demo" />
     <MESSAGE value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
     <MESSAGE value="Working on database implementation" />
     <MESSAGE value="demolist update" />
@@ -553,6 +550,7 @@
     <MESSAGE value="showcase version for prezentatation" />
     <MESSAGE value="fixed home page products showcase version for prezentatation" />
     <MESSAGE value="fixed image paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed image paths" />
+    <MESSAGE value="changed product png to jpg" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed product png to jpg" />
   </component>
 </project>
