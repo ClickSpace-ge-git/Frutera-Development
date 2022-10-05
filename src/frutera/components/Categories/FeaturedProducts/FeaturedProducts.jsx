@@ -4,6 +4,13 @@ import axios, {axiosPrivate, refresher} from "../../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import LoadingPage from "../../../LoadingPage/LoadingPage";
+import {
+    testDriedApples,
+    testDriedPeaches,
+    testDriedPears,
+    testDriedPlums,
+    testProductsList
+} from "../../../../Utils/data";
 
 let FeaturedProductsList = [
     {
@@ -79,18 +86,29 @@ let FeaturedProductsList = [
     }
 ]
 
-const demoCats = [
+let categoryListDemo = [
     {
-        id:1,
-        name:"apples"
+        id: "1",
+        name: "Dried Apples",
+        image: require("../../../images/ProductPage/ProductCategories/dried_apple_img.png"),
     },
+
     {
-        id:2,
-        name:"pears"
+        id: "2",
+        name: "Dried Plums",
+        image: require("../../../images/ProductPage/ProductCategories/dried_plum_img.png"),
     },
+
     {
-        id:3,
-        name:"chips"
+        id: "3",
+        name: "Dried Pears",
+        image: require("../../../images/ProductPage/ProductCategories/dried_pear_img.png"),
+    },
+
+    {
+        id: "4",
+        name: "Dried Peaches",
+        image: require("../../../images/ProductPage/ProductCategories/dried_peach_img.png"),
     }
 ]
 
@@ -100,35 +118,52 @@ export default function FeaturedProducts() {
     const [loading, setLoading] = useState(true)
     const [loadCat, setLoadCat] = useState(0)
     const {t} = useTranslation()
+    const [testProducts,setTestProducts] = useState(testProductsList)
 
     let navigate = useNavigate()
 
     const loadCats = async (props) => {
-        if(props === "0"){
-            const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
-            setProductsList(response?.data)
-        }else{
-            const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
-            setProductsList(response?.data)
+        console.log(props)
+        switch (props){
+            case "0":
+                setProductsList(testProductsList)
+                break
+            case "1":
+                setProductsList(testDriedApples)
+                break
+            case "2":
+                setProductsList(testDriedPlums)
+                break
+            case "3":
+                setProductsList(testDriedPears)
+                break
+            case "4":
+                setProductsList(testDriedPeaches)
+                break
+            default:
+                setProductsList(testProductsList)
+                break
         }
+        /*
+        if(props === "0"){
+           const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
+           setProductPage(response?.data)
+        }else{
+           const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
+           setProductPage(response?.data)
+        }*/
     }
 
     const loadingPage = async () => {
-        try {
-            if(loadCat === 0){
-                const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
-                setProductsList(response?.data)
-            }else{
-                const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + loadCat))
-                setProductsList(response?.data)
-            }
-            const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-            //setProductsList(FeaturedProductsList)
-            setCategories(response2?.data)
-            if (productsList != null ) {
+        try{
+            //const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
+            //const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+            setProductsList(testProducts)
+            setCategories(categoryListDemo)
+            if( productsList != null){
                 setLoading(false)
             }
-        } catch (err) {
+        }catch (err){
 
         }
     }
@@ -178,7 +213,7 @@ export default function FeaturedProducts() {
                         <div className='FPCD_image' onClick={(e) => {
                             navigate("/products/" + product.id)
                         }}>
-                            <img src={product.pictures[0]} alt={`Image_${product.id + 1}`}/>
+                            <img src={product.images[0]} alt={`Image_${product.id + 1}`}/>
                         </div>
 
                         <div className='FPCD_text'>
