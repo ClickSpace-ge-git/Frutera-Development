@@ -67,6 +67,24 @@ let productCardList = [
    }
 ]
 
+const data =    {
+       id: 0,
+       name: "Dried sweet red apples (Jonagold)",
+       price: 3.2,
+       weight: 100,
+       discount: 6.56,
+       description: "100% natural, without sugar additives, emulsifiers and preservatives. " +
+           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
+           "pectins. 100 gr. of the product contains 235 kcal",
+       images: [
+          require("../../../images/ProductList/apple3.jpg"),
+          require("../../../images/ProductList/apple2.jpg"),
+          require("../../../images/ProductList/apple1.jpg"),
+          require("../../../images/ProductList/apple4.jpg"),
+          require("../../../images/ProductList/apple5.jpg"),
+       ]
+    }
+
 
 export default function OneProduct() {
    const [productPage,setProductPage] = useState([])
@@ -82,7 +100,7 @@ export default function OneProduct() {
          //setProductPage(oneProductDemo)
          const url = window.location.href.split("/")
          //const response = await axios.get(PRODUCTURL + url[4])
-         setProductPage(testProduct[parseInt(url[4])])
+         setProductPage(data)
          if( productPage!= null){
             setLoading(false)
          }
