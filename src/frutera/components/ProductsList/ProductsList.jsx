@@ -4,7 +4,14 @@ import axios, {axiosPrivate, refresher} from "../../../Utils/axios";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import LoadingPage from "../../LoadingPage/LoadingPage";
-import {testDriedApples, testDriedPeaches, testDriedPears, testDriedPlums, testProductsList} from "../../../Utils/data";
+import {
+   testDriedApples,
+   testDriedPeaches,
+   testDriedPears,
+   testDriedPlums,
+   testProductsList,
+   translateBaseLocal
+} from "../../../Utils/data";
 
 let demoProductsList = [
    {
@@ -272,6 +279,10 @@ export default function ProductsList() {
       //refresher(loadingPage)
    },[])
 
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
+   }
+
    return (
       <>
       <div className="ProductsListContainer">
@@ -284,7 +295,7 @@ export default function ProductsList() {
                         {/*<img src={category.image} alt={`00${category.id + 1}`} />*/}
                      </div>
 
-                     <div className='CCD_title'><h3>All</h3></div>
+                     <div className='CCD_title'><h3>{translate("all")}</h3></div>
                   </div>
                   {categoryList.length > 0 ? ShowCategoryList(categoryList,loadCats):<LoadingPage/>}
                </div>

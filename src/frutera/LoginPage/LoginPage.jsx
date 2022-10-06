@@ -3,6 +3,7 @@ import {useState} from "react";
 import axios from "../../Utils/axios"
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {translateBaseLocal} from "../../Utils/data";
 
 const LOGIN_URL = '/api/User/LoginUser';
 
@@ -52,6 +53,10 @@ export default function LoginPage() {
       }
    }
 
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
+   }
+
    return (
       <>
          <div className="LoginPage_container">
@@ -84,6 +89,8 @@ export default function LoginPage() {
 
                      <div className="LP_Lsubmit"><button type="submit">{t('login')}</button></div>
                      <div className="LP_Lsubmit"><button onClick={(e) => {navigate("/register")}}>{t('register')}</button></div>
+                     <div className="LP_Lsubmit"><button onClick={(e) => {navigate("/home")}}
+                                                         type="submit">{translate("back")}</button></div>
                   </form>
                </div>
             </div>

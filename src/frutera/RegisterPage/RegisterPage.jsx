@@ -3,6 +3,7 @@ import { useState} from "react";
 import {useNavigate} from "react-router-dom";
 import axios from "../../Utils/axios";
 import {useTranslation} from "react-i18next";
+import {translateBaseLocal} from "../../Utils/data";
 
 const REGISTER_URL = '/api/User/RegisterUser';
 
@@ -58,6 +59,10 @@ export default function RegisterPage() {
             alert(errMsg)
          }
       }
+   }
+
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
    }
 
    return (
@@ -117,7 +122,9 @@ export default function RegisterPage() {
                      </div>
 
                      <div className="RP_Lsubmit"><button type="submit">{t('signup')}</button></div>
-                     <div className="RP_Lsubmit"><button onClick={(e) => {navigate("/login")}}>{t('haveacc')}</button></div>
+                     <div className="RP_Lsubmit"><button onClick={(e) => {navigate("/login")}}>{translate("login")}</button></div>
+                     <div className="RP_Lsubmit"><button onClick={(e) => {navigate("/home")}}
+                                                         type="submit">{translate("back")}</button></div>
                   </form>
                </div>
             </div>

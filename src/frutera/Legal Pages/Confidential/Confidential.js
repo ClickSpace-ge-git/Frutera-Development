@@ -1,6 +1,8 @@
 import "./Confidential.scss"
+import {useTranslation} from "react-i18next";
 
 export default function Confidential() {
+    const {t} = useTranslation()
    return (
       <>
          <div className="ConfTextContainer">
@@ -170,7 +172,7 @@ export default function Confidential() {
                            </ul>
                         </div>
                         </div>
-                        <button className="CU_S" type="submit" href="/contactus">Contact Us</button>
+                        <button className="CU_S" type="submit" href="/contactus">{t("contactus")}</button>
                </div>
          </div>
       </>

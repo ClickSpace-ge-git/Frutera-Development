@@ -1,6 +1,8 @@
 import "./Delivery.scss"
+import {useTranslation} from "react-i18next";
 
 export default function Delivery() {
+   const {t} = useTranslation()
    return (
       <>
          <div className="DelTextContainer">
@@ -45,9 +47,9 @@ export default function Delivery() {
                         <li><p>
                         მიწოდების ფასი დამოკიდებულია შეკვეთის ღირებულებაზე: მინიმუმ 5 ლარი, ხოლო შეკვეთის 100 ლარზე მეტი ღირებულების შემთხვევაში, მიწოდება უფასოა.
                         </p></li>
-                        <h4>დახმარება</h4>
+                        <h4>დახმარება:</h4>
                      </ul>
-                        <button className="CU_S" type="submit" href="/contactus">Contact Us</button>
+                        <button className="CU_S" type="submit" href="/contactus">{t('contactus')}</button>
                </div>
             </div>
          </div>

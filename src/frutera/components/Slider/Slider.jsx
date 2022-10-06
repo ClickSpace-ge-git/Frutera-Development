@@ -1,6 +1,7 @@
 import './Slider.scss'
 import {useState} from 'react';
 import {useTranslation} from "react-i18next";
+import {translateBaseLocal} from "../../../Utils/data";
 
 // -------------------- Public Variables --------------------
 
@@ -108,6 +109,9 @@ function ShowSlide(index) {
 // -------------------- Main Function --------------------
 export default function Slider() {
    const {t} = useTranslation()
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
+   }
    return (
       <>
          <div className='Scontainer'>
@@ -115,11 +119,9 @@ export default function Slider() {
             <div className='slide show whiteMode'>
                <img src={require("../../../images/Frutera/Slider/slider_background1.png")} alt="Slide 1" />
                <div className='slide_text'>
-                  <h1 className='Title'>Title 1</h1>
+                  <h1 className='Title'>{translate("title")} 1</h1>
                   <p className='text'>
-                     Dried fruit is fruit from which the majority of the original water content has 
-                     been removed either naturally, through sun drying, or through the use of specialized 
-                     dryers or dehydrators.
+                     {translate("slide1")}
                   </p>
                   <div className="slideBtns">
                      <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>
@@ -131,11 +133,9 @@ export default function Slider() {
             <div className='slide'>
                <img src={require("../../../images/Frutera/Slider/slider_background2.png")} alt="Slide 2" />
                <div className='slide_text'>
-                  <h1 className='Title'>Title 2</h1>
+                  <h1 className='Title'>{translate("title")} 2</h1>
                   <p className='text'>
-                     Dried fruit is fruit from which the majority of the original water content has 
-                     been removed either naturally, through sun drying, or through the use of specialized 
-                     dryers or dehydrators.
+                     {translate("slide2")}
                   </p>
                   <div className="slideBtns">
                      <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>
@@ -147,11 +147,9 @@ export default function Slider() {
             <div className='slide'>
                <img src={require("../../../images/Frutera/Slider/slider_background3.png")} alt="Slide 3" />
                <div className='slide_text'>
-                  <h1 className='Title'>Title 3</h1>
+                  <h1 className='Title'>{translate("title")} 3</h1>
                   <p className='text'>
-                     Dried fruit is fruit from which the majority of the original water content has 
-                     been removed either naturally, through sun drying, or through the use of specialized 
-                     dryers or dehydrators.
+                     {translate("slide2")}
                   </p>
                   <div className="slideBtns">
                      <a className="slideBtn1 moreStyle" href="/#">{t("learnm")}</a>

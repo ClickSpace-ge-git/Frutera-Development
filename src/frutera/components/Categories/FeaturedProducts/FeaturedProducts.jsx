@@ -9,7 +9,7 @@ import {
     testDriedPeaches,
     testDriedPears,
     testDriedPlums,
-    testProductsList
+    testProductsList, translateBaseLocal
 } from "../../../../Utils/data";
 
 let FeaturedProductsList = [
@@ -121,6 +121,10 @@ export default function FeaturedProducts() {
     const [testProducts,setTestProducts] = useState(testProductsList)
 
     let navigate = useNavigate()
+
+    const translate = (props) => {
+        return translateBaseLocal[props][sessionStorage.getItem("lan")]
+    }
 
     const loadCats = async (props) => {
         console.log(props)
@@ -277,10 +281,10 @@ export default function FeaturedProducts() {
                         <ul className='FP_categories'>
                             {loadCat === 0?
                             <li className='FPnavBtn marked'>
-                                <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>All</button>
+                                <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>{translate("all")}</button>
                             </li>:
                                 <li className='FPnavBtn'>
-                                    <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>All</button>
+                                    <button onClick={(e) => {setLoadCat("0");loadCats("0")}}>{translate("all")}</button>
                                 </li>
                             }
                             {!loading && categories.length > 0 ? mapCategories(categories,loadCats):<LoadingPage/>}

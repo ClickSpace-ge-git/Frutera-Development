@@ -1,9 +1,14 @@
 import './Footer.scss'
 import logo from "../../../images/Frutera/logo.png"
 import {useTranslation} from "react-i18next";
+import {translateBaseLocal} from "../../../Utils/data";
 
 export default function Footer() {
    const {t} = useTranslation()
+
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
+   }
    return (
       <div className="FooterContainer">
          <footer>
@@ -42,8 +47,8 @@ export default function Footer() {
                      <ul>
                         <li><a href="/confidential">{t("privacyp")}</a></li>
                         <li><a href="/delivery">{t("shipping")}</a></li>
-                        <li><a href="/terms&conditions">{t("terms")}</a></li>
-                        <li><a href="/payments">{t("payment")}</a></li>
+                        <li><a href="/terms&conditions">{translate("terms")}</a></li>
+                        <li><a href="/payments">{translate("payments")}</a></li>
                      </ul>
                   </div>
                   <div className="column">

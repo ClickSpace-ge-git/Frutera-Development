@@ -3,10 +3,14 @@ import Header2 from '../components/Header2/Header2'
 import Footer from '../components/Footer/Footer'
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
+import {translateBaseLocal} from "../../Utils/data";
 
 export default function ContactUsPage() {
    const [textLen,setTextLen] = useState(0)
    const {t} = useTranslation()
+   const translate = (props) => {
+      return translateBaseLocal[props][sessionStorage.getItem("lan")]
+   }
 
    return (
       <>
@@ -44,7 +48,7 @@ export default function ContactUsPage() {
                         <textarea id="textarea_1" rows="5" placeholder="Message" maxLength="1000" onChange={(e) => {setTextLen(e.target.value.length)}}></textarea>
                         <p class="textarea_limit" id="textarea_limit_id">{textLen}/1000</p>
                      </div>
-                     <button className="CUP_Lsubmit" type="submit">Send</button>
+                     <button className="CUP_Lsubmit" type="submit">{translate("send")}</button>
                   </form>
                </div>
 
@@ -66,10 +70,10 @@ export default function ContactUsPage() {
                   </table><br/><br/><br/>
 
                   <div class="news_mode">
-                     <h3>News Mode</h3><br/>
-                     <p>If you do not want to miss the news, then fill in the box below:</p><br/>
+                     <h3>{translate("news")}</h3><br/>
+                     <p>{translate("newsText")}</p><br/>
                      <input type="text" placeholder="Email"/>
-                     <button>Submit</button>
+                     <button>{translate("submit")}</button>
                   </div>
                </div>
          </div>
