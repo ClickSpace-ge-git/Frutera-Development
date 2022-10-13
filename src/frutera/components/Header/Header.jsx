@@ -35,7 +35,7 @@ export default function MainHeader() {
                            <i className="fa-solid fa-xmark"></i>
                         </label>
 
-                        <li className='navBtn marked'><a href="/home">{t("home")}</a></li>
+                        <li className='navBtn marked'><a href="/">{t("home")}</a></li>
                         <li className='navBtn'><a href="/aboutus">{t("aboutus")}</a></li>
                         <li className='navBtn'><a href="/products">{t("products")}</a></li>
                         <li className='navBtn'><a href="/blogs">{t("blogs")}</a></li>
