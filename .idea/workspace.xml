@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed require in header to import">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="hosted images on discord">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Header2/Header2.jsx" afterDir="false" />
     </list>
@@ -169,14 +169,7 @@
       <workItem from="1664962660801" duration="1456000" />
       <workItem from="1665054895398" duration="167000" />
       <workItem from="1665475026854" duration="616000" />
-      <workItem from="1665665219332" duration="1295000" />
-    </task>
-    <task id="LOCAL-00003" summary="optimized Cart system&#10;implemented mock voucher system">
-      <created>1661601454483</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1661601454483</updated>
+      <workItem from="1665665219332" duration="2080000" />
     </task>
     <task id="LOCAL-00004" summary="Uploading Iraklis Product Implementation&#10;&#10;Saina TODOS:&#10;Make Products Grid Modular&#10;Make Product Page dynamic&#10;Change LeftSide to be lean and database based&#10;&#10;Irakli TODOS:&#10;Make Header and Footer fit on both main pages">
       <created>1661621573179</created>
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665665325224</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="hosted images on discord">
+      <created>1665666633349</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1665666633349</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="demolist update" />
     <MESSAGE value="Pre-Host fixes" />
     <MESSAGE value="changed px back to rem" />
     <MESSAGE value="axios &quot;implementation&quot;" />
@@ -557,6 +556,7 @@
     <MESSAGE value="changed product png to jpg" />
     <MESSAGE value="prezentation version" />
     <MESSAGE value="changed require in header to import" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed require in header to import" />
+    <MESSAGE value="hosted images on discord" />
+    <option name="LAST_COMMIT_MESSAGE" value="hosted images on discord" />
   </component>
 </project>
