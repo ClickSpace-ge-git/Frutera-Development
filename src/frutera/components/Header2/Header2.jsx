@@ -2,9 +2,6 @@ import './Header2.scss'
 import LanguageBar from '../LanguageBar/LanguageBar'
 import {useLocation, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import bgImage from "../../../images/HomePage/background2.png"
-import whiteFigure from "../../../images/HomePage/white_figure_2.png"
-import logo from '../../../images/Frutera/logo.png'
 
 function PageName() {
    let location = useLocation()
@@ -54,10 +51,10 @@ export default function Header2() {
        <>
           <div className="H2container">
              <div className="images">
-                <img className='backgroundImage' src={bgImage} alt="dried_fruit_img" />
-                <img className='whiteFigure' src={whiteFigure} alt="white_figure_2.png" />
+                <img className='backgroundImage' src="https://cdn.discordapp.com/attachments/830721179895332914/1030102101151449108/background2.png" alt="dried_fruit_img" />
+                <img className='whiteFigure' src="https://cdn.discordapp.com/attachments/830721179895332914/1030102173847146546/white_figure_2.png" alt="white_figure_2.png" />
                 <div className="logoWithName" onClick={(e) => {navigate("/")}}>
-                   <img className='logo' src={logo} alt="logo" />
+                   <img className='logo' src="https://cdn.discordapp.com/attachments/830721179895332914/1030102174417551431/logo.png" alt="logo" />
                    <h3 className='logoName'>Frutera</h3>
                 </div>
              </div>
