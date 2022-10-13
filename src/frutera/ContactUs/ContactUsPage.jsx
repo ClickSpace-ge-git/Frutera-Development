@@ -57,11 +57,11 @@ export default function ContactUsPage() {
                   <table className="CUP_table">
                      <tr>
                            <td>{t("email")}:</td>
-                           <td><a href="#">Test.Tester@gmail.com</a></td>
+                           <td><a href="#">info@frutera.ge</a></td>
                      </tr>
                      <tr>
                            <td>{t("phonenum")}:</td>
-                           <td>(+995) 555 123 456</td>
+                           <td>(+995) 591 21 56 74</td>
                      </tr>
                      <tr>
                            <td>{t("address")}:</td>

@@ -1,7 +1,7 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
 import axios, {axiosPrivate, refresher, UseAxiosP} from "../../../Utils/axios";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {testProductsList} from "../../../Utils/data";
 
@@ -91,11 +91,13 @@ export default function OneProduct() {
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
    const {t} = useTranslation()
+   const {id} = useParams()
    const [testProduct,setTestProducts] = useState(testProductsList)
 
    let navigate = useNavigate()
 
    const loadingPage = async () => {
+      console.log(id)
       try{
          //setProductPage(oneProductDemo)
          const url = window.location.href.split("/")
@@ -212,13 +214,13 @@ export default function OneProduct() {
                    <div className="OneProductCard">
                       <div className="OP_imagePart">
                          <div className='OP_imagePart_UpperPart'>
-                            <img src={productPage.images[0]} alt="001.png"/>
+                            <img src="https://media.discordapp.net/attachments/976165891714727966/1024270792080498688/unknown.png" alt="001.png"/>
                          </div>
                          <div className='OP_imagePart_LowerParts'>
-                            <img src={productPage.images[0]} alt="001.png"/>
-                            <img src={productPage.images[1]} alt="002.png"/>
-                            <img src={productPage.images[2]} alt="003.png"/>
-                            <img src={productPage.images[3]} alt="004.png"/>
+                            <img src={productPage.images[0]} alt="001.jpg"/>
+                            <img src={productPage.images[1]} alt="002.jpg"/>
+                            <img src={productPage.images[2]} alt="003.jpg"/>
+                            <img src={productPage.images[3]} alt="004.jpg"/>
                          </div>
                       </div>
                       <div className="OP_textPart">

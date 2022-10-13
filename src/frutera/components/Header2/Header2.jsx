@@ -2,6 +2,9 @@ import './Header2.scss'
 import LanguageBar from '../LanguageBar/LanguageBar'
 import {useLocation, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import bgImage from "../../../images/HomePage/background2.png"
+import whiteFigure from "../../../images/HomePage/white_figure_2.png"
+import logo from '../../../images/Frutera/logo.png'
 
 function PageName() {
    let location = useLocation()
@@ -51,10 +54,10 @@ export default function Header2() {
        <>
           <div className="H2container">
              <div className="images">
-                <img className='backgroundImage' src={require("../../../images/HomePage/background2.png")} alt="dried_fruit_img" />
-                <img className='whiteFigure' src={require("../../../images/HomePage/white_figure_2.png")} alt="white_figure_2.png" />
+                <img className='backgroundImage' src={bgImage} alt="dried_fruit_img" />
+                <img className='whiteFigure' src={whiteFigure} alt="white_figure_2.png" />
                 <div className="logoWithName" onClick={(e) => {navigate("/")}}>
-                   <img className='logo' src={require('../../../images/Frutera/logo.png')} alt="logo" />
+                   <img className='logo' src={logo} alt="logo" />
                    <h3 className='logoName'>Frutera</h3>
                 </div>
              </div>

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changed product png to jpg" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="prezentation version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/ContactUs/ContactUsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,6 +168,8 @@
       <workItem from="1664954138496" duration="3856000" />
       <workItem from="1664961156601" duration="964000" />
       <workItem from="1664962660801" duration="1456000" />
+      <workItem from="1665054895398" duration="167000" />
+      <workItem from="1665475026854" duration="616000" />
     </task>
     <task id="LOCAL-00002" summary="Finalized Demo&#10;Optimized code&#10;merged Luka, Ioane and Saina Implementations&#10;&#10;TODO: Improve List Rendering in Cart&#10;Create a proper Blogs Page&#10;Sort out Images folder">
       <created>1661535156697</created>
@@ -526,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Translation on almost all pages, contact us and payment pages lack translation due to api string limitations on the free version" />
     <MESSAGE value="Working on database implementation" />
     <MESSAGE value="demolist update" />
     <MESSAGE value="Pre-Host fixes" />
@@ -551,6 +556,7 @@
     <MESSAGE value="fixed home page products showcase version for prezentatation" />
     <MESSAGE value="fixed image paths" />
     <MESSAGE value="changed product png to jpg" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed product png to jpg" />
+    <MESSAGE value="prezentation version" />
+    <option name="LAST_COMMIT_MESSAGE" value="prezentation version" />
   </component>
 </project>
