@@ -9,19 +9,23 @@ let index = 0;
 const languages = [
    {
       id: "en",
-      label: "English"
+      label: "English",
+      image:"https://media.discordapp.net/attachments/1030776866874851338/1030777930734915674/eng.png?width=815&height=611"
    },
    {
       id: "ka",
-      label: "ქართული"
+      label: "ქართული",
+      image:"https://media.discordapp.net/attachments/1030776866874851338/1030776932561862686/ka.jpg?width=815&height=611"
    },
    {
       id: "de",
-      label: "Deutsch"
+      label: "Deutsch",
+      image:"https://media.discordapp.net/attachments/1030776866874851338/1030776932092088370/de.jpg?width=815&height=611"
    },
    {
       id: "ru",
-      label: "Русский"
+      label: "Русский",
+      image: "https://media.discordapp.net/attachments/1030776866874851338/1030776932901589012/ru.jpg?width=815&height=611"
    },
 ]
 
@@ -49,7 +53,7 @@ export default function LanguageList() {
          sessionStorage.setItem('lan',0)
       }
       const [buttonText, setButtonText] = useState(
-          <label><img src={require(`../../../images/Frutera/flags/${languages[sessionStorage.getItem('lan')].id + ".jpg"}`)}
+          <label><img src={languages[sessionStorage.getItem('lan')].image}
                       alt={languages[sessionStorage.getItem('lan')].id} />
              <p>{languages[sessionStorage.getItem('lan')].label}</p>
           </label>
@@ -58,7 +62,7 @@ export default function LanguageList() {
       function handleClick(i) {
          index = i;
          setButtonText(
-             <label><img src={require(`../../../images/Frutera/flags/${languages[index].id + ".jpg"}`)} alt={languages[index].id} />
+             <label><img src={languages[sessionStorage.getItem('lan')].image} alt={languages[index].id} />
                 <p>{languages[index].label}</p>
              </label>
          );
@@ -76,10 +80,10 @@ export default function LanguageList() {
                 {buttonText}
              </button>
              <ul className='dropDownList hide'>
-                <li onClick={(e) => {handleClick(0);changeLanguage(0)}}><label><img src={require("../../../images/Frutera/flags/en.jpg")} alt="us" /> <p>English</p></label></li>
-                <li onClick={(e) => {handleClick(1);changeLanguage(1)}}><label><img src={require("../../../images/Frutera/flags/ka.jpg")} alt="ge" /> <p>ქართული</p></label></li>
-                <li onClick={(e) => {handleClick(2);changeLanguage(2)}}><label><img src={require("../../../images/Frutera/flags/de.jpg")} alt="de" /> <p>Deutsch</p></label></li>
-                <li onClick={(e) => {handleClick(3);changeLanguage(3)}}><label><img src={require("../../../images/Frutera/flags/ru.jpg")} alt="ru" /> <p>Русский</p></label></li>
+                <li onClick={(e) => {handleClick(0);changeLanguage(0)}}><label><img src={languages[0].image} alt="us" /> <p>English</p></label></li>
+                <li onClick={(e) => {handleClick(1);changeLanguage(1)}}><label><img src={languages[1].image} alt="ge" /> <p>ქართული</p></label></li>
+                <li onClick={(e) => {handleClick(2);changeLanguage(2)}}><label><img src={languages[2].image} alt="de" /> <p>Deutsch</p></label></li>
+                <li onClick={(e) => {handleClick(3);changeLanguage(3)}}><label><img src={languages[3].image} alt="ru" /> <p>Русский</p></label></li>
              </ul>
           </>
       );

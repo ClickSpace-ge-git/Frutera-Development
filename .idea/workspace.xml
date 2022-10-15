@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed header navigation">
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="changes images from local to hosted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/data.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/data.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/OneProduct/OneProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Comments/Comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Comments/Comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/LanguageBar/LanguageBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,14 +171,7 @@
       <workItem from="1665054895398" duration="167000" />
       <workItem from="1665475026854" duration="616000" />
       <workItem from="1665665219332" duration="3638000" />
-      <workItem from="1665824145846" duration="1362000" />
-    </task>
-    <task id="LOCAL-00006" summary="Merged Ira, Luka, Ioane and Saina for new baseline">
-      <created>1661688216036</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1661688216036</updated>
+      <workItem from="1665824145846" duration="2706000" />
     </task>
     <task id="LOCAL-00007" summary="Made Blogs implementation modular and connected to BlogPage (todo remove dual links)&#10;&#10;Added a mock dynamic route to products and blogs">
       <created>1661692351804</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665667603389</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="changes images from local to hosted">
+      <created>1665825847384</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1665825847384</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="axios &quot;implementation&quot;" />
     <MESSAGE value="made dashboard inccessible for hosting purpouses" />
     <MESSAGE value="hosted app to github pages" />
     <MESSAGE value="hotfix for axios access when loading on github" />
@@ -559,6 +558,7 @@
     <MESSAGE value="hosted images on discord" />
     <MESSAGE value="fixed header 2 navigation" />
     <MESSAGE value="fixed header navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed header navigation" />
+    <MESSAGE value="changes images from local to hosted" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes images from local to hosted" />
   </component>
 </project>

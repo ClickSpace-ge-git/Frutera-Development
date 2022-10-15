@@ -39,7 +39,7 @@ const Comment = ({
 
             <div className="CPUserMyPart">
                <div className="CPUserMyPart_icon">
-                  <img src={require("../../../images/UserProfileImages/default_image.png")}/>
+                  <img src="https://media.discordapp.net/attachments/1030113417811472404/1030776398765363210/default_image.png?width=612&height=612"/>
                </div>
 
                <div className="CPUserMyPart_UserName">{comment.username}</div>
