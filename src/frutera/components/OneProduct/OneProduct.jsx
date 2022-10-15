@@ -1,108 +1,27 @@
 import './OneProduct.scss'
 import {useEffect, useState} from "react";
 import axios, {axiosPrivate, refresher, UseAxiosP} from "../../../Utils/axios";
-import {useNavigate, useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {testProductsList} from "../../../Utils/data";
 
 const PRODUCTURL = "api/Products/GetProductWithPictures/"
-
-let oneProductDemo = {
-   id: "0",
-   name: "Test Product",
-   weight: 100,
-   price: 10.96,
-   discount: 10,
-   description: 
-   `Fruit is the sweet, fleshy, edible part of a plant. 
-   It generally contains seeds. Fruits are usually eaten raw, although 
-   some varieties can be cooked. They come in a wide variety of colours, 
-   shapes and flavours.Fruit is the sweet, fleshy, edible part of a plant. 
-   It generally contains seeds. Fruits are usually eaten raw, although 
-   some varieties can be cooked. They come in a wide variety of colours, 
-   shapes and flavours.`,
-   image: [
-      require("../../../images/ProductPage/OneProduct/001.png"),
-      require("../../../images/ProductPage/OneProduct/002.png"),
-      require("../../../images/ProductPage/OneProduct/003.png"),
-      require("../../../images/ProductPage/OneProduct/004.png"),
-   ]
-}
-
-let productCardList = [
-   {
-      id: "0",
-      name: "Pitted Black Prunes",
-      weight: 100,
-      price: 10.96,
-      discount: 10,
-      image: require("../../../images/ProductPage/ProductList/apple1.png")
-   },
-
-   {
-      id: "1",
-      name: "Dried Red Apple (Idared)",
-      weight: 200,
-      price: 11.96,
-      discount: null,
-      image: require("../../../images/ProductPage/ProductList/apple5.png")
-   },
-
-   {
-      id: "2",
-      name: "Dried Yellow Apple (Golden)",
-      weight: 300,
-      price: 13.96,
-      discount: 30,
-      image: require("../../../images/ProductPage/ProductList/peach2.png")
-   },
-
-   {
-      id: "3",
-      name: "Dried Red Apple (Jona Gold)",
-      weight: 400,
-      price: 14.96,
-      discount: null,
-      image: require("../../../images/ProductPage/ProductList/plum2.png")
-   }
-]
-
-const data =    {
-       id: 0,
-       name: "Dried sweet red apples (Jonagold)",
-       price: 3.2,
-       weight: 100,
-       discount: 6.56,
-       description: "100% natural, without sugar additives, emulsifiers and preservatives. " +
-           "Relative humidity not more than 70%. Contains vitamins: A, PP, C, B, B1 and " +
-           "pectins. 100 gr. of the product contains 235 kcal",
-       images: [
-          require("../../../images/ProductList/apple3.jpg"),
-          require("../../../images/ProductList/apple2.jpg"),
-          require("../../../images/ProductList/apple1.jpg"),
-          require("../../../images/ProductList/apple4.jpg"),
-          require("../../../images/ProductList/apple5.jpg"),
-       ]
-    }
-
 
 export default function OneProduct() {
    const [productPage,setProductPage] = useState([])
    const [loading, setLoading] = useState(true)
    const [quantity,setQuantity] = useState(1)
    const {t} = useTranslation()
-   const {id} = useParams()
    const [testProduct,setTestProducts] = useState(testProductsList)
 
    let navigate = useNavigate()
 
    const loadingPage = async () => {
-      console.log(id)
       try{
          //setProductPage(oneProductDemo)
          const url = window.location.href.split("/")
          //const response = await axios.get(PRODUCTURL + url[4])
-         setProductPage(data)
+         setProductPage(testProduct[url[4]])
          if( productPage!= null){
             setLoading(false)
          }
@@ -214,13 +133,13 @@ export default function OneProduct() {
                    <div className="OneProductCard">
                       <div className="OP_imagePart">
                          <div className='OP_imagePart_UpperPart'>
-                            <img src="https://media.discordapp.net/attachments/976165891714727966/1024270792080498688/unknown.png" alt="001.png"/>
+                            <img src={productPage.images[0]} alt="001.png"/>
                          </div>
                          <div className='OP_imagePart_LowerParts'>
-                            <img src={productPage.images[0]} alt="001.jpg"/>
-                            <img src={productPage.images[1]} alt="002.jpg"/>
-                            <img src={productPage.images[2]} alt="003.jpg"/>
-                            <img src={productPage.images[3]} alt="004.jpg"/>
+                            <img src={productPage.images[1]} alt="001.jpg"/>
+                            <img src={productPage.images[2]} alt="002.jpg"/>
+                            <img src={productPage.images[3]} alt="003.jpg"/>
+                            <img src={productPage.images[4]} alt="004.jpg"/>
                          </div>
                       </div>
                       <div className="OP_textPart">
