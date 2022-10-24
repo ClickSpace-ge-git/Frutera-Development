@@ -5,6 +5,7 @@ import OrderElementForm from "./OrderElementForm";
 import OrderList from "./OrderList";
 import OrderElement from "./OrderElement";
 import {useTranslation} from "react-i18next";
+import {axiosPrivate} from "../../../../Utils/axios";
 
 let demoproductList = [
    {
@@ -93,10 +94,16 @@ export default function Orders() {
    const [editElement,setEditElement] = useState({})
    const {t} = useTranslation()
 
-   const loadingPage = () => {
-      setOrdersList(demoordersList)
-      if( ordersList!= null){
-         setLoading(false)
+   const loadingPage = async () => {
+      try{
+         const response = await axiosPrivate.get("/api/Employee/GetOrders")
+         console.log(response?.data)
+             setOrdersList(response?.data)
+         if( ordersList!= null){
+            setLoading(false)
+         }
+      }catch (err){
+
       }
    }
 
@@ -151,12 +158,10 @@ export default function Orders() {
 
                <table className='Otable'>
                   <thead>
-                     <td>{t("fullname")}</td>
-                     <td>{t("email")}</td>
-                     <td>{t("phonenum")}</td>
+                     <td>{t("userId")}</td>
                      <td>{t("address")}</td>
                      <td>{t("order")} {t("list")}</td>
-                     <td>{t("total")} {t("price")}</td>
+                     <td>{t("date")}</td>
                      <td>{t("order")} {t("status")}</td>
                      <td>{t("action")}</td>
                   </thead>

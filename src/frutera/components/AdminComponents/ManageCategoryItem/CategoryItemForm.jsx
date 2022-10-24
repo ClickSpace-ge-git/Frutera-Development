@@ -10,6 +10,7 @@ export default function CategoryItemForm({props,close}){
     const [upload,setUpload] = useState()
     const [uploaded,setUploaded] = useState(false)
     const [id,setId] = useState("")
+    const [updating,setUpdating] = useState(false)
     const {t} = useTranslation()
     let navigate = useNavigate()
 
@@ -18,6 +19,7 @@ export default function CategoryItemForm({props,close}){
             setName(props.name)
             setImg(props.img)
             setId(props.id)
+            setUpdating(true)
         }
     },[])
 
@@ -30,15 +32,25 @@ export default function CategoryItemForm({props,close}){
             CategoryId: id,
         }
         console.log((id))
-        try{
-            const response = await axiosPrivate.post('/api/subcategory/CreateSubCategory',JSON.stringify(body)).data;
+        if(updating){
+            try{
+                const response = await axiosPrivate.post('/api/subcategory/CreateSubCategory',JSON.stringify(body)).data;
 
-        }
-        catch(er){
-            navigate('/dashboard');
-            console.log(er)
-        }
+            }
+            catch(er){
+                navigate('/dashboard');
+                console.log(er)
+            }
+        }else{
+            try{
+                const response = await axiosPrivate.post('/api/subcategory/CreateSubCategory',JSON.stringify(body)).data;
 
+            }
+            catch(er){
+                navigate('/dashboard');
+                console.log(er)
+            }
+        }
         close()
     }
 

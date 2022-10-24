@@ -13,7 +13,7 @@ export default function OrderList({props, close}) {
     const {t} = useTranslation()
 
     const loadingPage = () => {
-        setProductsList(props.orderList)
+        setProductsList(props.orders)
         if (productsList != null) {
             setLoading(false)
         }
@@ -21,10 +21,8 @@ export default function OrderList({props, close}) {
 
     const openForm = () => {
         if (trigger) {
-            console.log("close")
             setTrigger(false)
         } else {
-            console.log("open")
             setTrigger(true)
         }
     }

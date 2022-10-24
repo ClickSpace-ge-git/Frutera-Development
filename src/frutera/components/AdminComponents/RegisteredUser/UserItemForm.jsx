@@ -1,8 +1,11 @@
 import {useEffect, useState} from "react";
 import "./UserItemForm.scss"
 import {useTranslation} from "react-i18next";
+import axios from "../../../../Utils/axios";
 
-export default function UserItemForm({props,close}){
+const REGISTER_URL = '/api/User/RegisterUser';
+
+export default function     UserItemForm({props,close}){
     const [name,setName] = useState("")
     const [sname,setSName] = useState("")
     const [email,setEmail] = useState("")
@@ -22,7 +25,19 @@ export default function UserItemForm({props,close}){
         }
     },[])
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        const model = JSON.stringify({
+            "email": email,
+            "password": psw,
+            "firstName": name,
+            "lastName": sname
+        });
+        const response = await axios.post(REGISTER_URL, model, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        );
 
         close()
     }

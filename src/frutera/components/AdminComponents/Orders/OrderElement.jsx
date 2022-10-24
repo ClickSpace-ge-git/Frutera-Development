@@ -12,17 +12,15 @@ export default function OrderElement({props,handleEdit,handleList}){
 
     return(
         <tr>
-            <td className='OfullName'>{props.fullName}</td>
-            <td className='Oemail'>{props.email}</td>
-            <td className='OphoneNumber'>{props.phoneNumber}</td>
-            <td className='Oaddress'>{props.address}</td>
+            <td className='OfullName'>{props.UserId}</td>
+            <td className='Oaddress'>{props.Address}</td>
             <td className='OorderList'>
                 <button className='Obtn' onClick={() => {
                     listHandler()
                 }}>show order list
                 </button>
             </td>
-            <td className='OtotalPrice'>{props.totalPrice}</td>
+            <td className='OtotalPrice'>{props.CreatedAt}</td>
             <td className='OorderStatus'>{props.orderStatus ? "Delivered" : "Ordered"}</td>
             <td className='Oaction'>
                 <button className='penBtn' onClick={() => {editHandler()}}><i className="fa-solid fa-pen-to-square"></i></button>
