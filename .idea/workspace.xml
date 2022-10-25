@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="hosted comments&#10;hosted language flags">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/ManageCategoryItem/CategoryItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderElementForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElement.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/OrderListElement.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/Orders/Orders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/AdminComponents/RegisteredUser/UserItemForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/RouteProtector/RouteProtector.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implementing Finalized API Calls" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,14 +170,7 @@
       <workItem from="1665824145846" duration="3029000" />
       <workItem from="1666457791917" duration="593000" />
       <workItem from="1666463702825" duration="157000" />
-      <workItem from="1666611813071" duration="4016000" />
-    </task>
-    <task id="LOCAL-00008" summary="fixed productCard link">
-      <created>1661692436165</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1661692436165</updated>
+      <workItem from="1666611813071" duration="4404000" />
     </task>
     <task id="LOCAL-00009" summary="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements">
       <created>1661785465582</created>
@@ -527,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665827319048</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Implementing Finalized API Calls">
+      <created>1666645948836</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1666645948837</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hosted app to github pages" />
     <MESSAGE value="hotfix for axios access when loading on github" />
     <MESSAGE value="many fixes and backend implementation" />
     <MESSAGE value="Pre-Final" />
@@ -570,6 +557,7 @@
     <MESSAGE value="fixed header navigation" />
     <MESSAGE value="changes images from local to hosted" />
     <MESSAGE value="hosted comments&#10;hosted language flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="hosted comments&#10;hosted language flags" />
+    <MESSAGE value="Implementing Finalized API Calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Finalized API Calls" />
   </component>
 </project>

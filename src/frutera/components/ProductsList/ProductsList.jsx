@@ -227,45 +227,21 @@ export default function ProductsList() {
    }
 
    const loadCats = async (props) => {
-      console.log(props)
-      switch (props){
-         case "0":
-            setProductPage(testProductsList)
-            break
-         case "1":
-            setProductPage(testDriedApples)
-            break
-         case "2":
-            setProductPage(testDriedPlums)
-            break
-         case "3":
-            setProductPage(testDriedPears)
-            break
-         case "4":
-            setProductPage(testDriedPeaches)
-            break
-         default:
-            setProductPage(testProductsList)
-            break
-      }
-      console.log(productList)
-
-      /*
       if(props === "0"){
          const response = await (await axios.get("/api/Products/GetAllProductsWithPictures/"))
          setProductPage(response?.data)
       }else{
          const response = await (await axios.get("/api/Products/GetProductWithPicturesBySubCategoryId/" + props))
          setProductPage(response?.data)
-      }*/
+      }
    }
 
    const loadingPage = async () => {
       try{
-         //const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
-         //const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-         setProductPage(testProduct)
-         setCategoryList(categoryListDemo)
+         const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
+         const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+         setProductPage(response)
+         setCategoryList(response2)
          if( productList != null){
             setLoading(false)
          }
