@@ -140,8 +140,8 @@ export default function FeaturedProducts() {
         try{
             const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
             const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-            setProductsList(response)
-            setCategories(response2)
+            setProductsList(response?.data)
+            setCategories(response2?.data)
             if( productsList != null){
                 setLoading(false)
             }

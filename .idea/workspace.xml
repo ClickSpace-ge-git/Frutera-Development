@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="Implementing Finalized API Calls" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="switched to api product calls" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,13 +171,7 @@
       <workItem from="1666457791917" duration="593000" />
       <workItem from="1666463702825" duration="157000" />
       <workItem from="1666611813071" duration="4404000" />
-    </task>
-    <task id="LOCAL-00009" summary="Made Products Grid, ProductCard, LeftSide modular and ready for database implementation&#10;&#10;prepared productShowcase for database implementation&#10;&#10;fixed pathing for blog and product list elements">
-      <created>1661785465582</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1661785465582</updated>
+      <workItem from="1666693384392" duration="847000" />
     </task>
     <task id="LOCAL-00010" summary="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings">
       <created>1661811912759</created>
@@ -515,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666645948837</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="switched to api product calls">
+      <created>1666693617382</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1666693617384</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hotfix for axios access when loading on github" />
     <MESSAGE value="many fixes and backend implementation" />
     <MESSAGE value="Pre-Final" />
     <MESSAGE value="Fixed token assignment" />
@@ -558,6 +558,7 @@
     <MESSAGE value="changes images from local to hosted" />
     <MESSAGE value="hosted comments&#10;hosted language flags" />
     <MESSAGE value="Implementing Finalized API Calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Finalized API Calls" />
+    <MESSAGE value="switched to api product calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched to api product calls" />
   </component>
 </project>

@@ -240,8 +240,8 @@ export default function ProductsList() {
       try{
          const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
          const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-         setProductPage(response)
-         setCategoryList(response2)
+         setProductPage(response?.data)
+         setCategoryList(response2?.data)
          if( productList != null){
             setLoading(false)
          }
