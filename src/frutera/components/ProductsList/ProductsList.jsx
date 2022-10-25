@@ -139,7 +139,7 @@ function ShowCategoryList(props,setCat) {
    )
 }
 
-function ShowProductCardList({props,goToProduct,t,nav}) {
+function ShowProductCardList(props,goToProduct,t,nav) {
 
    const AddToCart = async (props) =>{
       if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
@@ -240,7 +240,6 @@ export default function ProductsList() {
       try{
          const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
          const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
-         console.log(response?.data)
          setProductPage(response?.data)
          setCategoryList(response2?.data)
          if( productList != null){

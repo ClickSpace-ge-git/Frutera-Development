@@ -18,10 +18,9 @@ export default function OneProduct() {
 
    const loadingPage = async () => {
       try{
-         //setProductPage(oneProductDemo)
          const url = window.location.href.split("/")
-         //const response = await axios.get(PRODUCTURL + url[4])
-         setProductPage(testProduct[url[4]])
+         const response = await axios.get(PRODUCTURL + url[4])
+         setProductPage(response?.data)
          if( productPage!= null){
             setLoading(false)
          }
