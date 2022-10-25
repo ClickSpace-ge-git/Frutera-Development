@@ -86,7 +86,7 @@ export default function OneProduct() {
                        </div>
 
                        <div className='OPCD_image'>
-                          <img src={product.images[0]} alt={`00${product.id + 1}`}
+                          <img src={product.pictures[0]} alt={`00${product.id + 1}`}
                                onClick={(e) => {navigate("/products/"+product.id)}} />
                        </div>
 
@@ -133,13 +133,13 @@ export default function OneProduct() {
                    <div className="OneProductCard">
                       <div className="OP_imagePart">
                          <div className='OP_imagePart_UpperPart'>
-                            <img src={productPage.images[0]} alt="001.png"/>
+                            <img src={productPage.pictures[0]} alt="001.png"/>
                          </div>
                          <div className='OP_imagePart_LowerParts'>
-                            <img src={productPage.images[1]} alt="001.jpg"/>
-                            <img src={productPage.images[2]} alt="002.jpg"/>
-                            <img src={productPage.images[3]} alt="003.jpg"/>
-                            <img src={productPage.images[4]} alt="004.jpg"/>
+                            <img src={productPage.pictures[1]} alt="001.jpg"/>
+                            <img src={productPage.pictures[2]} alt="002.jpg"/>
+                            <img src={productPage.pictures[3]} alt="003.jpg"/>
+                            <img src={productPage.pictures[4]} alt="004.jpg"/>
                          </div>
                       </div>
                       <div className="OP_textPart">

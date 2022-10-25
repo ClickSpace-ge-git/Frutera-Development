@@ -64,7 +64,6 @@ export default function CartPage() {
     const loadingPage = async () => {
         const response = await axiosPrivate.get(CART_URL)
         setCartList(response?.data)
-        console.log(response)
         if(cartList != null){
             setLoading(false)
         }

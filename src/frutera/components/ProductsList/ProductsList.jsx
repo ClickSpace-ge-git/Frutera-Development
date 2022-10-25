@@ -139,7 +139,7 @@ function ShowCategoryList(props,setCat) {
    )
 }
 
-function ShowProductCardList(props,goToProduct,t,nav) {
+function ShowProductCardList({props,goToProduct,t,nav}) {
 
    const AddToCart = async (props) =>{
       if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
@@ -176,7 +176,7 @@ function ShowProductCardList(props,goToProduct,t,nav) {
                   </div>
 
                   <div className='PCD_image' onClick={(e) => {goToProduct(product.id)}}>
-                     <img src={product.images[0]} alt={`00${product.id + 1}`} />
+                     <img src={product.pictures[0]} alt={`00${product.id + 1}`} />
                   </div>
 
                   <div className='PCD_text' onClick={(e) => {goToProduct(product.id)}}>
@@ -240,6 +240,7 @@ export default function ProductsList() {
       try{
          const response = await (await axios.get("/api/Products/GetAllProductsWithPictures"))
          const response2 = await (await axios.get("/api/subcategory/GetSubCategories"))
+         console.log(response?.data)
          setProductPage(response?.data)
          setCategoryList(response2?.data)
          if( productList != null){

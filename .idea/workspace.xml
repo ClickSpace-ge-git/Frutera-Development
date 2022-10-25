@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="switched to api product calls" />
+    <list default="true" id="3e0fbcf0-b38a-40e6-a853-806f0a699426" name="Changes" comment="fixed product data api call">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/CartPage/CartPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/Categories/FeaturedProducts/FeaturedProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frutera/components/ProductsList/ProductsList.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,13 +177,8 @@
       <workItem from="1666463702825" duration="157000" />
       <workItem from="1666611813071" duration="4404000" />
       <workItem from="1666693384392" duration="847000" />
-    </task>
-    <task id="LOCAL-00010" summary="Prepared RouteProtector for private routes, installed translation plugin and in i18next api prepared translation for all site strings">
-      <created>1661811912759</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1661811912759</updated>
+      <workItem from="1666711414078" duration="593000" />
+      <workItem from="1666712096315" duration="623000" />
     </task>
     <task id="LOCAL-00011" summary="Added front functionality to the admin page&#10;&#10;TODO: add routing, fix scss fix time error in voucherform">
       <created>1661883667219</created>
@@ -516,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666693617384</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="fixed product data api call">
+      <created>1666711505042</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1666711505043</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="many fixes and backend implementation" />
     <MESSAGE value="Pre-Final" />
     <MESSAGE value="Fixed token assignment" />
     <MESSAGE value="removed second index html" />
@@ -559,6 +565,7 @@
     <MESSAGE value="hosted comments&#10;hosted language flags" />
     <MESSAGE value="Implementing Finalized API Calls" />
     <MESSAGE value="switched to api product calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="switched to api product calls" />
+    <MESSAGE value="fixed product data api call" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed product data api call" />
   </component>
 </project>

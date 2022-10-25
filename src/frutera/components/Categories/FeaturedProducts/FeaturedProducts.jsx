@@ -156,7 +156,6 @@ export default function FeaturedProducts() {
     }, [])
 
     function ShowFeaturedProductsList(props, navigate) {
-
         const AddToCart = async (props) =>{
             if(JSON.parse(sessionStorage.getItem("token")).accessToken === "none"){
                 navigate("/login",{replace:true})
@@ -172,7 +171,7 @@ export default function FeaturedProducts() {
                 clearTimeout(typingTimeOut);
             }
         }
-
+        console.log(props)
         return (
             props.map(product => {
                 return (
@@ -195,7 +194,7 @@ export default function FeaturedProducts() {
                         <div className='FPCD_image' onClick={(e) => {
                             navigate("/products/" + product.id)
                         }}>
-                            <img src={product.images[0]} alt={`Image_${product.id + 1}`}/>
+                            <img src={product.pictures[0]} alt={`Image_${product.id + 1}`}/>
                         </div>
 
                         <div className='FPCD_text'>
